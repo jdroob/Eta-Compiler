@@ -1,0 +1,7 @@
+a:int, b, c:int;
+
+d:int[], e:bool[][] = 5, 4
+
+f:bool[], _ = 7;
+
+

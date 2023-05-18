@@ -1,0 +1,14 @@
+main() {
+    a:int = 5
+    b:int = inc(a)
+    c:int
+    c = inc(6)
+}
+
+inc(x:int):int {
+    return x+f()*2;
+}
+
+f():int {
+    return 5
+}

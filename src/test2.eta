@@ -1,0 +1,37 @@
+use io
+use conv
+
+//// case 1
+main(args: int[][]) {
+    a1:int, b1:int, c1:int, d1:int = f(1,2,3,4,5,6,7,8)     // 4 rvs, 8 args
+}
+
+f(a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int):int, int, int, int {
+    return 5, 6, 7, 8
+}
+
+// case 2
+//main(args: int[][]) {
+//    a:int, b:int = f(1,2,3,4,5,6,7,8)     // 2 rvs, 8 args
+//}
+//f(a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int):int, int {
+//    return 5, 6
+//}
+
+//// case 3
+//main(args: int[][]) {
+//    a:int, b:int, c:int, d:int = f(1,2,3,4,5)     // 4 rvs, 5 args
+//}
+//
+//f(a:int, b:int, c:int, d:int, e:int):int, int, int, int {
+//    return 5, 6, 7, 8
+//}
+
+//// case 4
+//main(args: int[][]) {
+//    a:int, b:int = f(1,2,3,4,5,6)     // 2 rvs, 6 args
+//}
+//
+//f(a:int, b:int, c:int, d:int, e:int, f:int):int, int {
+//    return 5, 6
+//}

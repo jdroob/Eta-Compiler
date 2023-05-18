@@ -1,0 +1,15 @@
+use io;
+use conv;
+
+main(args:int[][]) {
+  a:int = 2;
+  b:int = a;
+  c:int = b;
+  d:int = c;
+  e:int = d;
+  f:int = e;
+  b = a;
+  b = c;
+  println(unparseInt(f));
+
+}

@@ -1,0 +1,2 @@
+"Hello ""\"World\"""; x = ""\\"
+// 1:28 should be string \\

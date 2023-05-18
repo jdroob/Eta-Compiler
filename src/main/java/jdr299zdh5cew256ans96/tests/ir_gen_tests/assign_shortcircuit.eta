@@ -1,0 +1,7 @@
+main() {
+    a:bool = true
+    b:bool = false
+    c:bool = a & b
+
+    d:bool = !c
+}

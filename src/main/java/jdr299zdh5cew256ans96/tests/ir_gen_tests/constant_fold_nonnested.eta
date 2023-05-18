@@ -1,0 +1,7 @@
+main() {
+    x:int = 1 + 2 + 3
+    b:bool = true & false
+    c:bool = true | false
+    y:int = 9 * 7
+    p:bool = b & c
+}

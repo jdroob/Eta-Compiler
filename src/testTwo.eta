@@ -1,0 +1,57 @@
+use io
+use conv
+//
+//g:int[]
+main(args:int[][]) {
+    x:int = 5
+    y:int = 1 + x
+//    arr:int[] = {1,2,3}
+//    println(unparseInt(arr[0]))
+//
+//    arr2:int[] = "1,2,3"
+//    println(unparseInt(arr2[0]))
+//
+//    arr2[0] = 4
+//    println(unparseInt(arr2[0]))
+//    arr3:int[] = arr + arr2
+//    g = {100,2}
+//    arr4:int[] = g + "hi"
+//    println(unparseInt(arr4[0]))
+//    println("zzzzzzzzzzzzZZZZZZZZ")
+//    println(unparseInt(arr3[4]))
+//    a:bool = true
+//    b:bool = false
+//    c: bool = or(a,b)
+//    if (c) {
+//        a:bool = false
+//        println("if")
+//        if (true) {
+//            println("inner if")
+//        }
+//    } else {
+//        b:bool = true
+//        println("else")
+//    }
+////    g = "hello"
+////    h:int[] = "hi"
+////    g2:int[] = g + {1}
+////    println(unparseInt(g2[3]))
+////    println("hello")
+////
+//    i:int = 0
+//    while (i < 5) {
+//        i = i + 1
+////        println(unparseInt(i))
+//        j:int = 0
+//        while (j < 5) {
+//                println("inner while")
+//            println(unparseInt(i))
+//            println(unparseInt(j))
+//            j = j + 1
+//        }
+//    }
+}
+////
+//or(t1:bool, t2:bool): bool {
+//    return t1 | t2
+//}

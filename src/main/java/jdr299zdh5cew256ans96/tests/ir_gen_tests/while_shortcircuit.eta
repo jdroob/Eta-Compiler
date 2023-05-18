@@ -1,0 +1,17 @@
+main() {
+
+    a:bool = true
+    b:bool = false
+//    c:bool = a & b
+    while (a & b) {
+        john:int = 99;
+    }
+
+    while (!a) {
+        john:int = 98;
+    }
+
+    while (a) {
+        john:int = 97;
+    }
+}

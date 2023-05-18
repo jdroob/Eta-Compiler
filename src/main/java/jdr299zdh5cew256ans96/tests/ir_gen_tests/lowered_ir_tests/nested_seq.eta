@@ -1,0 +1,11 @@
+g : int = 3;
+main () {
+    g = 5;
+    proc(4, 5+6, 8*2)
+}
+
+proc(a:int, b:int, c:int) {
+    x:int = 5
+    y:int = 6
+    z:int = 8
+}

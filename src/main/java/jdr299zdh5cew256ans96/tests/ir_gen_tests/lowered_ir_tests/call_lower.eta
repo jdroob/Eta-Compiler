@@ -1,0 +1,20 @@
+main() {
+
+    a:int = g(5+4);
+
+    v:bool = h(g(2),3,1);
+
+}
+
+f(x:int, y:int) {
+
+}
+
+g(b:int):int {
+    return 5;
+}
+
+h(c:int, d:int, e:int):bool {
+    z:bool = false;
+    return z;
+}

@@ -1,0 +1,20 @@
+main() {
+    a:int = 1
+    b:int = 2
+    c:bool = true
+    d:bool = true
+    a,b = 5
+    if (a < b) {
+        ifExample:int = 69
+    }
+    if (c|d) {
+        ifExample:int = 69
+    }
+    if (c&d) {
+        ifExample:int = 69
+    }
+    if (!d) {
+        ifExample:int = 69
+    }
+
+}

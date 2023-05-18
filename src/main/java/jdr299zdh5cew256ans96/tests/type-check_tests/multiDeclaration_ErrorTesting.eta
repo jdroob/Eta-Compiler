@@ -1,0 +1,13 @@
+f():int,int {
+    return 1,2
+}
+a1:int
+// g:int, h:int = 1  // fine
+ g:int, h:int  // throws error b/c expecting '='
+
+main() {
+    z:int
+    //_,a:int, b:int = f(),3  // fine
+    a:int, b:int  // throws error b/c expecting '='
+    c:int   // fine
+}

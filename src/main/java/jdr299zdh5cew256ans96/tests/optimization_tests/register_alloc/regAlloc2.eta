@@ -1,0 +1,17 @@
+use io
+use conv
+
+main(args:int[][]) {
+    x:int[] = {2,3,5,7,11}
+    y:int[] = "helL0"
+
+    i:int = 0;
+    while (i < 5) {
+        j:int = 0;
+        while (j < 5) {
+            println(unparseInt(x[i]*y[j]))
+            j = j + 1
+        }
+        i = i + 1
+    }
+}

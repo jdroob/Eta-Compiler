@@ -1,0 +1,35 @@
+/*
+*  modulo
+*/
+
+use io
+use conv
+
+main(args: int[][]) {
+    b:int = 16;
+    a:int = b%4;
+    g:int = 4;
+    c:int = b % g;
+    e:int = 11;
+    f:int = 2;
+    r:int = 64;
+    v:int = 8;
+    s:int = 2;
+    println(unparseInt(a))      // 0
+    println(unparseInt(c))      // 0
+    println(unparseInt(e%f))    // 1 (integer division)
+    println(unparseInt(e%f%s))  // 0
+
+    q:int = 1244;
+    println(unparseInt(q%e))
+    j:int = 84621536
+    h:int = 724536
+    println(unparseInt(j%h))
+    i:int = 0;
+    n:int = 10;
+    while (i < 10) {
+        println(unparseInt(i%n))
+        i = i + 1
+    }
+    println(unparseInt(e%0))    // ERROR
+}

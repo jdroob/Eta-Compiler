@@ -1,0 +1,60 @@
+use io
+use conv
+
+//a:int = 4
+g:int[]
+main(args: int[][]) {
+
+    g = "hello"
+    println(unparseInt(g[0]))
+
+//    println("hello")
+//    b:int = 8;
+//    a:int = b/4+2;
+//    p:int = a*a*a
+//    println(unparseInt(a))
+//    println(unparseInt(p))
+//
+//    t:bool = true
+//    f:bool = !t
+//    if (!f) {
+//        println("!f")
+//    }
+//
+//    _, a2:int = 1, 2
+//    println(unparseInt(a2))
+//    array:int[] = {1,2}
+//    println(unparseInt(array[0]))
+//    arrayLen:int = array[0]
+//    println(unparseInt(arrayLen))
+
+
+
+//    print("hello")
+//  x:int[] = "hi"
+//  g = {65,66}
+//  g = "hello"
+////  x:int = 5
+////  a2:int = f(x)
+//  x2:int[] = "hello"
+//  x3:int[] = x2 + g
+//  i:int = 0
+//  while (i < 11) {
+////    println(unparseInt(x3[i]))
+//    i =  i + 1
+//  }
+//  g3(5)
+//  b:int = x2[0]
+//    println(unparseInt(x))
+//  unparseInt(x)
+//    f(5)
+}
+//
+//f(a2:int):int {
+//    a:int = 4;
+//    return a;
+//}
+
+//g3(arg1:int) {
+//    g8:int = 0
+//}

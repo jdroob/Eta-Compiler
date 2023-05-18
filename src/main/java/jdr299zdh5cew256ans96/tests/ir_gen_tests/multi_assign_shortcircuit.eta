@@ -1,0 +1,22 @@
+main() {
+    c:bool = false
+    a:bool, b:bool, c = true
+    j:int, h:bool = g(a|b,5), a & b
+//    h(a|b,5)
+
+    //a, b, c = true & false
+
+    //a, b, c, d:int = true & false, f(), f(), 5
+}
+
+f(): bool {
+    return true
+}
+
+g(a:bool, b:int): int {
+    return 5
+}
+
+h(a:bool, b:int) {
+
+}

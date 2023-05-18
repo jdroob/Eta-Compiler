@@ -1,0 +1,935 @@
+package main.java.jdr299zdh5cew256ans96.cup;
+import main.java.jdr299zdh5cew256ans96.util.edu.cornell.cs.cs4120.util.CodeWriterSExpPrinter;
+import main.java.jdr299zdh5cew256ans96.EtaLexer;
+import main.java.jdr299zdh5cew256ans96.ast.*;
+import main.java.jdr299zdh5cew256ans96.lexertokens.*;
+import main.java.jdr299zdh5cew256ans96.types.*;
+import java.io.Reader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java_cup.runtime.Symbol;
+
+parser code {:
+
+// Connect this parser to a scanner!
+
+    private String fileType;
+    private String errorStr;
+    private String fileName;
+
+    public parser(Reader input) throws IOException {
+        super(new EtaLexer(input));
+    }
+
+    public void syntax_error(Symbol cur_token){
+            EtaToken token_val = (EtaToken) cur_token.value;
+            String errorMessage = token_val.getPos() + " error:Unexpected token " + token_val.toString() + "\n";
+            report_error("Syntax error beginning at "+fileName+"."+fileType+":"+errorMessage, null);
+            errorStr = errorMessage;
+    }
+
+    public void unrecovered_syntax_error(Symbol cur_token){
+    	return;
+    }
+
+    public String getErrorStr() {
+        return errorStr;
+    }
+
+    public void setFileType(String fileType) {
+        this.fileType = fileType;
+    }
+
+    public void setFileName(String fileName) {
+            this.fileName = fileName;
+        }
+
+:};
+
+/* From the documentation:
+"Using CUP involves creating a simple specification based on the grammar for which a parser
+is needed, along with construction of a scanner capable of breaking characters up into
+meaningful tokens (such as keywords, numbers, and special symbols)."
+*/
+
+// You might want to add types to these declarations.
+/* no type indicates that a terminal/non-terminal holds no value
+eg: an integer literal has to hold an integer
+an identifier needs to hold a string (the identifier itself) */
+
+terminal EtaIdentifier IDENTIFIER;
+terminal EtaIntLiteral INTEGER_LITERAL;
+terminal EtaError ERROR;
+terminal EtaCharacterLiteral CHARACTER_LITERAL;
+terminal EtaStrLiteral STRING_LITERAL;
+terminal EtaTrue TRUE; 
+terminal EtaFalse FALSE;
+terminal EtaInt INT;
+terminal EtaBool BOOL;
+terminal EtaIf IF;
+terminal EtaElse ELSE;
+terminal EtaWhile WHILE;
+terminal RhoRecord RECORD;
+terminal EtaReturn RETURN;
+terminal EtaUse USE;
+//terminal EtaLength LENGTH;
+terminal EtaPlus PLUS;
+terminal EtaMinus MINUS;
+terminal EtaTimes TIMES;
+terminal EtaDivide DIVIDE;
+terminal EtaModulo MODULO;
+terminal EtaNOT NOT;
+terminal EtaLT LT;
+terminal EtaLEQ LEQ; 
+terminal EtaGT GT; 
+terminal EtaGEQ GEQ;
+terminal EtaAND AND;
+terminal EtaOR OR; 
+terminal EtaNotEquals NOT_EQUAL;
+terminal EtaEquals EQUALS;
+terminal EtaOpenBracket OPEN_BRACKET;
+terminal EtaCloseBracket CLOSE_BRACKET;
+terminal EtaOpenParen OPEN_PAREN;
+terminal EtaCloseParen CLOSE_PAREN;
+terminal EtaOpenBrace OPEN_BRACE;
+terminal EtaCloseBrace CLOSE_BRACE;
+terminal EtaColon COLON;
+terminal EtaComma COMMA;
+terminal EtaDot DOT;
+terminal EtaSemicolon SEMICOLON;
+terminal EtaAssign ASSIGN;
+terminal EtaHighMultiplication HIGH_MULT;
+terminal RhoBreak BREAK;
+terminal RhoNull NULL;
+
+// reminder: terminals are things that are returned by the scanner
+
+// You might want to add types to these declarations.
+// non-terminals are things that need to be "broken down" into terminals by the parser
+// see the pa2 release document for suggested non-terminals
+non terminal Program program;
+non terminal Use use;
+non terminal Definition definition;
+non terminal ArrayList<Definition> definitionList;
+non terminal ArrayList<Use> useList;
+non terminal LocalDeclaration localDeclaration;
+non terminal GlobalDeclaration globalDeclaration;
+non terminal ArrayList<Parameter> parameterDeclaration;
+non terminal ArrayList<Field> fieldList;
+non terminal Field field;
+non terminal Parameter parameter;
+non terminal Block block;
+non terminal Expression expression;
+non terminal ArrayList<Expression> expressionList;
+non terminal FunctionCall functionCall;
+non terminal Return returnStatement;
+non terminal ProcedureCall procedureCall;
+non terminal TypeNode type;
+non terminal Array array;
+non terminal ArrayList<Expression> arrayContentsList;
+non terminal Expression arrayContents;
+non terminal Method method;
+non terminal main.java.jdr299zdh5cew256ans96.ast.Record record;
+non terminal ArrayList<Identifier> identifierList;
+non terminal ArrayList<Statement> statementList;
+non terminal Operator.UnaryOperator unop;
+non terminal String optionalSemicolon;
+non terminal ArrayList<TypeNode> returnType;
+non terminal Multiline multiLineStatement;
+non terminal SingleLine singleLineStatement;
+non terminal If ifStatement;
+non terminal While whileStatement;
+non terminal Node optionalBracketContent;
+non terminal ArrayTypeNode arrayType;
+non terminal String primitiveType;
+non terminal ArrayList<Parameter> globalMultiDeclaration;
+non terminal ArrayList<Expression> localMultiDeclaration;
+non terminal Expression multiAssignContent;
+non terminal Parameter globalMultiAssignContent;
+non terminal Expression globalLiteral;
+non terminal ArrayList<Expression> globalLiteralList;
+non terminal ArrayList<Definition> methodInterfaceList;
+non terminal ArrayList<Record> recordList;
+non terminal Method methodInterface;
+non terminal Expression assignmentIdentifier;
+
+/*precedences go here*/
+// three types of precedence delcarations: left, right, nonassoc.
+// order of precedence, from highest to lowest, is bottom to top
+
+precedence left OR;
+precedence left AND;
+precedence left EQUALS, NOT_EQUAL;
+precedence left LT, LEQ, GEQ, GT;
+precedence left PLUS, MINUS;
+precedence left TIMES, HIGH_MULT, DIVIDE, MODULO;
+precedence left NOT;
+
+precedence nonassoc IF;
+precedence nonassoc ELSE;
+
+// "start with" indicates which non-terminal is the "start" or "goal" non-terminal for parsing.
+// this is optional. if not explicitly declared, then non-terminal on the LHS of the first
+// production will be used
+
+start with program;
+
+program ::=
+    useList:ul definitionList:dl
+        {:
+            if (!fileType.equalsIgnoreCase("eta") && !fileType.equalsIgnoreCase("rh")
+                && !fileType.equalsIgnoreCase("ri")){
+                RESULT = new Program(true,"Expected a .eta file");
+            } else {
+                Program program =
+                    new Program(ul, dl, false, ul.get(0).getPos());
+                program.setFileName(fileName);
+                RESULT = program;
+            }
+        :}
+    | useList:ul definitionList:dl methodInterfaceList:ml
+    {:
+        if (!fileType.equalsIgnoreCase("ri")) {
+            RESULT = new Program(true, "Expected a .ri file");
+        } else {
+        Program program = new Program(ul,dl,true,ul.get(0).getPos());
+//        Program program = new Program(ul, ml, false, ml.get(0).getPos());
+        program.setFileName(fileName);
+        RESULT = program;
+//        RESULT = new Program(new ArrayList<Use>(), new ArrayList<Definition>(), false, ul2.get(0).getPos());
+        }
+    :}
+    | methodInterfaceList:ml
+        {:
+            if (!fileType.equalsIgnoreCase("eti") && !fileType.equalsIgnoreCase("ri")){
+                RESULT = new Program(true,"Expected a .eti file");
+            } else {
+                Program program =
+                    new Program(new ArrayList<Use>(), ml, true, ml.get(0).getPos());
+                program.setFileName(fileName);
+                RESULT = program;
+            }
+        :}
+    | definitionList: dl
+        {:
+            if (!fileType.equalsIgnoreCase("eta") && !fileType.equalsIgnoreCase("rh")){
+                RESULT = new Program(true,"Expected a .eta file");
+            } else {
+                Program program =
+                    new Program(new ArrayList<Use>(), dl, false, dl.get(0).getPos());
+                program.setFileName(fileName);
+                RESULT = program;
+            }
+        :}
+    | useList:ul
+        {:
+            if (!fileType.equalsIgnoreCase("eta") && !fileType.equalsIgnoreCase("rh")){
+                RESULT = new Program(true,"Expected a .eta file");
+            } else {
+                Program program =
+                    new Program(ul, new ArrayList<Definition>(), false, ul.get(0).getPos());
+                program.setFileName(fileName);
+                RESULT = program;
+            }
+        :}
+    | /*empty*/
+        {:
+            RESULT = new Program("0:0");
+        :}
+;
+useList ::=
+    useList:ul use:u
+        {:
+        if (fileType.equals("ri")) {
+             u.setRi(true);
+        }
+            ul.add(u);
+            RESULT = ul;
+        :}
+    | use:u
+        {:
+            if (fileType.equals("ri")) {
+                u.setRi(true);
+            }
+            ArrayList<Use> uses = new ArrayList<>();
+            uses.add(u);
+            RESULT = uses;
+        :}
+;
+definitionList ::=
+    definitionList:dl definition:d
+        {:
+            dl.add(d);
+            RESULT = dl;
+        :}
+    | definition:d
+        {:
+            ArrayList<Definition> defs = new ArrayList<>();
+            defs.add(d);
+            RESULT = defs;
+        :}
+;
+methodInterfaceList ::=
+    methodInterfaceList:ml methodInterface:mi
+        {:
+            ml.add(mi);
+            RESULT = ml;
+        :}
+    | methodInterface:mi
+        {:
+            ArrayList<Definition> methodList = new ArrayList<>();
+            methodList.add(mi);
+            RESULT = methodList;
+        :}
+;
+
+//recordList ::=
+//    recordList:rl record:r
+//        {:
+//            rl.add(r);
+//            RESULT = rl;
+//        :}
+//        | record:r
+//        {:
+//            ArrayList<Record> recordList = new ArrayList<>();
+//            recordList.add(r);
+//            RESULT = recordList;
+//        :}
+//;
+methodInterface ::=
+    IDENTIFIER:id OPEN_PAREN parameterDeclaration:p CLOSE_PAREN COLON returnType:r optionalSemicolon
+        {:
+            RESULT = new Method(id.getId(), p, r, id.getPos());
+        :}
+    | IDENTIFIER:id OPEN_PAREN parameterDeclaration:p CLOSE_PAREN optionalSemicolon
+        {:
+            RESULT = new Method(id.getId(), p, id.getPos());
+        :}
+;
+use ::=
+    USE:u IDENTIFIER:id optionalSemicolon
+        {:
+            RESULT = new Use(id.getId(), u.getPos());
+        :}
+;
+definition ::=
+    method:m
+        {:
+            RESULT = m;
+        :}
+    | globalDeclaration:g optionalSemicolon
+        {:
+            RESULT = g;
+        :}
+    | globalMultiDeclaration:m ASSIGN:a globalLiteralList:gl optionalSemicolon
+        {:
+            RESULT = new GlobalMultiDeclareAssign(m,gl,a.getPos());
+        :}
+    | record:r
+        {:
+            RESULT = r;
+        :}
+;
+
+record ::=
+    RECORD:r IDENTIFIER:i OPEN_BRACE fieldList:fl CLOSE_BRACE
+        {:
+	        RESULT = new main.java.jdr299zdh5cew256ans96.ast.Record(i.getId(), fl, r.getPos());
+        :}
+    | RECORD:r IDENTIFIER:i OPEN_BRACE CLOSE_BRACE
+        {:
+            RESULT = new main.java.jdr299zdh5cew256ans96.ast.Record(i.getId(), r.getPos());
+        :}
+;
+
+fieldList ::=
+        fieldList:fl field:f
+            {:
+                fl.add(f);
+                RESULT = fl;
+            :}
+        | field:f
+            {:
+                ArrayList<Field> fields = new ArrayList<>();
+                fields.add(f);
+                RESULT = fields;
+            :}
+;
+
+
+field ::=
+    parameter:p
+        {:
+            RESULT = new Field(p);
+        :}
+    | identifierList:il COLON type:t
+        {:
+	        RESULT = new Field(il,t);
+        :}
+;
+
+identifierList ::=
+    identifierList:il COMMA IDENTIFIER:i
+        {:
+            il.add(new Identifier(i.getId()));
+            RESULT = il;
+        :}
+    | IDENTIFIER:i1 COMMA IDENTIFIER:i2
+        {:
+            ArrayList<Identifier> identifiers = new ArrayList<>();
+            identifiers.add(new Identifier(i1.getId()));
+            identifiers.add(new Identifier(i2.getId()));
+            RESULT = identifiers;
+        :}
+;
+
+globalLiteralList ::=
+    globalLiteralList:gl COMMA globalLiteral:g
+        {:
+            gl.add(g);
+            RESULT = gl;
+        :}
+    | globalLiteral:g
+        {:
+            ArrayList<Expression> literals = new ArrayList<>();
+            literals.add(g);
+            RESULT = literals;
+        :}
+;
+method ::=
+    IDENTIFIER:id OPEN_PAREN parameterDeclaration:p CLOSE_PAREN COLON returnType:r block:b
+        {:
+            RESULT = new Method(id.getId(), p, r, b, id.getPos());
+        :}
+    | IDENTIFIER:id OPEN_PAREN parameterDeclaration:p CLOSE_PAREN block:b
+        {:
+            RESULT = new Method(id.getId(), p, b, id.getPos());
+        :}
+;
+parameterDeclaration ::=
+    /*empty*/
+        {:
+            RESULT = new ArrayList<Parameter>();
+        :}
+    | parameterDeclaration:pd COMMA parameter:p
+        {:
+            pd.add(p);
+            RESULT = pd;
+        :}
+    | parameter:p
+        {:
+            ArrayList<Parameter> parameters = new ArrayList<>();
+            parameters.add(p);
+            RESULT = parameters;
+        :}
+;
+parameter ::=
+    IDENTIFIER:id COLON type:t
+        {:
+            RESULT = new Parameter(id.getId(),t, id.getPos());
+        :}
+;
+block ::=
+    OPEN_BRACE:o statementList:sl CLOSE_BRACE
+        {:
+            RESULT = new Block(sl, o.getPos());
+        :}
+    | OPEN_BRACE:o statementList:sl returnStatement:rs CLOSE_BRACE
+        {:
+            RESULT = new Block(sl, rs, o.getPos());
+        :}
+;
+statementList ::=
+    /*empty*/
+        {:
+            RESULT = new ArrayList<Statement>();
+        :}
+    | statementList:sl multiLineStatement:s
+        {:
+            sl.add(s);
+            RESULT = sl;
+        :}
+    | statementList:sl singleLineStatement:s
+        {:
+            sl.add(s);
+            RESULT = sl;
+        :}
+    | statementList:sl block:b
+        {:
+            sl.add(b);
+            RESULT = sl;
+        :}
+;
+optionalSemicolon ::=
+    /*empty*/
+        {:
+            RESULT = "";
+        :}
+    | SEMICOLON:s
+        {:
+            RESULT = s.getString();
+        :}
+;
+globalDeclaration ::=
+    IDENTIFIER:id COLON type:t
+        {:
+            RESULT = new GlobalDeclaration(new Parameter(id.getId(),t, id.getPos()),id.getPos());
+        :}
+    | IDENTIFIER:id COLON type:t ASSIGN globalLiteral:gl
+        {:
+            RESULT = new GlobalDeclareAssign(new Parameter(id.getId(),t,id.getPos()),gl,id.getPos());
+        :}
+;
+multiLineStatement ::=
+    ifStatement:i
+        {:
+            RESULT = i;
+        :}
+    | whileStatement:w
+        {:
+            RESULT = w;
+        :}
+;
+singleLineStatement ::=
+    assignmentIdentifier:ai ASSIGN expression:e1 optionalSemicolon
+        {:
+            RESULT = new IdAssign(e1,ai, ai.getPos());
+        :}
+    | localDeclaration:ld optionalSemicolon
+        {:
+            RESULT = ld;
+        :}
+    | localMultiDeclaration:md ASSIGN:a expressionList:el optionalSemicolon
+        {:
+            RESULT = new LocalMultiAssign(md,el,a.getPos());
+        :}
+    | procedureCall:p optionalSemicolon
+        {:
+            RESULT = p;
+        :}
+;
+assignmentIdentifier ::=
+    IDENTIFIER:id
+        {:
+            RESULT = new Identifier(id.getId(), id.getPos());
+        :}
+    | IDENTIFIER:id OPEN_BRACKET:ob expression:e CLOSE_BRACKET:cb
+        {:
+            Identifier identifier = new Identifier(id.getId(), id.getPos());
+            RESULT = new ArrayAccess(identifier, e, id.getPos());
+        :}
+    | IDENTIFIER:id OPEN_BRACKET:ob1 expression:e1 CLOSE_BRACKET:cb1 OPEN_BRACKET:ob2 expression:e2 CLOSE_BRACKET:cb2
+        {:
+            Identifier identifier = new Identifier(id.getId(), id.getPos());
+            RESULT = new ArrayAccess(identifier, e1, e2, id.getPos());
+        :}
+    | IDENTIFIER:i1 DOT IDENTIFIER:i2
+        {:
+
+	        RESULT = new FieldAccess(new Identifier(i1.getId()), new Identifier(i2.getId()));
+	    :}
+;
+ifStatement ::=
+    IF:i expression:e block:b
+        {:
+            RESULT = new If(e,b,i.getPos());
+        :}
+    | IF:i expression:e block:b1 ELSE block:b2
+        {:
+            RESULT = new Ifelse(e,b1,b2,i.getPos());
+        :}
+    | IF:i expression:e block:b ELSE singleLineStatement:sl
+        {:
+            RESULT = new Ifelse(e,b,sl,i.getPos());
+        :}
+    | IF:i expression:e block:b ELSE ifStatement:ifs
+        {:
+            RESULT = new Ifelse(e,b,ifs,i.getPos());
+        :}
+    | IF:i expression:e singleLineStatement:sl
+        {:
+            RESULT = new If(e,sl,i.getPos());
+        :}
+    | IF:i expression:e singleLineStatement:sl ELSE block:b
+        {:
+            RESULT = new Ifelse(e,sl,b,i.getPos());
+        :}
+    | IF:i expression:e singleLineStatement:sl1 ELSE singleLineStatement:sl2
+        {:
+            RESULT = new Ifelse(e,sl1,sl2,i.getPos());
+        :}
+    | IF:i expression:e singleLineStatement:sl ELSE ifStatement:ifs
+        {:
+            RESULT = new Ifelse(e,sl,ifs, i.getPos());
+        :}
+;
+whileStatement ::=
+    WHILE:w expression:e block:b
+        {:
+            RESULT = new While(e,b, w.getPos());
+        :}
+    | WHILE:w expression:e singleLineStatement:sl
+        {:
+            RESULT = new While(e,sl, w.getPos());
+        :}
+;
+procedureCall ::=
+    IDENTIFIER:id OPEN_PAREN expressionList:el CLOSE_PAREN
+        {:
+            RESULT = new ProcedureCall(id.getId(),el, id.getPos());
+        :}
+    | IDENTIFIER:id OPEN_PAREN CLOSE_PAREN
+        {:
+            RESULT = new ProcedureCall(id.getId(), id.getPos());
+        :}
+;
+returnStatement ::=
+    RETURN:r expressionList:el optionalSemicolon
+        {:
+            RESULT = new Return(el, r.getPos());
+        :}
+    | RETURN:r optionalSemicolon
+        {:
+            RESULT = new Return(r.getPos());
+        :}
+;
+localDeclaration ::=
+    IDENTIFIER:id COLON type:t
+        {:
+            Parameter param = new Parameter(id.getId(),t, id.getPos());
+            RESULT = new LocalDeclaration(param, id.getPos());
+        :}
+    | IDENTIFIER:id COLON type:t ASSIGN expression:e
+        {:
+            Parameter param = new Parameter(id.getId(),t, id.getPos());
+            RESULT = new LocalDecAssign(param, e, id.getPos());
+        :}
+;
+multiAssignContent ::=
+    IDENTIFIER:id COLON type:t
+        {:
+            RESULT = new Parameter(id.getId(),t, id.getPos());
+        :}
+    | assignmentIdentifier:a
+        {:
+            RESULT = a;
+        :}
+
+;
+globalMultiAssignContent ::=
+    IDENTIFIER:id COLON type:t
+        {:
+            RESULT = new Parameter(id.getId(),t, id.getPos());
+        :}
+;
+localMultiDeclaration ::=
+    localMultiDeclaration:ml COMMA multiAssignContent:m
+        {:
+            ml.add(m);
+            RESULT = ml;
+        :}
+    | multiAssignContent:m1 COMMA multiAssignContent:m2
+        {:
+            ArrayList<Expression> params = new ArrayList<>();
+            params.add(m1);
+            params.add(m2);
+            RESULT = params;
+        :}
+;
+globalMultiDeclaration ::=
+    globalMultiDeclaration:ml COMMA globalMultiAssignContent:m
+        {:
+            ml.add(m);
+            RESULT = ml;
+        :}
+    | globalMultiAssignContent:m1 COMMA globalMultiAssignContent:m2
+        {:
+            ArrayList<Parameter> params = new ArrayList<>();
+            params.add(m1);
+            params.add(m2);
+            RESULT = params;
+        :}
+;
+expressionList ::=
+    expressionList:el COMMA expression:e
+        {:
+            el.add(e);
+            RESULT = el;
+        :}
+    | expression:e
+        {:
+            ArrayList<Expression> exprs = new ArrayList<>();
+            exprs.add(e);
+            RESULT = exprs;
+        :}
+;
+expression ::=
+    expression:e1 PLUS expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.PLUS, e2, e1.getPos());
+        :}
+    | expression:e1 MINUS expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.MINUS, e2, e1.getPos());
+        :}
+    | expression:e1 TIMES expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.TIMES, e2, e1.getPos());
+        :}
+    | expression:e1 DIVIDE expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.DIVIDE, e2, e1.getPos());
+        :}
+    | expression:e1 MODULO expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.MODULO, e2, e1.getPos());
+        :}
+    | expression:e1 HIGH_MULT expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.HIGH_MULT, e2, e1.getPos());
+        :}
+    | expression:e1 LT expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.LT, e2, e1.getPos());
+        :}
+    | expression:e1 LEQ expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.LEQ, e2, e1.getPos());
+        :}
+    | expression:e1 GT expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.GT, e2, e1.getPos());
+        :}
+    | expression:e1 GEQ expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.GEQ, e2, e1.getPos());
+        :}
+    | expression:e1 AND expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.AND, e2, e1.getPos());
+        :}
+    | expression:e1 OR expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.OR, e2, e1.getPos());
+        :}
+    | expression:e1 NOT_EQUAL expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.NOT_EQUAL, e2, e1.getPos());
+        :}
+    | expression:e1 EQUALS expression:e2
+        {:
+            RESULT = new BinopExpression(e1, Operator.BinaryOperator.EQUALS, e2, e1.getPos());
+        :}
+    | MINUS:m INTEGER_LITERAL:i
+        {:
+            RESULT = new IntegerLiteral("-"+i.getVal(),m.getPos());
+        :}
+    | unop:uOp expression:e
+        {:
+            RESULT = new UnopExpression(e, uOp, e.getPos());
+        :}
+    | array:a
+        {:
+            RESULT = a;
+        :}
+    | functionCall:fc
+        {:
+            RESULT = fc;
+        :}
+    // identifier, or array access of an identifier
+    | assignmentIdentifier:ai
+        {:
+            RESULT = ai;
+        :}
+    | NULL:n
+        {:
+            RESULT = new Null(n.getPos());
+        :}
+    | array:a OPEN_BRACKET:ob expression:e CLOSE_BRACKET:cb
+        {:
+            RESULT = new ArrayAccess(a,e,a.getPos());
+        :}
+
+     | array:a OPEN_BRACKET:ob1 expression:e1 CLOSE_BRACKET:cb1 OPEN_BRACKET:ob2 expression:e2 CLOSE_BRACKET:cb2
+        {:
+            RESULT = new ArrayAccess(a, e1, e2, a.getPos());
+        :}
+    | OPEN_PAREN expression:e CLOSE_PAREN
+        {:
+            RESULT = e;
+        :}
+    | INTEGER_LITERAL:i
+        {:
+            RESULT = new IntegerLiteral(i.getVal(),i.getPos());
+        :}
+    | CHARACTER_LITERAL:c
+        {:
+            RESULT = new CharLiteral(c.getVal(),c.getPos());
+        :}
+    | STRING_LITERAL:s
+        {:
+            RESULT = new StringLiteral(s.getVal(),s.getPos());
+        :}
+
+    | TRUE:t
+        {:
+            RESULT = new BooleanLiteral(t.getVal(),t.getPos());
+        :}
+    | FALSE:f
+        {:
+            RESULT = new BooleanLiteral(f.getVal(),f.getPos());
+        :}
+;
+unop ::=
+    NOT
+        {:
+            RESULT = Operator.UnaryOperator.NOT;
+        :}
+;
+array ::=
+    OPEN_BRACE:o arrayContentsList:al CLOSE_BRACE
+        {:
+            RESULT = new Array(al,o.getPos());
+        :}
+    | OPEN_BRACE:o CLOSE_BRACE
+        {:
+            RESULT = new Array(o.getPos());
+        :}
+;
+arrayContentsList ::= 
+    arrayContentsList:al COMMA arrayContents:a
+        {:
+            al.add(a);
+            RESULT = al;
+        :}
+    | arrayContents:a
+        {:
+            ArrayList<Expression> arrList = new ArrayList<>();
+            arrList.add(a);
+            RESULT = arrList;
+        :}
+;
+arrayContents ::=
+    INTEGER_LITERAL:i
+        {:
+            RESULT = new IntegerLiteral(i.getVal(),i.getPos());
+        :}
+    | CHARACTER_LITERAL:c
+        {:
+            RESULT = new CharLiteral(c.getVal(),c.getPos());
+        :}
+    | TRUE:t
+        {:
+            RESULT = new BooleanLiteral(t.getVal(),t.getPos());
+        :}
+    | FALSE:f
+        {:
+            RESULT = new BooleanLiteral(f.getVal(),f.getPos());
+        :}
+    | array:a
+        {:
+            RESULT = a;
+        :}
+;
+functionCall ::=
+    IDENTIFIER:id OPEN_PAREN expressionList:el CLOSE_PAREN
+        {:
+            RESULT = new FunctionCall(el,id.getId(),id.getPos());
+        :}
+    | IDENTIFIER:id OPEN_PAREN CLOSE_PAREN
+        {:
+            RESULT = new FunctionCall(id.getId(),id.getPos());
+        :}
+//    | LENGTH:l OPEN_PAREN expression:e CLOSE_PAREN
+//        {:
+//            RESULT = new FunctionCall(e,l.getName(),l.getPos());
+//        :}
+;
+returnType ::=
+    returnType:rt COMMA type:t
+        {:
+            rt.add(t);
+            RESULT = rt;
+        :}
+    | type:t
+        {:
+            ArrayList<TypeNode> returnTypes = new ArrayList<>();
+            returnTypes.add(t);
+            RESULT = returnTypes;
+        :}
+;
+type ::=
+    INT:i
+        {:
+            RESULT = new IntTypeNode(i.getPos());
+        :}
+    | BOOL:b
+        {:
+            RESULT = new BoolTypeNode(b.getPos());
+        :}
+    | arrayType:a
+        {:
+            RESULT = a;
+        :}
+    | IDENTIFIER:i
+        {:
+            RESULT = new RecordTypeNode(i.getId(),i.getPos());
+        :}
+;
+primitiveType ::= 
+    INT:i
+        {:
+            RESULT = i.getVal();
+        :}
+    | BOOL:b
+        {:
+            RESULT = b.getVal();
+        :}
+;
+arrayType ::= 
+    primitiveType:p OPEN_BRACKET:ob optionalBracketContent:o CLOSE_BRACKET
+        {:
+            RESULT = new ArrayTypeNode(p,ob.getPos(),o);
+        :}
+    | primitiveType:p OPEN_BRACKET:ob optionalBracketContent:o1 CLOSE_BRACKET
+        OPEN_BRACKET optionalBracketContent:o2 CLOSE_BRACKET
+        {:
+            RESULT = new MultiArrayTypeNode(p,ob.getPos(),o1,o2);
+        :}
+;
+globalLiteral ::=
+    INTEGER_LITERAL:i
+        {:
+            RESULT = new IntegerLiteral(i.getVal(),i.getPos());
+        :}
+    | CHARACTER_LITERAL:c
+        {:
+            RESULT = new CharLiteral(c.getVal(),c.getPos());
+        :}
+    | STRING_LITERAL:s
+        {:
+            RESULT = new StringLiteral(s.getVal(),s.getPos());
+        :}
+    | TRUE:t
+        {:
+            RESULT = new BooleanLiteral(t.getVal(),t.getPos());
+        :}
+    | FALSE:f
+        {:
+            RESULT = new BooleanLiteral(f.getVal(),f.getPos());
+        :}
+;
+optionalBracketContent ::= 
+    /*empty*/
+        {:
+            RESULT = null;
+        :}
+    | INTEGER_LITERAL:i
+        {:
+            RESULT = new IntegerLiteral(i.getVal(),i.getPos());
+        :}
+    | IDENTIFIER:id
+        {:
+            RESULT = new Identifier(id.getId(),id.getPos());
+        :}
+;

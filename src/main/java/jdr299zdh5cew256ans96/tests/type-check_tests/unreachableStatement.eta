@@ -1,0 +1,11 @@
+main(){
+    a: int = 1
+    b: int = 2
+    if(){
+        return a //this should work
+    }
+    else{
+        return b //this should work
+    }
+    return a //this statement is unreachable and should throw an error
+}

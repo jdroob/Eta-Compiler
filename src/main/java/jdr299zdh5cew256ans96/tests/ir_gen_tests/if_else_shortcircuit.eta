@@ -1,0 +1,14 @@
+use conv
+use io
+main(args:int[][]) {
+    a:bool = true
+    b:bool = false
+//    println("hi")
+    if (a & b) {
+        john:bool = false
+        println("if")
+    } else {
+        println("else")
+        john:bool = true
+    }
+}

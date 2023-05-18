@@ -1,0 +1,10 @@
+main(args:int[][]) {
+  a:bool = true;
+  b:bool = a;
+  c:bool =b;
+  d:bool = false;
+  e:bool = true;
+  c = a;
+  d = c;
+
+}

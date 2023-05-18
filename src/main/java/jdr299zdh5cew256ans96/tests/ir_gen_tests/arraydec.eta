@@ -1,0 +1,8 @@
+main() {
+ 
+    x : int = 3;
+    //y: int = 10;
+    arr0:int[4]       // good
+    //arr1:int[x][];
+    //arr2:int[x][y];
+}

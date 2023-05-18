@@ -1,0 +1,16 @@
+main(){
+    a: int = 3
+    b: int =5
+    if(a>100)
+    {
+        return 7
+    }
+    else {
+        if(b<3){
+            return 5
+        }
+        else{
+            return 3;
+        }
+    }
+}

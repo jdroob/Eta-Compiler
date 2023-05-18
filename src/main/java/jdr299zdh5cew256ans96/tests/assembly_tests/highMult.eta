@@ -1,0 +1,15 @@
+/*
+*  high-multiplication
+*/
+
+use io
+use conv
+
+main(args: int[][]) {
+    b:int = 4294967296 // 2^32
+    c:int = 8589934592 // 2^33
+    a:int = b *>> b   //2^32 *>> 2^32 = 1
+    d:int = c *>> b  // 2^33 *>> 2^32 = 2
+    println(unparseInt(a))
+    println(unparseInt(d))
+}

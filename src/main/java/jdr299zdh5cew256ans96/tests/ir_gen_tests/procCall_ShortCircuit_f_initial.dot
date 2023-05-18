@@ -1,0 +1,30 @@
+digraph finite_state_machine {
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+	rankdir=LR;
+	node [shape = circle];
+	Block_31 [label="LABEL__L3\nMOVE_T_t3_C_1\n"];
+	Block_31 -> Block_32 ;
+	Block_33 [label="MOVE_T_t6_C_1\nCJUMP_XOR_T_t6_T_b__L4\n"];
+	Block_33 -> Block_34 ;
+	Block_33 -> Block_35 ;
+	Block_28 [label="LABEL_l__Imain_p\nMOVE_T_a_C_1\nMOVE_T_b_C_0\nCJUMP_T_a__L3\n"];
+	Block_28 -> Block_29 ;
+	Block_28 -> Block_31 ;
+	Block_30 [label="MOVE_T_t3_C_0\nJUMP_LE3\n"];
+	Block_30 -> Block_32 ;
+	Block_35 [label="LABEL__L4\nMOVE_T_t4_C_0\n"];
+	Block_35 -> Block_36 ;
+	Block_5 [label="LABEL_l__Ig_pbb\nMOVE_T_a_T__ARG1\nMOVE_T_b_T__ARG2\nRETURN\n"];
+	Block_32 [label="LABEL_LE3\nMOVE_T_t5_C_1\nCJUMP_XOR_T_t5_T_a__L4\n"];
+	Block_32 -> Block_33 ;
+	Block_32 -> Block_35 ;
+	Block_13 [label="LABEL_l__If_pb\nMOVE_T_a_T__ARG1\nRETURN\n"];
+	Block_36 [label="LABEL_LE4\nMOVE_T_t7_T_t3\nMOVE_T__ARG1_T_t7\nMOVE_T_t8_T_t4\nMOVE_T__ARG2_T_t8\nCALL_STMT_0__Ig_pbb_T_t7_T_t8\nRETURN\n"];
+	Block_29 [label="CJUMP_T_b__L3\nCJUMP_T_b__L3\n"];
+	Block_29 -> Block_30 ;
+	Block_29 -> Block_31 ;
+	Block_34 [label="MOVE_T_t4_C_1\nJUMP_LE4\n"];
+	Block_34 -> Block_36 ;
+}

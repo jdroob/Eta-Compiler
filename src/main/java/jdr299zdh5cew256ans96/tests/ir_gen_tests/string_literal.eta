@@ -1,0 +1,8 @@
+use io
+use conv
+// g : int = 3;
+main(args:int[][]) {
+    y:int[] = "Hello World!";
+    println(y);
+
+}

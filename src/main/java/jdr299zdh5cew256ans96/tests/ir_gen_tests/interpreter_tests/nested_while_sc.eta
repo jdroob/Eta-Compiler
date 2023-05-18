@@ -1,0 +1,31 @@
+use io
+use conv
+
+main(args:int[][]) {
+
+    i:int = 1
+    z:bool = true
+    while(a(z) | (i < 10)) {
+        println(unparseInt(i))
+        if (i == 5) {
+            z = false
+        }
+        y:int = 1
+        while (b(true) & (y < 5)) {
+            println("inner loop")
+            y = y + 1
+        }
+        i = i + 1
+    }
+
+}
+
+a(x:bool):bool {
+    println("a")
+    return x;
+}
+
+b(x:bool):bool {
+    println("b")
+    return x;
+}

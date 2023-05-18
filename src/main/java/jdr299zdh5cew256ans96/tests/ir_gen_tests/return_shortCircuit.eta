@@ -1,0 +1,91 @@
+use io
+use conv
+
+main(args:int[][]) {
+t1:bool = true
+t2:bool = false
+t3:bool = t1 | t2
+t4:bool = z(t1 & t2)
+if (t4) {
+    println("t4")
+}
+if (t3) {
+    println("t3")
+}
+p(t1&t2)
+t4 = t1 | t2
+if (t4) {
+//    println("t4 again")
+}
+    println("main")
+    if (x() | y()) {
+        println("outer if")
+        i:int = 1
+//        a:bool = t1 | t2
+//        while (!(i >= 10)) {
+////           println("while")
+////           println(unparseInt(i))
+////           println("")
+//
+////            if (true | x()) {
+////                println("inner if")
+////            }
+            if (true | x()) {
+                john:int = 69;
+                println("inner if")
+                if (!t2) {
+                    john:int = 70;
+                    println("inner inner if")
+                }
+//                println(unparseInt(john))
+            }
+            else {
+                println("inner else")
+            }
+////            println("while2")
+//            i = i + 1
+////            println(unparseInt(i%2))
+//        }
+////        println(unparseInt(i))
+////        println(unparseInt(i%2))
+    } else {
+        println("else")
+        j:int = 0;
+        sum:int = 0;
+        while (j < 10) {
+            sum = sum + j;
+            j = j + 1;
+        }
+//        println(unparseInt(sum))
+    }
+
+}
+
+y():bool {
+    println("y")
+    return false
+}
+
+x():bool {
+    println("x")
+    x1:bool = true
+    x2:bool = false
+    return x1 | x2
+}
+
+z(expr:bool):bool {
+    println("z")
+    return true
+}
+p(expr2:bool) {
+    println("p")
+}
+
+//main (args:int[][]) {
+//    if (false) {
+//        println("if")
+//    } else {
+//        println("else")
+//    }
+//
+//}

@@ -1,0 +1,7 @@
+main(){
+    a: int = 3
+    while(a<10){
+        return a //should work - here the while loop will be entered a maximum of one time
+    }
+    return 3 //should work - not necessarily an unreachable statement so shouldn't throw an error
+}

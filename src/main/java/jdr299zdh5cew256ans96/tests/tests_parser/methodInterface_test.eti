@@ -1,0 +1,5 @@
+// This should be parsed
+sum(a:int, b:int, c:int): int, bool
+noArgs(): int, bool, int[];
+noArgs()
+sum(a:int, b:int, c:int)

@@ -1,0 +1,15 @@
+main() {
+    a:bool = true; b:bool = false;
+//    c:int = f(a&b)
+//    d:int = f(!a)
+   g(a | b, a & b)
+
+}
+
+f(a:bool) {
+//    return 5
+}
+
+g(a:bool, b:bool) {
+//    return a & b
+}

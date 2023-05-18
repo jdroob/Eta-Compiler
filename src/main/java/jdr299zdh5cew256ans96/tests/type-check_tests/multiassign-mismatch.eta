@@ -1,0 +1,15 @@
+f(): int, int {
+    return 0,0
+}
+f2(): int {
+    return 12;
+}
+g1:int, g2:int = 1, 2
+
+main() {
+    c:int = f2()
+    b:int, c = 1, 2 
+    a:int, b = 1
+    a,b = f()
+    _, a, b = f(), f2();
+}

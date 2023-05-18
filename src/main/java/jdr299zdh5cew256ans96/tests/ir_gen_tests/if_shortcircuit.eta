@@ -1,0 +1,22 @@
+use io
+//use conv
+main() {
+
+    a:bool = true
+    b:bool = false
+//    c:bool = a & b
+//    c = !c
+
+//    print(c)
+    if (a & b) {
+        john:int = 99;
+    }
+//
+//    if (!a) {
+//
+//    }
+//
+    if (a) {
+        john:int = 97
+    }
+}

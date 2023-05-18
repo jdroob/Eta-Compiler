@@ -1,0 +1,20 @@
+use io
+use conv
+
+main(args:int[][]) {
+    a:int = 5;
+    b:int = 6;
+    if (4 < 5) {
+        a = 7;
+        b = -1 * a;
+        i:int = 0
+        while (i < 100) {
+            j:int
+            i = i+1
+        }
+    } else {
+        k:int = 4;
+        j:int = k *k
+        h:int = j*k
+    }
+}

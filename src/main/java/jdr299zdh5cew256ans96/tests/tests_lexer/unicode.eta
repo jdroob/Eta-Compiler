@@ -1,0 +1,4 @@
+main(args: int[][]) {
+ a :int[] = "ƕ"; // can also test with "😂""hi"'🅰';//
+ b:bool = false;
+}

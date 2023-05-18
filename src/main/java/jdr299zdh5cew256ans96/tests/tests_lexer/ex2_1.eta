@@ -1,0 +1,4 @@
+x:bool = 4all
+y = "hello, worl\x{64}\n!"
+x = ''
+this = does not matter

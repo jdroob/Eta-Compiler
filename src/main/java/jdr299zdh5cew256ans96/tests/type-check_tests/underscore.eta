@@ -1,0 +1,12 @@
+f(): int {
+    return 0
+}
+f2(): int, int {
+    return 0, 0
+}
+main() {
+    _ = 5   // this works
+    a:int, _ = 2, 3 // this works
+    _, _ = f2() // this works
+    //_:int = 5   // ERROR
+}

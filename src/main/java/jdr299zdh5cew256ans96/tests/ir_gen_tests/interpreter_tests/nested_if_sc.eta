@@ -1,0 +1,49 @@
+use io
+use conv
+
+main(args:int[][]) {
+
+    e:bool = true
+
+    if (a() | b()) {
+        println("outer if")
+    } else {
+        if (c() & d()) {
+            println("if else 1")
+        } else {
+            if (!c()) {
+                println("if else 2")
+            } else {
+                println("else2")
+                if (d()) {
+                    println("d inner if")
+                }
+
+                if (e) {
+                    println("e inner if")
+                }
+            }
+        }
+        println("else1")
+    }
+}
+
+a():bool {
+    println("a")
+    return false
+}
+
+b():bool {
+    println("b")
+    return false
+}
+
+c():bool {
+    println("c")
+    return true
+}
+
+d():bool {
+    println("d")
+    return true
+}

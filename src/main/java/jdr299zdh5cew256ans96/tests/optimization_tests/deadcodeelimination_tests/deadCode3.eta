@@ -1,0 +1,18 @@
+use io
+use conv
+
+main(args:int[][]) {
+  a:int = 1;
+  b:int = 1;
+  b = b_();  
+  println(unparseInt(b));
+  
+    
+    
+}
+
+b_():int {
+  c:int = 3
+  return 2
+
+}

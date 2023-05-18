@@ -1,0 +1,45 @@
+use io
+use conv
+
+main(args:int[][]) {
+    a:int = f(1)
+    b:int = g(2)
+    c:int = h(3)
+    d:int = z(0);
+}
+
+f(x:int):int {
+    i:int = 0
+    while (i < 100) {
+       j:int
+       i = i+1
+    }
+    return 5;
+}
+
+g(y:int):int {
+    if (y == y) {
+        a:int = 3 * 74;
+        b:int = a * 3 * 74
+        c:int = 12
+    } else {
+        if (y < 1000) {
+            while (y < 1000) {
+                y = y + 1
+            }
+        }
+    }
+    return y;
+}
+
+h(x:int):int {
+    return f(x)
+}
+
+z(y:int):int {
+    if (y == 0) {
+         y = y - y;
+         x:int = y*>>y
+    }
+    return y;
+}

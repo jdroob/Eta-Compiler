@@ -1,0 +1,43 @@
+use io
+use conv
+
+main(args:int[][]) {
+
+    x:bool = a() | b()
+    y:bool = c() & d()
+    if (x | c()) {
+        println("x")
+    } else {
+        if (y) {
+            println("y")
+        } else {
+            println("neither")
+        }
+    }
+
+}
+
+a():bool {
+    println("a")
+    return true;
+}
+
+b():bool {
+    println("b")
+    return false;
+}
+
+c():bool {
+    println("c")
+    return true;
+}
+
+d():bool {
+    println("d")
+    return true;
+}
+
+e():bool {
+    println("e")
+    return false;
+}

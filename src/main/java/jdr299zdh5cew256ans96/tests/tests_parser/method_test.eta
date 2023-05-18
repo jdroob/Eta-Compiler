@@ -1,0 +1,59 @@
+use io
+
+// multiple parameter types; multiple return types
+method1(intVar:int, boolVar:bool, arrayVar:int[], arrayVar:int[][]): int, bool, int[], int[][] {
+    print("Hello World\n!");
+
+    while(true) {
+        print("You're never leaving this loop!\n");
+        {
+            // random inner block
+        }
+    }
+    return 4, true, {1,2,3}, {{1,2},{3,4}};
+}
+
+// multiple parameter types; single return type
+method2(intVar:int, boolVar:bool, arrayVar:int[], arrayVar:int[][]): int {
+    print("Hello World\n!");
+
+    while(true) {
+        print("You're never leaving this loop!\n");
+        {
+            // random inner block
+        }
+    }
+    return 4;
+}
+
+// single parameter type; multiple return types
+method3(intVar:int): int, bool, int[], int[][] {
+    print("Hello World\n!");
+
+    while(true) {
+        print("You're never leaving this loop!\n");
+        {
+            // random inner block
+        }
+    }
+    return 4, true, {1,2,3}, {{1,2},{3,4}};
+}
+
+// single parameter type; single return type
+method3(intVar:int): int {
+    print("Hello World\n!");
+
+    while(true) {
+        print("You're never leaving this loop!\n");
+        {
+            // random inner block
+        }
+
+        if (a == b) {
+            //this
+        } else {
+            //that
+        }
+    }
+    return 4;
+}

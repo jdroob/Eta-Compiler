@@ -1,0 +1,5 @@
+// This should not be parsed and an error should be thrown
+sum(a:int, b:int, c:int): int, bool
+noArgs(): int, bool, int[];
+noArgs()
+sum(a:int, b:int, c:int)

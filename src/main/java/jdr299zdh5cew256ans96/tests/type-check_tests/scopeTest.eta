@@ -1,0 +1,16 @@
+use io
+
+g:int
+arr:int[]
+
+main(): int {
+    g = 5   // global g
+    g:bool = true
+    if (g) {
+        // should enter here
+    }
+    arr = {1,2,3}   // global arr
+    arr:int = 5
+
+    return arr+2    // local arr
+}

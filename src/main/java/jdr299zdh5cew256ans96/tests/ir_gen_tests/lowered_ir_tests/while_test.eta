@@ -1,0 +1,7 @@
+main(a:int[][]) {
+    a2:bool = true
+    i:int = 0
+    while (a2) {
+        i = i +1
+    }
+}

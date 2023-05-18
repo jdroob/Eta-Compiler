@@ -1,0 +1,25 @@
+main() {
+    a:int, b:int = h();
+    c:int, d:bool = f(5), g();
+    e:int, x:int = f(4), 5;
+    z:int, _ = f(4), 5;
+
+    test(5);
+
+}
+
+f(a:int):int {
+    return 5
+}
+
+g(): bool {
+    return false
+}
+
+h(): int, int {
+    return 1,2
+}
+
+test(a:int) {
+
+}

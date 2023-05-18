@@ -1,0 +1,10 @@
+use io
+use conv
+
+main(args:int[][]) {
+    a:int = 0;
+    b:int,c:int,d:int = 0;
+    while (a < 5) {
+        print(unparseInt(a))
+    }
+}

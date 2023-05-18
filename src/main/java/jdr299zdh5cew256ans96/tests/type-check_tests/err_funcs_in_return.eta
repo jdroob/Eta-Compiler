@@ -1,0 +1,12 @@
+main() {
+    a:int = 5
+    b:int = inc(a)
+}
+
+inc(x:int):int {
+    return x+f();
+}
+
+f():int,int {
+    return 5,10
+}

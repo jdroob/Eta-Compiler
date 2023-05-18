@@ -1,0 +1,27 @@
+/*
+*  division
+*/
+
+use io
+use conv
+
+main(args: int[][]) {
+    b:int = 16;
+    a:int = b/4;
+    c:int = b / a;
+    e:int = 11;
+    f:int = 2;
+    r:int = 64;
+    v:int = 8;
+    s:int = 2;
+    println(unparseInt(a))      // 4
+    println(unparseInt(c))      // 4
+    println(unparseInt(e/f))    // 5 (integer division)
+    println(unparseInt(r/v/s))  // 4
+    q:int = 1244;
+    println(unparseInt(q/c))
+    g:int = 84621536
+    h:int = 724536
+    println(unparseInt(g/h))    // 116
+    println(unparseInt(e/0))    // ERROR
+}

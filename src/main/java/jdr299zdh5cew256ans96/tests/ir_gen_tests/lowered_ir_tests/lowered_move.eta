@@ -1,0 +1,10 @@
+g:int = 5
+main() {
+    g = f();
+    a:int = f();
+    b:int = 10;
+}
+
+f():int {
+    return 5
+}

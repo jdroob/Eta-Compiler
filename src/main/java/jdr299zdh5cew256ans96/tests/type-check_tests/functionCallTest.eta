@@ -1,0 +1,17 @@
+f(): int, int {
+    return 0,0
+}
+g(): int {
+    return 12;
+}
+
+main() {
+    a:int = g()
+    b:int
+    a,b = f()
+
+    /*
+        //THIS WILL THROW AN ERROR
+        c:int = f()
+    */
+}

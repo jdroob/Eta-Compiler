@@ -1,0 +1,16 @@
+/*
+> 6 args, < 3 return values (sum of args + rv is odd)
+*/
+
+use io
+use conv
+
+main(args: int[][]) {
+    x:int, y:int = foo(1,2,3,4,5,6,7)
+    println(unparseInt(x))
+    println(unparseInt(y))
+}
+
+foo(a:int, b:int, c:int, d:int, e:int, f:int, g:int):int, int {
+    return a + b, c + d
+}

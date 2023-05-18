@@ -1,0 +1,9 @@
+main() {
+    a:bool = true
+    b:bool = false
+    if (a) {
+        a = false
+    } else {
+        b = true
+    }
+}

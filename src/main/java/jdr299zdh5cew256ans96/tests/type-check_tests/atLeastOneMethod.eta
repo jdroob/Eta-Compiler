@@ -1,0 +1,8 @@
+// No methods below!
+// This will throw an error
+use io
+
+a:int
+b:bool
+arr:int[]
+bArr:bool[]

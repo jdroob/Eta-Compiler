@@ -1,0 +1,19 @@
+
+main() {
+  test();
+  func();
+  a = 5
+  b = false;
+}
+
+test() {
+
+}
+
+func() {
+
+}
+
+a:int
+b:bool
+c:int

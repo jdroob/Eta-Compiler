@@ -1,0 +1,16 @@
+main() {
+    a:int[] = "testing";
+    print(a);
+    c:int = '\x{64}'
+    i:int=0;
+    while(i < length(a)){
+        print(a[i]);
+        {
+            //unnecessary nested block
+            a:int[] = "hello"+4
+            print("hi" + 1);
+            b:int[] = sum("hello"+"12345")
+            c:int = '\x{64}'
+        }
+    }
+}

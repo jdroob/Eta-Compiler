@@ -1,0 +1,56 @@
+use io
+use conv
+
+main(args:int[][]) {
+
+    if (a() & w(true, 5)) {
+        if (!b()) {
+            j:int = 1
+            while (j < 4) {
+                println(unparseInt(j))
+                j = j + 1
+            }
+        }
+    } else {
+        if (c() & d()) {
+            if (e() | true) {
+                println("inner second")
+            }
+        }
+    }
+
+}
+
+
+a():bool {
+    println("a")
+    return false;
+}
+
+b():bool {
+    println("b")
+    return false;
+}
+
+c():bool {
+    println("c")
+    return true;
+}
+
+d():bool {
+    println("d")
+    return true;
+}
+
+e():bool {
+    println("e")
+    return false;
+}
+
+w(z:bool, x:int):bool {
+    while (z & (x < 10)) {
+        println("in w")
+        x = x + 1
+    }
+    return true
+}
