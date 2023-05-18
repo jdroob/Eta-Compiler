@@ -1,0 +1,8 @@
+#!/bin/bash
+export CLASSPATH=CLASSPATH:/home/student/shared/deps/libs/main/commons-cli-1.5.0.jar:.
+# java main.java.jdr299zdh5cew256ans96.src/main/java/jdr299zdh5cew256ans96/cli $@
+
+DIR=$(dirname $0)
+#cd $DIR
+BUILD_DIR=$DIR/build/libs
+java -jar $BUILD_DIR/awesome-etac-1.0-SNAPSHOT-all.jar $@

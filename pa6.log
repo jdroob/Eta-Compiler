@@ -1,0 +1,5154 @@
+commit 99c271fce5da0db222b18e2b176f97ffd0266fc5
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 23:04:27 2023 -0400
+
+    deleted extra files
+
+commit 31e5378fafa90b60f883c94336b0cabd3c8ca06e
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 22:55:43 2023 -0400
+
+    Add another dead code test
+
+commit 4f24e3d68cbcac6b1ca5b1fa1f339be79584579c
+Merge: 1efffed 6f43b4a
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 22:30:46 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 1efffed2ff146893e2fa92f6f81cafd90e4bfebf
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 22:30:42 2023 -0400
+
+    Add some dead code tests. Don't even pass them...
+
+commit 6f43b4a837678925026af41e2fa592695cd05b6a
+Merge: ac87d4a 1bfed60
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 22:18:34 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit ac87d4adc622de4c17e29879ee2add8767cf30bd
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 22:18:15 2023 -0400
+
+    parsing ri files works but are not being added to context
+
+commit 1bfed60b911237839dea9bfb17629f9aeced6db8
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 15 22:16:45 2023 -0400
+
+    ^
+
+commit 0721aa4fac054f42737c422438873740d845cff1
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 15 22:14:12 2023 -0400
+
+    implemented null checker with record types
+
+commit 1b0cc1a184c21fe50d88b2728062d3e63ed1f26c
+Merge: 60b44f5 375e7bd
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 15 22:07:49 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 60b44f527a0ea7376919875325f631e2f975f398
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 15 22:07:35 2023 -0400
+
+    record recursive test
+
+commit 375e7bd491309ef22d7c5d2804ca095c3b8893b3
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 22:07:01 2023 -0400
+
+    fixing grammar bug
+
+commit fbe60ff73eea886a5e98f8afa8673112ebd7ac6e
+Merge: 98870ea e6f3773
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 22:04:59 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 98870eade810daaf8d3b2a9b2dd2d41c8a89f115
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 22:03:26 2023 -0400
+
+    Fix DCE and Copy Prop
+    - Some extremely subtle issues
+    - Now works for primes.eta
+    - That was a pain in the ass.
+
+commit e6f37731bfd91e504fc1c62cb201634c76f5a814
+Merge: 8d20530 6d3c93b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 15 21:46:28 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 8d20530815c149ff23f67099e8f7f20bd60ca44d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 15 21:46:23 2023 -0400
+
+    recursive record types
+
+commit 6d3c93b243ad875bb03aa7da7e201691dcf847a0
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 21:17:11 2023 -0400
+
+    grammar should recognize .ri files now
+
+commit 001ac9db4c286329fcdaea87f3584d194e758d87
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 20:13:56 2023 -0400
+
+    working on .ri grammar
+
+commit ee912aff30a477749ff2cad3b73af1329dacef36
+Merge: a412c2d a8adb31
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 17:26:49 2023 -0400
+
+    debugging chaitins... stuck - switching to Rho interface
+
+commit a412c2da3904656fef992fcc75c715e0e6fbfcbd
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 17:25:34 2023 -0400
+
+    debugging chaitins... stuck - switching to Rho interface
+
+commit a8adb3184db4ca4d5c466606bc90ee37f1d8cd02
+Merge: f873313 2d202bc
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 15 16:50:23 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit f873313a8ffc192f1ff6072b3b1eef3216fc0d83
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 15 16:50:05 2023 -0400
+
+    implemented equals for null
+
+commit 2d202bc8cf30e6b7e2fec2d9581bd9183aa747a4
+Merge: 9ba82f1 7bb6de5
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 16:39:54 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 9ba82f11a1bb8b8ac49925d4d04643314f2ec977
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 16:39:11 2023 -0400
+
+    Begin implementing reaching definitions for dce
+    - Need to make sure it sees things like CJUMPs before marking code as
+    dead.
+
+commit 7bb6de5897b1855ecb7e2bd1b8556388bc063b24
+Merge: 5ffe470 8205368
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 14:52:50 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 5ffe4701e3d272d9967ef671b8d74e5b10a23dfa
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 14:52:33 2023 -0400
+
+    debugging chaitin's
+
+commit 8205368a1b7992389ef602444aef167f8a4f6985
+Merge: 073683b c9826a1
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 13:29:16 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 073683b21cbf036ff0036f73afd9071fe4e64f95
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 13:29:03 2023 -0400
+
+    Add folder for optimization tests
+
+commit ed7cb03ef61a021e5a003f8a0c4e771fc02711ff
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 13:28:41 2023 -0400
+
+    Add folder for optimization tests
+
+commit c9826a1110c88329dc21b8e4dbb00fb38099c3f4
+Merge: c6a3301 5651de9
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 11:47:50 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit c6a3301565631b6e890f1f3c604edace9dc99c4f
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 11:47:34 2023 -0400
+
+    using this combination of registers seems to cause fewer seg-faults
+
+commit 5651de9f93ae7d88d0d5c130e7136c277db5dcab
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 11:38:39 2023 -0400
+
+    Add opt descriptions for --report-opts
+
+commit c7756328099fdca2ecbcaa689687fb89f275645f
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 11:25:27 2023 -0400
+
+    still bugs in chaitin's but only seg-faulting some of the time?
+
+commit 81b365f865e580d5f8249bb439164ee768d31362
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 09:44:08 2023 -0400
+
+    fixed infinite loop bug
+     in insertCallingConventions
+
+commit 09461acface78925eb27ecd778530b10f8289de3
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 15 05:48:35 2023 -0400
+
+    tried to implement calling conventions but infinite loop
+
+commit bcef7ebcb52401bd06378da7aa04baa6e89db55c
+Merge: 17d4971 50a550e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 15 02:45:58 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 17d4971e233ef3e1173816b8b2052965bba7cd72
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 15 02:45:52 2023 -0400
+
+    fix memory location issue for spilled nodes
+
+commit 50a550e9c2c7cfea4c247b522908f67f0f46727d
+Merge: 06000eb ffa9cd3
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 01:52:07 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 06000ebea07324ceed628856a2de829ce5789fad
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 15 01:50:07 2023 -0400
+
+    Implement simple IR dead code elimination
+    - Now removes statements where we move into the same temp.
+    - That took forever because of some stuff with trying to modify things
+    while a loop is iterating over them, and also because I was forgetting
+    that you need to actually modify the IRSeq contained in the IRFuncDecl
+    in order for code to be modified.
+
+commit ffa9cd31a098c30a3e864046b3bf61bfdd201673
+Merge: 7dc3faf e1980e0
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 00:10:23 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 7dc3faf8326b5331009b43b3aa573609ce80e50f
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 15 00:10:12 2023 -0400
+
+    working on primes seg fault issue
+
+commit e1980e0df7edaa4cb368440007f51171dd71fd7c
+Merge: ab94743 1e425e7
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 14 23:46:45 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit ab947435ad9443ffac8fa007edaead30a79c07c8
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 14 23:46:38 2023 -0400
+
+    implemented rho field getters and setters
+
+commit 59455ad1b210c5140b9e92718efb5124ec0b2533
+Merge: bab0b4c 1e425e7
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun May 14 23:29:07 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit bab0b4c9864f8682c66d1f5508c6ff6d903855bc
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun May 14 23:28:56 2023 -0400
+
+    fixed null ptr exception in registerAllocate
+
+commit 1e425e7345badcaa2d0f325380c8636d17b6999e
+Merge: f16570b a284de5
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun May 14 22:32:47 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit f16570b7c6b1e98a2b9256895a5dab8ec7dfca0a
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun May 14 22:31:59 2023 -0400
+
+    Implement simple IR copy propagation
+    - Now copy propagation works as an IR optimization, still need to do
+    dead code elimination.
+
+commit f1fdf89fc4b847360b456d1d6f91f2f56b4d5176
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 14 21:05:46 2023 -0400
+
+    translate function for record definition
+
+commit a284de579c75d85fccedb64719f50456c4662038
+Merge: e8a0cbe a5f5982
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 14 17:59:07 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit e8a0cbe0e9d0e7e2742871a44aaf44d0d617b98b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 14 17:59:02 2023 -0400
+
+    implemented null
+
+commit a5f5982d9dc59c2cd549a0c1ad8fb74fea82a3b9
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun May 14 17:08:41 2023 -0400
+
+    Implement IR CFG flattening
+    - WOO
+    - Was a one line fix in BlockGraph
+    - Also seems to be a bug in nested_if? I noticed it while building the
+    CFG, but it's also in the IR before I build the CFG so I don't think
+    it's from me. There's a jump without a label.
+
+commit 64309da5f34b69e602001300a733fc8e0b928e62
+Merge: 0f92193 db058ba
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun May 14 16:53:49 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 0f921936347a403ffce242954aba19526be2040e
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun May 14 16:52:41 2023 -0400
+
+    Almost finished CFG flattening
+    - Did a ton of refactoring to make it work with functions
+    - A few statements are dropped during the flattening even though they
+    are present in the CFG. Hopefully a small fix.
+
+commit db058ba42564a7f5d6be8d4af3aface161f03b3f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 14 16:17:17 2023 -0400
+
+    default values for int and bool and recognize break for rho
+
+commit b03283c5072df0a2eff771cc806d7c79be803692
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 14 00:01:58 2023 -0400
+
+    finished majority of typechecking for rho files
+
+commit 10e05b9afac9e7c863e6e88c6a9f8c47fae6b69a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat May 13 23:09:11 2023 -0400
+
+    constructor for creating record objects
+
+commit a922a5882de890c73c97e559ddc6c2d48baedae4
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat May 13 21:47:43 2023 -0400
+
+    local declarations with record types
+
+commit 6d329a6a770b5e532356e9a36a06352ea702b2d2
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat May 13 19:49:24 2023 -0400
+
+    feature for comma separated fields in records
+
+commit 25739209f0b9460dcbed02bdf08889db6a22ed1f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat May 13 18:51:21 2023 -0400
+
+    dont allow duplicate field names in record
+
+commit 66dc037f6c202b295c6e01be003b4cff13652183
+Merge: c655c44 44fa359
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat May 13 18:34:37 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit c655c44f3bf8cfc4b5d75f411135be6c2cb026e4
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat May 13 18:34:30 2023 -0400
+
+    type checking for records and fields
+
+commit 44fa3591bd315b41b4eca7aae9475109b9d020b4
+Merge: ecbeaf9 5d0923d
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sat May 13 14:07:58 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit ecbeaf930cb89053f3ed6b246db7e157b808d78a
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sat May 13 14:04:43 2023 -0400
+
+    Partially implement IR CFG flattening
+    - Can flatten any CFG to a List<IRStmt>
+    - However, this doesn't allow translation back to inline code because
+    the IRCompUnit object requires for the code for functions to be split up
+    - So, I'll probably make it so that you can construct a CFG for each
+    given function. And then also make it so that you can combine CFG.
+    - Again shouldn't take too long, but everything is piling up a bit
+
+commit 5d0923dbe0bc91b9252bd2f5f712c22e42356d53
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat May 13 11:48:06 2023 -0400
+
+    accept empty records
+
+commit 19ccd01f05efa9feb215a4230da826605e6ad0bd
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Fri May 12 20:28:00 2023 -0400
+
+    Implement IR CFG with BasicBlocks
+    - Now CFG nodes are basic blocks
+    - Should make flattening back into code much easier
+    - Also, I personally think it's much easier to make sense of
+
+commit 0466c7579975195c764d0119422768ddcc6e2186
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri May 12 17:30:09 2023 -0400
+
+    recognize rho records except when empty
+
+commit ee0e1c55194f9c7f5e95c23b5c62b8146decfe4f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri May 12 15:46:55 2023 -0400
+
+    get rho stuff to build
+
+commit c45c85f1bc51e19623e4f1e930714beb9ccb169a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri May 12 15:34:22 2023 -0400
+
+    tried to debug primes
+
+commit 2f5cac882bdfcc253fd07f2a226115cf800ab5a9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri May 12 13:50:31 2023 -0400
+
+    fix issue with dce
+
+commit 3f07c8491dfa4ea8eec43ef962db07f64c6fe857
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri May 12 13:21:11 2023 -0400
+
+    debugging chaitin
+
+commit a8f511e2862faa0a1f238816aebc77a1bb8b2e30
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri May 12 12:50:36 2023 -0400
+
+    merging in debugChaitin branch
+
+commit 2d9bcb2b03f6db0415947fdbf3e1fc0483e69593
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri May 12 12:47:07 2023 -0400
+
+    some previous issues seem to be resolved (for now). still haveing null ptr error when trying primes.eta (need to uncomment to test).
+
+commit 415b758bcddc97f78449133da8e5147e989d8cc2
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri May 12 09:05:11 2023 -0400
+
+    changed 'enter' amount
+
+commit bb50d7d332e652da5a592419a1e92aac4a9e9134
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri May 12 00:24:14 2023 -0400
+
+    fixed reg allocate bugs across fn calls by reseting data structures
+
+commit 366bbf711af93f14f3ea4666dd7217ca85c4f428
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu May 11 23:28:28 2023 -0400
+
+    fixed rbp coloring issue for spilled temps
+
+commit f94c9e180ddd1f6aaf51c03bee67af3931e7fbba
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu May 11 22:37:16 2023 -0400
+
+    fix successor and predecessor issue. assembly is broken by coloring rbp
+
+commit a2afa6494c71d7600d77097c92ba83fefce12f1b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu May 11 17:18:34 2023 -0400
+
+    clear in and out before performing live variable analysis
+
+commit 4139b19445a314c8469ece4f3525c3f853e490a0
+Merge: 27c115a 65b4b7c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu May 11 15:47:19 2023 -0400
+
+    Debugging Chaitin's - think bug has to do with not properly clearing intGraph
+
+commit 27c115a07f5b48ebb09825198e8fb25e5fa5f7c8
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu May 11 15:44:28 2023 -0400
+
+    Debugging Chaitin's - think bug has to do with not properly clearing intGraph
+
+commit 65b4b7c3fcf421b4e7ef9152bca430e60a9dcdd0
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Thu May 11 14:48:12 2023 -0400
+
+    Fix issue with IR CFG
+    - HelperCli was calling lower() twice due to an oversight. This didn't
+    effect compilation other than making it slower, but was adding duplicate
+    values to the IR CFG (because the objects were different, even if the
+    nodes were functionally identical).
+    - IR CFG now works without having to do any removal of duplicates.
+    - Now work on flattening Graph back into code.
+
+commit 22959462b8799829860fe6fae3e68e066e52544d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue May 9 16:24:31 2023 -0400
+
+    started implementing rho
+
+commit b907bc6d671178c8dc14facf7eb658545ee4d6ec
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue May 9 15:22:15 2023 -0400
+
+    small null fix for precolored
+
+commit 9c16cb1042d0c389ced7ae23adb5de65fe245b27
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue May 9 11:07:09 2023 -0400
+
+    Found bug - we actually shouldn't be removing precolored nodes from the interference graph
+
+commit 01c9110e7f23e5888616347389f6b8faf76381e1
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 8 19:20:49 2023 -0400
+
+    fix null pointer but have infinite loop
+
+commit faebbcdabc21e5e65993ca1c40e828467c79c3b9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 8 19:14:25 2023 -0400
+
+    debug print statements
+
+commit 859eedbb858c8ce5d3c7ed41da3811b1ff764685
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 8 18:31:55 2023 -0400
+
+    implemented dead code elimination and spilling to chaitins
+
+commit 6c6365a299cb36ff6f5b7e4998cb2673233517c6
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 8 15:55:18 2023 -0400
+
+    Chaitin's algorithm works (unless you spill)
+
+commit a8afb6f2ef43ebb9a4f85ccc4997333765cf9560
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon May 8 15:15:39 2023 -0400
+
+    Debugging round 1 of Chaitin's
+
+commit 3b167c20fb016878e62d89c2b7a1d14904c03aa0
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 7 21:49:14 2023 -0400
+
+    implemented register allocation but doesnt work
+
+commit fdecde94853c731de639a4862c02cdc4eb5a0719
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 7 21:12:10 2023 -0400
+
+    implemented assign colors
+
+commit 1ba1c6c1d827d865aa442e7cc0ce26c48dd674c9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 7 20:56:01 2023 -0400
+
+    got out of infinite loop issue
+
+commit 4757455c08433485bc37a773d01b31aede9f59ba
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 7 20:36:39 2023 -0400
+
+    null pointer excep in combine
+
+commit f3773c8b9bb296b68fff1e331b8ed08a119f76ec
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 7 20:29:46 2023 -0400
+
+    implemented coalesce
+
+commit e8f277c648e17a54cd8a714270eb0004c2a4406d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 7 19:06:54 2023 -0400
+
+    created list for all nodes from initial and precolored
+
+commit 868d832960f522bf815b83cd9059e5da6990bf1b
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun May 7 18:41:56 2023 -0400
+
+    Debugged getPrecoloredTemps()
+
+commit 87124267e2effbc14e5b6c92771b791f896de856
+Merge: e81fa56 91f3742
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 7 15:53:15 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit e81fa568b3c9fe72d07bfdaf1f8fbc094bdb7f37
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun May 7 15:53:12 2023 -0400
+
+    refactor simplify
+
+commit 91f374282c423c28d3a3671a4557b2f0e810eb7b
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun May 7 13:51:06 2023 -0400
+
+    added getPrecoloredTemps() method to instruction classes
+
+commit cb390ee3ffe63b670c36aefbefd48dd7ce9be929
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu May 4 11:15:16 2023 -0400
+
+    Reverted back to using liveIn for detecting variable interference (along with the def'd / liveOut corner case). This appears to be working. We should be all set to continue implementing Chaitin's algorithm
+
+commit 768a61fbe07ad48d04973b485082c8db30ce6559
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed May 3 17:40:03 2023 -0400
+
+    updating interference graph
+
+commit 18d0dc36d60aa88a5e192f765d33b00343fd4729
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed May 3 16:37:53 2023 -0400
+
+    debugging reg alloc null ptr exception
+
+commit 291a4ffbb52c5298df6d648aaed192f5f69623d3
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue May 2 22:25:01 2023 -0400
+
+    Implemented simplify() helper method for registerAlloc()
+
+commit 82111b626f98c471f0fda9bc0639e095cd41b05e
+Merge: e90d8d6 94e9929
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue May 2 19:03:36 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit e90d8d6d277c931bdc189afbb367893ef85d480e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue May 2 19:03:32 2023 -0400
+
+    skeleton for chaitins algorithm outlined
+
+commit 94e9929923d6a9375a107e25636fb668efa531c0
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue May 2 18:45:13 2023 -0400
+
+    Remove duplicate IR CFG edges
+
+commit cdc33865868ad4c6bd40e784c41fe34392f987a0
+Merge: aaaf3a9 a976d12
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue May 2 18:19:20 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit aaaf3a9445857cbb3d9e3462597ae14fbde43510
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue May 2 18:15:51 2023 -0400
+
+    Fix CFG for library function calls
+    - Used to not work because library calls don't have a label to jump to
+    - Now just falls through to next line in CFG
+    - Seems good. Want to do some more testing.
+    - One more thing: see if I can get rid of duplicate edges.
+
+commit a976d1263c04b180870c2bfb88159b801669f50f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue May 2 17:24:24 2023 -0400
+
+    merge conflicts
+
+commit faa8042c8ea1bbf44e9681d69d5ace69fe83bd82
+Merge: d6b0058 2258026
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue May 2 17:21:10 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit d6b0058ad87a014d2e1d3dd774b1828eee36cb8e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue May 2 17:21:05 2023 -0400
+
+    stash changes
+
+commit 2258026632abc0f1ba37dac07db34a0ad4aec71d
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue May 2 17:13:06 2023 -0400
+
+    Add Jump/LabelMap to commit
+
+commit 052b0d2e019f3d873230be53a9ff16f856bc4195
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue May 2 16:03:52 2023 -0400
+
+    move reg alloc fns to helper class
+
+commit 7cb299dba2fea61d010320542c28e816f1ccd666
+Merge: cd6efe1 52de46c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 1 23:20:19 2023 -0400
+
+    built interference graph
+
+commit cd6efe17f2e4ca3dd082bccf8b434ef3668d2e9c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 1 22:38:54 2023 -0400
+
+    debugging live in live out
+
+commit 52de46cdaa7a76ad0f388a81dcdb52089c6839b7
+Merge: 38abaee da79fbc
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 1 22:25:29 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 38abaeec65383d99cb06f5affa931eed2a6ee834
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon May 1 22:22:17 2023 -0400
+
+    Implement CFG generation in IRFuncDecl
+    - Still duplicate edges, have to deal with that, but doesn't affect
+    function
+    - Now correctly reflects Jumps, CJumps, Function calls from what I can
+    tell. Need to test more.
+    - Re-worked buildCFG into buildCFG2, to use List of IRStmt rather than
+    blocks, as this allows for me to use the more omptimized sequence.
+
+commit da79fbc6a352ad2f1a5bad47f4002399d201903e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 1 18:42:28 2023 -0400
+
+    implemented use and def for each instruction
+
+commit ab39f51b9343e0b267ab2d092036e5487d226a83
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 1 18:36:03 2023 -0400
+
+    implemented use and def for each instruction
+
+commit 68ca4ace0c209b968d68d421987564d6d856b7b2
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 1 16:36:06 2023 -0400
+
+    tried to fix global array concats
+
+commit 4d1ef6a126e607f034c7fee260177a9ee80073af
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon May 1 16:16:46 2023 -0400
+
+    global arrays working with executable
+
+commit ab85522af6958489d24345730474779e61bef3be
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Apr 30 18:58:36 2023 -0400
+
+    fix multi array access concatenation
+
+commit 1ee359411ae754876fe2de1115f56c3925448da5
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Apr 30 16:33:14 2023 -0400
+
+    fix flag error with optir and optcfg
+
+commit 8dd3a4547d87832418bdbd159a94c85c2fce1d7b
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 30 00:15:57 2023 -0400
+
+    cleaning up some basic block comments
+
+commit 0bb070514a785e8f3e6c3d55b7d791f6b5efa575
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 29 23:10:41 2023 -0400
+
+    delete commented out code and old todos
+
+commit a8b3119b4d656aadcd711796273e7a284d5abd0b
+Merge: 53f8b0f 12ef0a0
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 29 21:52:52 2023 -0400
+
+    fix merge conflicts with main
+
+commit 53f8b0f0d7b3606d76ab29617eed347a50086712
+Merge: 169f90e dc9883d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 29 21:36:55 2023 -0400
+
+    merged main into branch
+
+commit 169f90eb19f257051d6da7b83649245dee028b6f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 29 21:27:53 2023 -0400
+
+    refactory fix
+
+commit 5e3f0e9250a3dfa1b3a3c86ac479ba8b841876c6
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 29 21:06:57 2023 -0400
+
+    Debugging
+
+commit 12ef0a06dabe689768cc1f9bebd54d40718abb78
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sat Apr 29 18:50:23 2023 -0400
+
+    Continue working on CFG diagram output
+    - Starting to get Jumps working correctly. More work to do
+
+commit 446e3eed058c416aff745f30845528aa82b20909
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 29 13:30:42 2023 -0400
+
+    commented out print statements
+
+commit 9b4e6e8ba73e21114cd9a02b1872a73d9072caea
+Merge: 2fdaa72 3db5c72
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 29 13:12:50 2023 -0400
+
+    merge conlicts (merged in directives from main branch)
+
+commit 2fdaa72c92ca782cc12baa108d02d1b5b884cba0
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 28 16:23:30 2023 -0400
+
+    make sure string const not abstract
+
+commit 35fcd3d5afbd74bc7392e43a74031f67adcb7f62
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Fri Apr 28 15:21:20 2023 -0400
+
+    Fix some stuff with Graph.java
+    - Remove some self-bindings that shouldn't exist
+    - Still need to fix Jumps going to Labels
+    - Also want to figure out why there are duplicate keys (like they aren't
+    actually duplicates, I think, they just have exactly the same String
+    representation but are different Objects? It's weird. Biggest priority
+    is just getting Jumps working tho cuz then the CFG should be correct)
+
+commit 9ceb9826346693b9848d4ef81ffeede7a9ad96a3
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Fri Apr 28 14:12:10 2023 -0400
+
+    Working on dot file printout
+    - Creates a dot file now. Tons of duplicate edges though.
+    - Also not dealing with jumps properly.
+    - And seems like some nodes don't appear.
+
+commit 478b653bcdd28d4eab7ebe6be43f428e1586cd8a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 28 13:46:20 2023 -0400
+
+    implemented register replace functions
+
+commit 41ad9ea1b49189dff44ca20b3ba4099bf3ab003d
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Fri Apr 28 13:03:21 2023 -0400
+
+    Begin implementing CFG dotfile output
+    - Need to implement a toString() for the Stmt classes, as the label() is
+    not descriptive enough
+
+commit 3db5c72562e0481e8c4804c1c5a7eddcd46f3454
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Apr 28 12:40:13 2023 -0400
+
+    random update
+
+commit dc9883d38d988d40a0dcd2c52caade8e8b05720c
+Merge: 31963f9 d063808
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 28 12:21:33 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 31963f9b12e6ec544c7f925e681e9e5ff2fc93ad
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 28 12:21:16 2023 -0400
+
+    fix out of bounds issue
+
+commit d063808dc56686485cc3852837bc3dbe022ec968
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Fri Apr 28 12:13:05 2023 -0400
+
+    Add Graph.java to commit
+
+commit 60fc78863789e121ca7db80d9df9bc223bc2450c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Apr 28 08:04:09 2023 -0400
+
+    putting p5 debugging work here for now
+
+commit ab32bcf7cb43b1e34097070b57a482c68062bfc2
+Merge: c03ec63 ca70a36
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 28 00:28:10 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit c03ec633acdf34ca6376edfd52e85f562583ef32
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 28 00:28:02 2023 -0400
+
+    more than 2 array concats
+
+commit ca70a36e4245f9b9e59888eec437d57aa7dc5915
+Merge: 70fed41 bbc29ec
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Fri Apr 28 00:16:36 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 70fed41bba3c1c46344da5279c63e881d505a075
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Fri Apr 28 00:16:02 2023 -0400
+
+    Add Graph.java for the CFG
+    - Getting a strnge error when trying to run ./etac
+
+commit bbc29ec8eb0ebd9c67cdd8de481834629aa0614e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Apr 27 22:25:41 2023 -0400
+
+    implemented target
+
+commit d32d4ba4eebc93fc092f6792631ede7893f157c9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Apr 27 21:54:02 2023 -0400
+
+    stash changes
+
+commit eae0a4a17ad876d578f4425d1ea6564dfafb21ce
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Apr 27 21:11:47 2023 -0400
+
+    finish refactor
+
+commit c63191c7a6ed959bc5ff9b8c732b651b825ff448
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Apr 27 21:07:52 2023 -0400
+
+    refactor changes
+
+commit fa220f099df8f19e62c2f0a20526121ca0cf2be5
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Apr 27 18:50:52 2023 -0400
+
+    added constructor to deal with a lot of refactoring
+
+commit 46e99e7055e3bfb555f270a376d82420493c1061
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Apr 27 18:10:38 2023 -0400
+
+    replace all instruction classes with operands instead of strings
+
+commit 38ba76f9121ca8a7fef3257911f5cafa47cbc34b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Apr 27 17:53:58 2023 -0400
+
+    implement operand hierarchy
+
+commit bbb651c4ff0677873e129da8721d1385a9ef7d76
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Apr 27 17:39:04 2023 -0400
+
+    stash changes
+
+commit c558794a1443545e019540f1a6fed7bb13bacf54
+Merge: 6b2bff3 db3a5a7
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Apr 27 17:02:13 2023 -0400
+
+    Updating directives
+
+commit 6b2bff3d9852e4b52769222d6f87cc6b39112943
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Apr 27 17:01:12 2023 -0400
+
+    Updating directives
+
+commit db3a5a7b88791d70e6107616429ddb12ad72d2d1
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Apr 27 16:51:09 2023 -0400
+
+    implement optir and wrote stub method for .dot file
+
+commit fecf4e69f53af2f4c04075926a1c31742d2662e2
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Apr 27 15:25:46 2023 -0400
+
+    fix -O problem w test harness
+
+commit e152705d3fbf49c283f9bf94739cd93c081e9210
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 26 22:55:49 2023 -0400
+
+    commented out funcdecl
+
+commit 3af17551b40df44254e69e838e14b4f35cfdda4c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 26 22:22:21 2023 -0400
+
+    got arrays working!
+
+commit 2dc8986f4613eff37dfa8abb42275992cf96adda
+Merge: 9c467d6 c653f97
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Apr 26 21:00:19 2023 -0400
+
+    Debugging register allocation / array bug
+
+commit 9c467d66a9168f41a7bd6ab3a306ffe2e099a022
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Apr 26 20:58:23 2023 -0400
+
+    Debugging register allocation / array bug
+
+commit 06af80656354c3af6282f95d32f819f35d8d98cb
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 26 20:51:33 2023 -0400
+
+    stash changes
+
+commit 955e65f244745234823421473a082b12f5b660d9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 26 19:25:25 2023 -0400
+
+    saved changes for refactor
+
+commit c653f971678d173df8325759dfa4caee3a64c212
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 26 16:51:19 2023 -0400
+
+    finish cli
+
+commit 0cf69c0bfc241db52c1aadc038cd219a2680f893
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 26 15:57:23 2023 -0400
+
+    use new optimization flags for constant folding
+
+commit 983c39a1e54c058e014fa4aae1e2213a66a05c7d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 26 15:54:50 2023 -0400
+
+    finish recognizing cli commands
+
+commit 724615f8c57e2c7fdddadedb2f8bb7ef7c754f20
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 26 10:45:09 2023 -0400
+
+    simplify arguments in helper cli by making an object
+
+commit d2dbd9addeef064c840ee95937992f00b3638465
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Apr 25 22:30:01 2023 -0400
+
+    added cli options for p6
+
+commit ca6ffc1d8a37959f824a2ff87aeede8307708b9f
+Merge: 65589c4 d50161c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Apr 18 23:05:24 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 65589c40559afcd2730ef8c0852f0a7aea520d9a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Apr 18 23:05:19 2023 -0400
+
+    fix concat issue
+
+commit d50161cbbe152532bd3539d5b05b15b201c60283
+Author: cew256 <cew256@cornell.edu>
+Date:   Tue Apr 18 22:52:09 2023 -0400
+
+    Add files via upload
+    
+    added our own ethScript and additional test files
+
+commit 13fb3c4b880024bbf56f355b84785df77da1a3c5
+Merge: 2c032f7 a0a1aa3
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Apr 18 21:41:25 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 2c032f7c9431a1f0937936fa718841eeb6341f58
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Apr 18 21:41:15 2023 -0400
+
+    recognize rv within move
+
+commit a0a1aa3b0cb1c4221064dad2a36a3b0aa626e3ae
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Apr 18 20:59:25 2023 -0400
+
+    Fix translation issue in BinopExpression
+    - concatFromPointers() was adjusting the actual memory location of the
+    array operands. Now save the mem in a temp to not do this.
+    - Still have an issue with function returns in binops.
+
+commit c7600fb40577602a9b44a32ca2396386214dd69a
+Merge: 950fda8 aed9db0
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Apr 18 19:21:09 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 950fda8077f2b560d13f24b2fd229f5b121598f0
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Apr 18 19:20:48 2023 -0400
+
+    fix issue when popping args off stack when pushing 0
+
+commit aed9db00e0955e83a126926a0c896dd28331059e
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Apr 18 16:31:07 2023 -0400
+
+    Another nother TRA fix
+
+commit 8d9a272584e4d7edfe5819a42ff282f37d9e86bf
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Apr 18 16:00:06 2023 -0400
+
+    Changed 3 TRA registers from rcx, r10, r11 to r10, r11, r12. No longer any overlap with arg registers or RV registers
+
+commit 76f4e3b619b3855c4b9d1101c1a1e06a1c7a2801
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Apr 18 14:23:20 2023 -0400
+
+    Implemented high multiplication at the assembly level - will begin testing next
+
+commit 6ca94d041b36d2c9ec06a8af3f08906a076ac0af
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Apr 18 13:40:00 2023 -0400
+
+    Implemented high multiplication at the IR level
+
+commit 6bd26a797b1df03f84289827c2c55d69cf511f1c
+Merge: cc6c177 9c66840
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Apr 18 11:30:07 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit cc6c177625b09334cfb8b80e39e0b07bac4c123a
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Apr 18 11:29:49 2023 -0400
+
+    Fixed qword ptr / register allocation bug
+
+commit 9c668407364c5f4a6111cd0b6e8465e65aaf5a60
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Apr 18 02:49:11 2023 -0400
+
+    fix junk pointer issue
+
+commit d6f3c7a2528d0eff2919e4973a272aa0dc55101e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 17 22:33:56 2023 -0400
+
+    retry push for rv reg fix
+
+commit 8cf58fa67a8d053e82a0d45e0c8cec787cb37c68
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 17 21:49:51 2023 -0400
+
+    fix for RV registers if inside binops
+
+commit 66defebb037fb189326b3eabae141fa17924fd07
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 17 20:17:10 2023 -0400
+
+    Debugging _RV error
+
+commit c15babd9547b70e01d543caf4b2c3139bb72a263
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 17 18:40:16 2023 -0400
+
+    revert moves to temps before return registers
+
+commit 3836d19af8a594dac3bd4df7e09e2b6a900d3191
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 17 17:38:30 2023 -0400
+
+    Calculating L and aligning rsp shoooould be okay? We can print 'hello world!' now
+
+commit 28c8ef382d7bdca273da98369c391606e164b133
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 17 14:19:05 2023 -0400
+
+    Resolved [r1*r2] bug
+
+commit ec099f943fd7733da2e8be14f861f060d72a3db9
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 17 10:11:28 2023 -0400
+
+    Attempt at calculating l (now taking into account # of spilled args and # of spilled RVs)
+
+commit ec8e9995b99ce93bf744cd6514163ab4002b0330
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 17 01:51:01 2023 -0400
+
+    stuck trying to solve global array concatenation
+
+commit 68f5a32db530816a58e4c6f1cb54b36281c5089c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 17 00:13:15 2023 -0400
+
+    Fixed bug in register allocation. Return values should be working as expected now (please test this).
+
+commit 35d98fe4ae2cfeb3cd72f769c21905868b961a90
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 16 23:27:40 2023 -0400
+
+    working on global arrays
+
+commit 749b7ff7e1c67b5d1df55cb7f4f2f30160a9894a
+Merge: 4954bd3 e723022
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Apr 16 23:25:42 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 4954bd3f5eae7b690d025695d385f354060ae625
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Apr 16 23:22:41 2023 -0400
+
+    Fix Exception catching issue
+    - Tiling error was making it so that we were failing parse/typecheck
+    testcases that had nothing to do with it.
+    - Added some null value checking and moved around some catch statements
+    to catch generateAssembly Exceptions in that function rather than
+    letting it cascade up and ruin the whole compilation.
+
+commit e723022b21dc37c73d09a96a1775c21cfdb9bb41
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 16 21:52:20 2023 -0400
+
+    Added in .type directives
+
+commit 3283e9c239c6b4e32780501d1ee8cc09587ac419
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 16 20:31:55 2023 -0400
+
+    debugging x86 issues
+
+commit a9b630b8b0361d172f7cda6c4e0fe62830f37b90
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 16 20:03:39 2023 -0400
+
+    first pass at adding div and mod assembly
+
+commit 8630c1aacf5e5f351e5824a43de2b13989dbfc5c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 16 18:27:42 2023 -0400
+
+    fixed order in which args are added
+
+commit fef9082fb011206ecd618b7fa3a087e2278946df
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 15 20:06:35 2023 -0400
+
+    added runtim
+
+commit 48ce5b601ab424cdf42548ad638dc214e90de098
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 15 19:57:42 2023 -0400
+
+    We appear to have a functioning version of trivial register allocation.
+
+commit 6ab4836402a7b0931d1d8ad1984d4c94c80668ee
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 15 18:48:54 2023 -0400
+
+    Currently debugging println bug
+
+commit df13f616bf9de407f26c722011da07485442bc56
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 15 14:45:38 2023 -0400
+
+    I think we now have the correct instructions? NOTE: those instructions are not what we're returning yet.
+
+commit 021de31e2589f28d432ef50d2850ffb88da7af6c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 15 11:42:09 2023 -0400
+
+    now able to extract arrayList of all abstract operands from an instruction. finally ready to try trivial register allocation.
+
+commit bbd7ce61d619f0a970e36fb05e1ca42954cf330d
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 15 10:06:57 2023 -0400
+
+    slight refactor - just going to use a regular expression library to extract operands used in each instruction
+
+commit ddad0afd2d6ceaa43a9871ca9adae314a4cd0990
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 15 00:58:02 2023 -0400
+
+    Able to detect abstract temps
+
+commit e4688bf16e134aaf1014751db05d1d468bef96e3
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Apr 14 22:00:57 2023 -0400
+
+    experiment to debug trivial reg allocation.
+    - going to see if moving logic to IRFuncDecl might resolve some issues / allow us to count number of temps in each function
+
+commit 7d1fc7c5edcac366843df25966c3e57054f2ace8
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 14 16:37:28 2023 -0400
+
+    throw error for global string declaration
+
+commit 37498a72949cdf431089c82fb798aff314db760c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Apr 14 15:36:46 2023 -0400
+
+    tabbing for directives
+
+commit 99412493531e02f5adc7b34203f72988478c965d
+Merge: 14bcfc0 5f91c9c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Apr 14 15:32:42 2023 -0400
+
+    fixing merge error
+
+commit 14bcfc0cf828ca7145c623ae2d5c9d8818809925
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Apr 14 15:31:32 2023 -0400
+
+    Added directive classes
+
+commit 5f91c9c1f367396a898cfa6dfd141b0494f3ab5e
+Merge: 9721fa5 04a0cd6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 14 15:12:00 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 9721fa5f4799b05068974fafc260b1a584eedcc3
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 14 15:11:54 2023 -0400
+
+    tabs on assembly if not labels
+
+commit 04a0cd669042045aa41fc61a84c1cf7c744919ff
+Merge: fb58603 d2bde49
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Apr 14 15:02:29 2023 -0400
+
+    fixing merge conflicts
+
+commit fb58603fc033c2ed7bd6c672d53e9cc829d2c98d
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Apr 14 15:00:49 2023 -0400
+
+    quick fix
+
+commit d2bde49a687014ac24e220df70d110640f6b38db
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 14 14:56:36 2023 -0400
+
+    commented out directives for now until we added insn classes for it
+
+commit 6b77f4f7384368a6d248219c04be9d18b09b212d
+Merge: a79ce97 a27b292
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 14 14:49:58 2023 -0400
+
+    fix merge conflicts with isntructions being classes vs strings
+
+commit a79ce972d35111dd29040bd7339b4699d2258078
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 14 14:30:57 2023 -0400
+
+    added instruction classes and bigger tiles
+
+commit a27b29299fb3412431447eccc7940b4d143f7d28
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Apr 14 14:23:52 2023 -0400
+
+    Adding in directives
+
+commit f62b44658be5ab3799d7a9397385e61e22a4683d
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Thu Apr 13 22:30:32 2023 -0400
+
+    Complete preliminary trivial reg alloc
+    - Every place that uses temps to make assembly with the old "String"
+    architecture now has a "trivial()" function that changes the assembly to
+    be trivially register allocated
+
+commit c9bf3db6a1d3b7fc373aea19fc294cf07d293684
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Thu Apr 13 22:26:35 2023 -0400
+
+    Complete preliminary trivial reg alloc
+    - Every place that uses temps to make assembly with the old "String" architecture
+    now has a "trivial()" function that changes the assembly to be trivially register
+    allocated
+
+commit f1d6902c6ed9ecc62c1f398b83d43b349785fdea
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Thu Apr 13 17:53:25 2023 -0400
+
+    Change TempStack indexOf() to reflect stack pos
+
+commit 52688b90fd926fec0497d365d84529541400eafe
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Thu Apr 13 17:01:03 2023 -0400
+
+    Continue implementing trivial alloc
+    - Each file that implements it currently has a trivial() function
+    - It's a bit messy bc of how assembly is all just strings rn
+
+commit 84ac8aa77749733eaee4c33bff6eab956ea7886e
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Thu Apr 13 09:55:27 2023 -0400
+
+    Add TempStack to commit again
+
+commit 96f11b1fb3bcadf62003b4e1c49a323a72ada1f7
+Merge: fb17044 ec5b703
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Thu Apr 13 01:05:40 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit fb17044e22a37178344c2a8591cc30991b8119bb
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Thu Apr 13 01:02:19 2023 -0400
+
+    Implementing trivial register alloc
+    - Just using strings for now
+    - Added a function trivial() in MoveRegToRegTile.java to reduce code
+    duplication.
+
+commit ec5b703330a9e3bb7e9334acf14daf81cf439843
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Apr 12 20:39:01 2023 -0400
+
+    adding qword ptr
+
+commit dcc2efef342499361b8d7556d8949766233d24d9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 12 18:58:53 2023 -0400
+
+    implemented move name to temp tile for global vars
+
+commit c539ea110a90f8b1b92bf0e5ef15d75e6791bec9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 12 17:27:05 2023 -0400
+
+    fix offset when moving into rdi
+
+commit 0e699b4653c136cccda952b20bb7ec673df52978
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 12 16:29:41 2023 -0400
+
+    change label names to caps
+
+commit 458730ad4e5a66724a33c0b6c04d5f72ff63f5b1
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 12 16:24:22 2023 -0400
+
+    bandaid solution to label issue
+
+commit 896c74f2d816b4587501bd13351d453f7772ca24
+Merge: 5748850 520a34f
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Apr 12 15:43:14 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 5748850ebf6f081ebc30bfd36cdc4583c895d63c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Apr 12 15:43:02 2023 -0400
+
+    fixed minor bug with popping off args after call
+
+commit 520a34fbd32eeee9c52c9b2a230f10ff93d7dd99
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 12 14:42:07 2023 -0400
+
+    fix ir call stmt in array access and single line
+
+commit 0dca379178dce6241572abbaec5ad03dd28c9e1a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 12 14:04:26 2023 -0400
+
+    move instruction tiles to assembly package to fix build issues
+
+commit 576f0b8685fd86ec9bf490f6aad950d2664b8960
+Merge: f9ed594 3e3bf3c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 12 14:00:26 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit f9ed5942659908fc799713cff513147032b7df71
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Apr 12 14:00:13 2023 -0400
+
+    calling convention fix for more than 2 return values
+
+commit 3e3bf3c0161a36a1675d46623d12465c3b94c09a
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Apr 12 13:49:56 2023 -0400
+
+    Add Mov.java, not much in there yet
+
+commit aba06e4ac7389fdcc9bc669d8ea48c89b67a4844
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Apr 12 13:32:33 2023 -0400
+
+    Add some stuff to Register.java
+    - push/pull to keep track of if contents are live/needed
+
+commit 450330694168b881eb142333101dbe7efa96bf2b
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Apr 12 13:18:34 2023 -0400
+
+    Begin adding Instruction classes
+    - Made an enum for Registers
+            - Will make any operations involving registers 10x cleaner
+    - Need to start making classes for instructions
+
+commit 629f26564f0cfff76a758cca9b7a2b954f6f33b2
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Apr 12 10:50:31 2023 -0400
+
+    Changed name of local var in inStrList (b/c this method isn't only used for traces). Also - just fyi, I commented out the import TempStack import statement so I could build
+
+commit 3535de335858b6940043f95de054863451f6ab73
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Apr 11 23:58:00 2023 -0400
+
+    Begin messing with register alloc
+
+commit f447e76e60f7c2aa02d1c2c4d4948a99e89ba292
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Apr 11 23:28:46 2023 -0400
+
+    started implementing calling conventions with multiple return values
+
+commit fe903c24a5e99bea8fac625eb371e5d364423c5f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Apr 11 22:01:27 2023 -0400
+
+    implemented calling conventions for argument registers
+
+commit ed546818dc0fc493da4e11155f4696426a2a3c27
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Apr 11 18:21:32 2023 -0400
+
+    refactor tile package and created move tiles with temps
+
+commit 98f273a5b27c90456f779212685dcdc15c4f6dd4
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Apr 11 14:28:20 2023 -0400
+
+    fix move tiles
+
+commit 8aaac09cca9eb434bfe67f5ab79e57d14e48348b
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Apr 11 11:09:08 2023 -0400
+
+    label fix
+
+commit 3a6c092b5777fad24912cf328de9484ec0555927
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Apr 11 10:55:07 2023 -0400
+
+    Updated labels to use '.L' convention
+
+commit d398f36afb9e2e8ca9c518c7a112586fb695357d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 10 22:41:36 2023 -0400
+
+    added cjump tile to assembly list of tiles
+
+commit 8ac84d36d6d7b156e9a29566b72aab0d7521daf3
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 10 22:31:53 2023 -0400
+
+    imports
+
+commit 3637c1746bd062a674caaee4601e5c7ed2d833cc
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 10 22:31:14 2023 -0400
+
+    implemented binop for other logical operators
+
+commit 310a3c9826ef7cd5c0fd80bdc4b94b0dad92c2ae
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 10 22:30:03 2023 -0400
+
+    CJump tiling logic
+
+commit 8e508f667fbaa76f161ac26c3e0d2b36f6c4f63b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 10 19:40:16 2023 -0400
+
+    started to implement remainder of binop munches
+
+commit 4e314917928570a6ade89396fe79de88537455cb
+Merge: 153ce8e e411515
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 10 19:02:30 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 153ce8e3b677e6e6f4633ab0e96b4d0489e5fc70
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 10 19:02:24 2023 -0400
+
+    implemented ir call statment munch and added todo for return
+
+commit e411515678284e599d59278e6e7fa4faa086686c
+Merge: 2bd438f 9b40eb8
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 10 19:02:01 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 2bd438f2f30ec239100b165da4a918c4ccd521f8
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 10 19:01:45 2023 -0400
+
+    Now placing arg vals in _ARG registers before function / procedure calls
+
+commit 9b40eb8928ecae32f6c83a6676e7e1a68a1c8614
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 10 18:42:45 2023 -0400
+
+    added munch for irjump
+
+commit 459eb1430c22e643ba35bd7ccb69713575045fc8
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 10 17:24:26 2023 -0400
+
+    code reuse in tile and ir classes and implemented binop tiling
+
+commit f1cba0c4a37bef6ee91accfb32a160b45ac0ea17
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 10 15:10:03 2023 -0400
+
+    adding comments
+
+commit 7a9b097b3e88c5b195d3080fd191280004d54bfa
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 10 15:02:57 2023 -0400
+
+    adding comments
+
+commit 0f267bfd8f676e7ac3e64504f9dcbb98bc53aed4
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 9 20:55:16 2023 -0400
+
+    Block reordering should be done! Unnecessary labels are no longer included in IR output.
+
+commit 98ac96e4fd5da4cffbcfb4eed0478fd8d4464853
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 9 17:14:00 2023 -0400
+
+    Unnecessary jumps have been removed
+
+commit c7a3575c7b7205fcf5c228e47e5f951743480cb0
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 9 16:20:23 2023 -0400
+
+    Added alreadyVisited arrayList to chooseBlock method to avoid setting a block as the candidate block more than one time.
+
+commit 74f89dcd2c7ae641c0c1407079aa7184225f2b35
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 9 14:38:44 2023 -0400
+
+    Commented out block reordering-debugging print statements
+
+commit 57a4898e26f0726177ba0239add203808c538a19
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 9 14:13:43 2023 -0400
+
+    90% sure that block reordering works for all same cases as unreordered code
+
+commit 19801d7bcbf3e8423dd24a7b3f6ffc7c56b95d79
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 9 12:59:44 2023 -0400
+
+    Fixed if (...) return a, else return b, return c case. Now need to fix if (...) return a, else return b case.
+
+commit ea658440b22f14fae5e8e9ddb4da32f508a51271
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 9 01:06:13 2023 -0400
+
+    Merge conflicts resolved b/w main and p5_setup_v2
+
+commit 4a7f7716fb0540c73743659f0cc132318ecef1c1
+Merge: c4bbd23 9270571
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 9 00:50:20 2023 -0400
+
+    Merge branch 'main' into p5_setup_v2
+
+commit c4bbd2368789a694551c2ccc69e958f9cc770b28
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 9 00:36:32 2023 -0400
+
+    manually resolving merge conflicts
+
+commit 927057131334c8929667605f4954ba8ed9ab74de
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 8 23:29:15 2023 -0400
+
+    fix build issue after merge
+
+commit 8c5fee4d198cb84902aa1227ce90c072ed31c969
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 8 22:49:22 2023 -0400
+
+    fix merge conflicts
+
+commit c2b13efc41c57f98c94fcc8ef06cebd84947a22e
+Merge: a18ac59 afeba04
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 8 22:37:48 2023 -0400
+
+    merge basic block reording algorithm into tiling branch
+
+commit a18ac599a093895996e51543d2b3accc5efa625b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 8 22:33:16 2023 -0400
+
+    recursive move tiling
+
+commit 795a5127ef870f2b83bc31318207d2c5c6d16cbd
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 8 21:22:36 2023 -0400
+
+    Finally got reordering working - just need to remove unnecessary jumps / labels now
+
+commit 79e2fca2b1312f1fd4d08b653007fb2afb3f5810
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 8 17:51:13 2023 -0400
+
+    Added jumps back in as necessary so control doesn't get messed up. Next bug is figuring out why certain trueLabels in CJUMPS are disappearing after block reordering.
+
+commit 2780deabd21c0e6df721538d9bf19d9908c3ef50
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 8 14:51:22 2023 -0400
+
+    moved tile functions into node class
+
+commit afeba0410ab6b382fba480e76a3feeec11d71872
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Apr 7 18:42:50 2023 -0400
+
+    BLOCK REORDERING WORKSgit add .
+
+commit c3669525977e26d711e7f0bdc20e6ecaf233363b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Apr 7 15:47:52 2023 -0400
+
+    started implementing tiles
+
+commit ba98bd80d864486c1fba910405f5e8344e141124
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Apr 7 13:20:34 2023 -0400
+
+    testing reordering
+
+commit d6ba64a1c256a64eca0d8136011f96c69698dfe4
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Apr 7 08:17:31 2023 -0400
+
+    Working on block reordering - specifically, on getting maximal unmarked trace
+
+commit 9ac76f5952ed40a784d8a93dbf47be7360bb01c9
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Apr 6 20:38:41 2023 -0400
+
+    Working on implementing block reordering
+
+commit 2a513caf612714fe633612f228f12b59647cf1c6
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Apr 6 12:55:29 2023 -0400
+
+    Adding back in true labels immediately after each CJUMP. These labels serve no other function besides allowing us to have true basic blocks (where a label is the first statement. There is no change in behavior by adding these back in.
+
+commit 16336af39bfbd3cdf411429eac8f34ac5b5fdc80
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Apr 4 23:08:44 2023 -0400
+
+    Can now use global arrays as operands in array concatenation
+
+commit dea07b543b11e0c4babb5bb57ba7debec6749cc4
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Apr 4 13:05:37 2023 -0400
+
+    Updating gitignore to stop adding .s files to repo
+
+commit fce5f2eeaf01d0da31120fc9b5334a122b9a0628
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Apr 4 13:02:30 2023 -0400
+
+    minor fix - forgot to make array concatenations legal for bool arrays :). Fixed now.
+
+commit 085795c648b443327f55001813e50f6d8fbd5860
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 3 20:33:51 2023 -0400
+
+    Think I made some progress in finding pattern for implementing munch(), tile() methods.
+
+commit 40657f3444265f59a88e036698d6392970e6cb99
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 3 18:49:03 2023 -0400
+
+    Experimenting with static ArrayList of Tiles, ordered by size for Greedy Tiling.
+
+commit c5dff7a94e53fa62d81962c373d972509cbe64c7
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 3 14:01:42 2023 -0400
+
+    Temporarily hard-coded in tiling for moves and adds. Will implement tiling algorithm / more precise x86 next
+
+commit 82a2ac4c43800cfc0ef0a4241af28097b0314fa0
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 3 12:39:52 2023 -0400
+
+    Adding function name as label
+
+commit 1a53c9097735e31a8622c269d2cff8bfb0101a6b
+Merge: a88b707 60ec032
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 3 11:42:15 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit a88b7079535542e1815c6900c1271da53b56cfa2
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 3 11:42:02 2023 -0400
+
+    printed out assembly with constant into temp
+
+commit 60ec03295124986939ffe24a7d2fcadf7a75539f
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Apr 3 02:46:18 2023 -0400
+
+    added comment to singleLine explaining complicated-looking expression
+
+commit 87b620e032827a123f29b67898cb6279c4638935
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 3 02:38:16 2023 -0400
+
+    remove mid ir in print to file in cli
+
+commit 2d5703453db38577c2831b35171e0c3fa48d1cae
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Apr 3 02:26:04 2023 -0400
+
+    fix multi array initializations
+
+commit 7f435b843f5567a3182fb9a86a19ec19f475e213
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Apr 2 23:45:47 2023 -0400
+
+    finish array concatonation
+
+commit d0ffea85c1bee6c55c7119884247f85d8599f819
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Apr 2 22:14:42 2023 -0400
+
+    got array concatentation working with string literals and identifiers
+
+commit 5128d0b64c81ec4104a060db055141ea35baa2d9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Apr 2 18:56:37 2023 -0400
+
+    debugging arrays
+
+commit 438566329fea59dcedac5851997c3d0435a2b54b
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 2 17:20:23 2023 -0400
+
+    Can now support concatenation of array / string literals
+
+commit 2a764c3f2ab68a8beb7c9e3f953983c1e737d606
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Apr 2 11:43:02 2023 -0400
+
+    String literals in array concatenation
+
+commit 97414b2d4aa725f417de342a58945a974e9c93c1
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 1 23:55:20 2023 -0400
+
+    implemented array concat for literals
+
+commit 6b2e8c37444cf7e6587bbb34649a4199e1b1189d
+Merge: bf5d731 92af695
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 1 22:00:03 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit bf5d731b52fb431ca3729bdf3cbfb8b6f656b95a
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 1 21:58:45 2023 -0400
+
+    Fixing eta_alloc issue
+
+commit 92af6953a3334fbdd0151f3896c034d8f5dbb0b5
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 1 20:23:41 2023 -0400
+
+    final test for short circuit
+
+commit 0694d89780d146aa17ffc559ae06122508bfa7be
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 1 20:13:00 2023 -0400
+
+    test short circuiting completely
+
+commit ea8a00408d3690310d8691c3f3a8076d67d5627f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 1 14:05:34 2023 -0400
+
+    fix short circuit for or in if
+
+commit 3e6b68f4c2a4020262c3e7e2d9322ea0e80ca41a
+Merge: bae0e22 e429806
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 1 12:36:41 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit bae0e2279450b06b54f376949ea6f5e47cd755b7
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Apr 1 12:36:33 2023 -0400
+
+    interpreter tests
+
+commit e429806b20a53255a6be64dacdcff8783a1d14e7
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 1 12:21:43 2023 -0400
+
+    Fixed bug with NOT
+
+commit 4360b9a98159a1530a4f9d9e46ccc2b00112ef1a
+Merge: 9ce75de 6911fd2
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 1 11:13:56 2023 -0400
+
+    resolving merge conflicts
+
+commit 9ce75ded7cf07b5bbb94110ecc400012f47793a4
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 1 11:09:45 2023 -0400
+
+    Added getShortCircuitSeq() calls to: localDecAssign, Return, funcCall, procCall, IdAssign. If, While, localMultiAssign each return unique IRSeq's so are currently unsupported by getShortCircuitSeq()
+
+commit f9bfabf50e0eb0ec3f058502f487a5aeef215370
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 1 10:51:19 2023 -0400
+
+    Implemented getShortCircuitSeq in IRSeq
+
+commit a36253b7616c2e920e3e79225ce68c5ff17cbde7
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Apr 1 10:24:42 2023 -0400
+
+    adding getShortCircuitSeq() method
+
+commit 6911fd2f3c5c4aa1d603b7847bef67c2fe398712
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 31 23:55:38 2023 -0400
+
+    clean up getter in parameter
+
+commit cc9a660b1e0dbcd82a961515af356ad6dc3308a6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 31 23:47:38 2023 -0400
+
+    remove commented out code in ast classes
+
+commit 9c16afebbfb63ab6b61788831eea2baadfbd9d85
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 31 23:00:02 2023 -0400
+
+    return_shortCircuit.eta can do some cool stuff
+
+commit d53cd4b913fc4ddf9c7b05122016e3ff83442f94
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 31 22:26:39 2023 -0400
+
+    while can now take an 'or' guard expression
+
+commit fed851753cdd275dd641200fa5bb5494f6c63302
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 31 21:41:42 2023 -0400
+
+    Can now nest ifs and whiles to your heart's delight
+
+commit f6711ed913f9fffb6a981512b595277856c733ae
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 31 21:32:26 2023 -0400
+
+    Nested ifs should be all set
+
+commit 99c5899bf198ae2f5cf89a192584e183dbd10d94
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 31 21:26:41 2023 -0400
+
+    fixing label issue
+
+commit 764aecb5c727d333b4ba3510d3c1b9e8be2f06f2
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 31 12:25:13 2023 -0400
+
+    fix or logic for short circuiting
+
+commit 9dff485d76b4d2067ff138ad70ca883732120c00
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 31 11:27:28 2023 -0400
+
+    nested if debugging
+
+commit a47e5c5211b05a3c33ef30b688666f87859cddce
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 31 10:59:56 2023 -0400
+
+    Fixing nested if/while bug
+
+commit 259880c7ee4c3ddbc4e33c386258f56aa6feff51
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 31 10:58:30 2023 -0400
+
+    remove instances of generate fresh end label
+
+commit 0c94f27400bf21b2f71bae60032d04b8f72817be
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 30 18:49:49 2023 -0400
+
+    What was done on 3/30
+    Add factory.IRLabel(factory.getCurrentTempLabel()) to:
+        funcCall, IdAssign, If,
+        localDecAssign, localMultiAssign, procCall,
+        Return, While
+    Added getCurrentTempLabel() to node factory
+    Added getShortCircuitForm() to IRESeq
+    Added getShortCircuitFTVal to IRExpr_c
+        - holds value boolean expression should evaluate to in fall-through case
+        - See usage in IdAssign
+    Added getOppShortCircuitFTVal to IRExpr_c
+        - holds opposite  of the value boolean expression should evaluate to in fall-through case
+        - See usage in IdAssign
+    
+    TODOs:
+        UPDATE getShortCircuitForm() to support NOT    DONE
+        CALL getShortCircuitForm() in UnOpExpression    DONE
+        UPDATE short circuit logic in classes listed above so they call getCurrentTempLabel() DONE
+        Create a static method 'getShortCircuitSeq' in IRSeq that returns a sequence of short-circuit statements
+            *This will eliminate code duplication in each true isShortCircuit case in each translate() method
+        Debug short circuit returns
+    
+    Note:
+    Currently unable to do more than 1 short-circuit at a time (e.g. something like a3grade & b doesn't work)
+    Please see comments return_shortCircuit.eta
+
+commit 0543519a5bb3538a74f347d1885af4029ec9e340
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 30 12:54:52 2023 -0400
+
+    Add factory.IRLabel(factory.getCurrentTempLabel()) to:
+    
+        funcCall, IdAssign, If,
+        localDecAssign, localMultiAssign, procCall,
+        Return, While
+    
+    Added getCurrentTempLabel() to node factory
+    
+    Added getShortCircuitForm() to IRESeq
+    
+    Added shortCircuitFTVal to IRExpr_c
+        - holds value boolean expression should evaluate to in fall-through case
+        - See usage in IdAssign
+    
+    TODOs:
+        UPDATE getShortCircuitForm() to support NOT
+        CALL getShortCircuitForm() in UnOpExpression
+        UPDATE short circuit logic in classes listed above
+        so they call getCurrentTempLabel()
+
+commit 8b1a82d707fc68ef219d2459abae66444e506741
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 29 19:00:24 2023 -0400
+
+    remove unnecessary labels and fixed return registers
+
+commit 202cad5466ee0a0b8e32d6f62372ef29c4b6d054
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 29 16:17:51 2023 -0400
+
+    fix if else
+
+commit 5752e9734556b037839da532b2c05f925c9ee96f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Mar 28 03:28:50 2023 -0400
+
+    fix procedure call producing void value
+
+commit 78542c6c8c747575061a43ba38a53d33763aedd7
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 27 22:41:43 2023 -0400
+
+    added tests for debugging test harness issue
+
+commit 8aa3fc7bdc2110e71472077034c103e5ec82c1ed
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 27 21:57:32 2023 -0400
+
+    revert cli back to procedure main
+
+commit 17c689f0b2a2462f79c78b1888937c17638b5b3a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 27 21:54:47 2023 -0400
+
+    cli
+
+commit bf787d364ebea8a7cf76c6d083b4b0c72dd3515a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 27 21:46:03 2023 -0400
+
+    fix escape character printing issue in irrun
+
+commit b17c2ec2b976d26e511c83d0303e21c8746605de
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 27 19:22:29 2023 -0400
+
+    got interpreter to run locally
+
+commit 6637a115247f20ffd206a5a0adf1215c5996936d
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Mar 26 23:49:13 2023 -0400
+
+    Fully implement array translations
+    - IdAssign to multiarray index should work fine now
+            - Works the same as the ArrayAccess translation
+            - ie: use first index to access within outer array, then get mem
+            location of inner array, pass into ta, and re-use code for the
+            single array case.
+    - Didn't use fresh temps for Array literals bc I feel like it
+    shouldn't matter, but we can easily change that.
+    - That should be it for translations assuming everything is correct
+
+commit 0ba469bb393fe21ffc4fc2b70d617862dad99dcb
+Merge: 9c99219 7e9dd8f
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Mar 26 22:10:50 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 9c99219ce96ca00dd52ef823ba663e59420f2ebf
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Mar 26 22:08:51 2023 -0400
+
+    Fix a couple bugys with ArrayAccess translation
+    - Re-added MIR printer because manually debugging translations is impossible
+    without it
+    - Wasn't adding a couple statements to the final seq
+    - Also was adding arrayExpr into t_a instead of arrExpr2 for
+    multiarrays.
+
+commit 7e9dd8f2ac42431402e37b886d02e4f46181e06c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 26 00:31:43 2023 -0400
+
+    rework cli
+
+commit 50a70a894cc9045d32391641b013eeadb4438b22
+Merge: d47a120 111debf
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Mar 25 20:14:48 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit d47a120097cdc8729f43c3712a459146b93de802
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Mar 25 20:14:37 2023 -0400
+
+    recognize io.eti file
+
+commit 111debf7c35d7355fd4d47f9a7c134c4282775b1
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Fri Mar 24 18:31:20 2023 -0400
+
+    Add tentative multi ArrayAccess translation
+    - Didn't test AT ALL
+    - In the case of multiarray should just put the mem location of internal
+    array in t_a, 2D index in t_i and then re-use the rest of the code.
+
+commit 1bfdb1457f77d6f753bd5b6b64c37d4580f17439
+Merge: 8c14fea 734ca0c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 23 20:44:38 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 8c14fea53fa274a105d9a6a9303fda741694e0aa
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 23 20:42:17 2023 -0400
+
+    Removed error_label print statements
+
+commit 734ca0c046515f01c21a8aa3b2207e3c8b6c8259
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 23 16:34:56 2023 -0400
+
+    fix p5 cli
+
+commit c3dc727beb0841eaf51b249511a3d0346f6b1ca0
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 23 15:44:03 2023 -0400
+
+    p5 cli
+
+commit 63444cf47d1e64004400494b229a59d9bd86dd65
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 22 23:09:50 2023 -0400
+
+    ArrayAccess.java should be good to go
+
+commit a7dc5b7f51975f44cca78cae627beee75c168443
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 22 22:32:19 2023 -0400
+
+    remove mir print for helper cli
+
+commit 58bb1b6d2d27d59416a6f21fa8a461e1df547f8a
+Merge: 35bb7f7 088f3ee
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 22 22:29:01 2023 -0400
+
+    Resolving merge conflicts
+
+commit 35bb7f7ade5d43a641bed839b4c45a73320f381d
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 22 22:26:43 2023 -0400
+
+    Adding fall through logic for array accesses
+
+commit 088f3eec344ac669dad79bd59e7877c7c7cd97f9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 22 22:16:44 2023 -0400
+
+    clean up single line
+
+commit 99a7f947deac81b4b3959cbdf7d62f6413cae6cf
+Merge: dfad1cd 2125fc3
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 22 21:59:43 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit dfad1cdb678d0c246bf76950717b60ef818dd938
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 22 21:59:39 2023 -0400
+
+    clean up commented out code and print statements
+
+commit 2125fc38f914a1e1a82b19afda7a0c74de10d2df
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Mar 22 21:57:43 2023 -0400
+
+    Fresh labels in SingleLine
+
+commit 6c7d99baebad9639b206607f92d1ea1e9c8d6757
+Merge: 0824af6 2253335
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 22 21:39:57 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 0824af6b62cb5f546d4bf9a2b3d9c123e113f092
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 22 21:39:44 2023 -0400
+
+    arrayAcess cjump fall-through
+
+commit 2253335d837b056d69acb9e721ba0f74669a0460
+Merge: 3a15c76 ddabfd8
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Mar 22 21:11:22 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 3a15c768b08b50f1df16c35c5e46d39abb58b992
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Mar 22 21:11:03 2023 -0400
+
+    Add comments to ArrayAccess.java and SingleLine.java
+
+commit ddabfd85c95a9d63925e2cd52d9c284dc19a61b6
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 22 21:04:43 2023 -0400
+
+    arrayAcess cjump fall-through
+
+commit 4736f14f793a91c09d25638553b8a426917cf774
+Merge: 4f980a0 d7a00b6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 22 19:44:50 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 4f980a02e576569d0350531255145f789d45f780
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 22 19:44:43 2023 -0400
+
+    implement constant folding
+
+commit d7a00b685c22754030178eb5eb202029db34cf1a
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Mar 22 18:27:34 2023 -0400
+
+    Fix grammar issue with multiarrays
+    - Didn't recognize b:int[] = x[1][0], for instance, even though it
+    typechecks.
+            - Same thing with array literals
+    - Now need to extend ArrayAccess translation to deal with this.
+
+commit ac4652d29bbc00b7d24114c2fce85d67019ebe07
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Mar 22 17:44:35 2023 -0400
+
+    Comment out MIR again
+
+commit 539c1460abfe4c10e4718b3235ef5548e638dbe9
+Merge: 111812b 3ba7b91
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Mar 22 17:43:56 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 111812bec8d763e56fbd6c0ad4b69229398af454
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Mar 22 17:42:49 2023 -0400
+
+    Implement SingleLine.adTranslate()
+    - Translates array declarations
+    - Works now for 2D arrays
+            - Now stores the memory pointer to the inner array in the outer array
+    - Still need to change temps to be fresh (I think)
+    - I also made the weird decision to store the inner
+    arrays under for array "arr" under "arr[]". Might want to look at this,
+    but I don't think it matters
+
+commit 3ba7b91880e65412fb748c44e2cb2bf94e8e29a9
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 22 17:36:37 2023 -0400
+
+    All CJUMP fall-throughs implemented besides array access and singleLine
+
+commit bb5581ba38b9c2b2f65e98a02370ac34047b01c4
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 22 17:24:41 2023 -0400
+
+    fix array type getType
+
+commit bc4f35efdc7fa28220cd14a493adb3e5ae61b775
+Merge: dcea669 8c8d5ca
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Mar 22 16:12:53 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit dcea669b133b894e4e7624f131b05c25694c385b
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Mar 22 16:12:06 2023 -0400
+
+    Started implementing mem allocation for 2D array dec
+    - The allocation is fine but not able to store pointer to internal array in outer array rn.
+    - Need fresh temps
+    - Might want to declare a temp outside of recursive call, pass it in, and then store
+    Mem() of it in tm (because it would still get altered, as long as naming stays consistent)
+
+commit 8c8d5cafcaa939ef3689c69ee10c48c140f37c62
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 22 16:01:45 2023 -0400
+
+    Added comment to BiopExpression.java explaining why line 196 doesn't have the expected CJUMP fall-through logic (it's because it makes short-circuiting work this way)
+
+commit 54ca4765da03672bb8285ea9c5e22208c9999003
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 22 15:54:33 2023 -0400
+
+    Adding CJUMP fall-throughs. Added for AND / OR short-circuit logic
+
+commit b69af437303e2e7be32fd3a3d21cdf3214d99be9
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Mar 21 10:09:18 2023 -0400
+
+    Can run IR simulator! Just needed to comment out a few lines in HelperCLI
+
+commit 80e8ffa6f2c04609dbcd27e4587c0d9d297e93fc
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Mar 21 09:56:54 2023 -0400
+
+    Adding pa4 test harness files to ir_gen_tests/test_harness
+
+commit 535db89c10eb21cb5a5a26fd85fccf189384eb3d
+Merge: 713c51c 94fe081
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Mar 21 02:43:18 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 94fe081b74ab8b457ffb900191126d5f92a21e00
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Mar 21 02:42:57 2023 -0400
+
+    local multi assign type-check bug fix
+
+commit 713c51c582277438b3e24bd84277f6c1a240ab36
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Mar 21 02:37:15 2023 -0400
+
+    fix local multi assign issue
+
+commit d15557b3522b529fcee61a46c6213ebee324a62a
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Mar 21 02:34:05 2023 -0400
+
+    local multi assign type-check bug fix
+
+commit 59d931dc5c9bc866ff0b29781945b52470badf0d
+Merge: be12fd0 d1e1973
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Mar 21 01:52:57 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit be12fd0da2f865b648325c522a726012bf6d2326
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Mar 21 01:52:35 2023 -0400
+
+    CJump lower / printing length correctly when lexing
+
+commit d1e19737fac23621d45a9f2eeae0891848efd43f
+Merge: 81cd9cf 189d3e6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Mar 21 01:45:59 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 81cd9cf82506d9445ebe75abc37ec545a6f6123f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Mar 21 01:45:53 2023 -0400
+
+    local multi assign issue
+
+commit 189d3e669bb4d23b703c5ca8a191658dce714d71
+Merge: 3c18b2c 8812ade
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Mar 21 01:35:56 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 3c18b2c4f3cd5c5b203c5f7d72fd2c07d49517ad
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Mar 21 01:29:26 2023 -0400
+
+    Started implementing mem allocation for 2D array dec
+    - The allocation is fine but not able to store pointer to internal array
+    in outer array rn.
+    - Need fresh temps
+    - Might want to declare a temp outside of recursive call, pass it in,
+    and then store Mem() of it in tm (because it would still get altered,
+    as long as naming stays consistent)
+
+commit 8812adea90faeb91a978621e307947a8dd4390fc
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Mar 21 00:56:06 2023 -0400
+
+    adding end labels
+
+commit 5a201d8177ab9ef942351c87171034b9a3261a05
+Merge: b638bff abf4d67
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Mar 21 00:30:04 2023 -0400
+
+    merge conflicts
+
+commit b638bff5cfcb00f45a642a6436154c948b1c2dae
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Mar 21 00:28:07 2023 -0400
+
+    generateEndLabel implementation
+
+commit abf4d67c4c3443863a8bb4556a2bf81fe09f0cea
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Mar 21 00:28:05 2023 -0400
+
+    Forgot to save
+
+commit 3c1a4dd6072d6bcee3716789c86c3822df2831ed
+Merge: fcab9c3 2359e9f
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Mar 21 00:20:22 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit fcab9c377bae60673670569111936423de0b733b
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Mar 21 00:15:56 2023 -0400
+
+    Fix 1D array declaration translation
+    - Now initializes elements to 0 via a loop that is embedded in the IR
+    - Next: implement for 2D arrays
+
+commit 2359e9f85e347706725d587de75b40ce23defe70
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Mar 20 23:57:01 2023 -0400
+
+    Adding proper CJUMP logic to if.translate() *was falling through to l_f after executing code inside l_t
+
+commit 5eb4fabd702de1ed2d0f8ea230fe466de32f89bb
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 20 23:55:22 2023 -0400
+
+    returns short circuit
+
+commit 56633481cac7747db37b205b344f17a203887c29
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Mar 20 20:26:02 2023 -0400
+
+    No longer need to check if type is 'return' (like it is any time a function call appears). Optimized all of this away with getBaseTypeMethod() in Type
+
+commit 3e4f4d9c420378f8cd4bcce869114063b54079ad
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 20 20:14:23 2023 -0400
+
+    algorithm to get typechecking correct for return types
+
+commit 4ba390eb9fe6e3738bccc636d7171532c65cf236
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 20 19:15:42 2023 -0400
+
+    simplify logic when typechecking with returns
+
+commit 59f262246773ebaf1598b9a6fd9c14761e4ecfbc
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 20 17:42:33 2023 -0400
+
+    fixed io error issue and array typechecking
+
+commit c07d9150e46282bf1d4ba71c5265d514b6f76229
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 20 16:32:36 2023 -0400
+
+    remove side effect helpers
+
+commit 1b98f43242edca8727851df5e0d9044c9b75b654
+Merge: a1eb734 37af172
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 20 16:17:29 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 37af17227bdbc21640f67d4fb1b3ef7a0cae40c3
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Mar 20 16:17:17 2023 -0400
+
+    Removing getSideEffects(), getPureExpr() from IRBinOp, IrCallStmt, IRESeq
+
+commit a1eb734598f4dbf26dda87559f7973bdd5b5d9ac
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 20 16:16:21 2023 -0400
+
+    use lower for expressions to get side effects
+
+commit afe68048756382be1d4ff651dbb9eee81a449199
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Mar 20 15:58:26 2023 -0400
+
+    IRSEQ lower function implemented
+
+commit 7a5c4eada28515947472f195f6dd6608b08d9b35
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 20 03:34:52 2023 -0400
+
+    implemented more lower functions
+
+commit 5b08f2747277c6dc56a0314f96c15cda4014a16f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 20 02:31:47 2023 -0400
+
+    fix fresh temps
+
+commit 4916ee8aaf82e9805aad872f3a6e5b676ce8665f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 20 02:27:13 2023 -0400
+
+    generate fresh temps
+
+commit d31f2010943f777c44ae991a5d7a69b2b19b431d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 20 00:16:12 2023 -0400
+
+    lower function in seq
+
+commit 42a3584928e08725fb5fe26f64ce682b98f677b2
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 19 19:53:00 2023 -0400
+
+    lowering call statement
+
+commit 377db642a126f6f5c24968993fee904765224c40
+Merge: fba6efb e17fc0c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 19 19:07:41 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit fba6efbf2f739b9e2c972a87ac97af6ccb52ee4f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 19 19:07:34 2023 -0400
+
+    started lowering nested sequences
+
+commit e17fc0c0715014c487266e09c61bbddf0110d425
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Mar 19 18:56:33 2023 -0400
+
+    Implement array initialization translation
+    - LocalDeclaration translation now handles array init ie: a: int[3]
+    - Need to expand to handle 2D arrays
+
+commit 80066980059e3e707ccedd7a7f25448d8ef039f6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 19 17:18:06 2023 -0400
+
+    if else translation
+
+commit 88af1b315c5f4a10a8bad5bea00786e07c28b32d
+Merge: cbdae2c 126027a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 19 16:53:40 2023 -0400
+
+    merge conflict
+
+commit cbdae2c989a1b6ebf707ab87e33891797d797288
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 19 16:49:50 2023 -0400
+
+    added string literal translate function
+
+commit 126027ac2bc5ea1f3461cbe754854f3f1ec5fb54
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Mar 19 16:41:58 2023 -0400
+
+    Add typechecking for array index
+
+commit 2058fb9531007b10c7b850f143f7021379a4ec22
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Mar 19 16:04:33 2023 -0400
+
+    Implement array index localMultiAssign
+
+commit 926a96d5329a5c3b2c09c614e7368c022925dd69
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 19 14:17:39 2023 -0400
+
+    started working on generating labels but doesnt work rn
+
+commit bc00f82dcd52528247e17437dd0808351ac3b3d4
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 19 12:41:51 2023 -0400
+
+    added string literals to global data section
+
+commit 85ae7172e495910abe05198dd85a6fa30aa2055e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 19 04:57:09 2023 -0400
+
+    fix same issue in id assign
+
+commit 4bb1f3daa6f0c48badaec3a23ec954258634c742
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 19 04:53:26 2023 -0400
+
+    fix p3 bug with function calls in return statements
+
+commit b48b129597270edae2caa1f0700b0784bf06131a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 19 03:45:48 2023 -0400
+
+    cli
+
+commit dfff2e8d3b7d8bf9ef8223a2b93ff431f075e9c5
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 19 02:32:52 2023 -0400
+
+    move tests to own package + cli
+
+commit fed8e45dd4979b6a7ed0d1172b8c0e40ee8ed076
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sat Mar 18 21:50:09 2023 -0400
+
+    Implement array index assignment for IdAssign
+    - Have to test more to make sure all looks good
+    - Implemented SingleLine.aaTranslate()
+    - Next step is to do multiAssign
+    - I am buzzed
+
+commit a1ba823fda53e35403f0e831d95b00b1d09e8a28
+Merge: 216284a 4306a17
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Mar 18 20:46:34 2023 -0400
+
+    fix merge conflict with array stuff
+
+commit 216284a5f3d79d903ddfb3cfc08567f903c0eef9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Mar 18 20:42:18 2023 -0400
+
+    finished implementing short circuit
+
+commit 4306a17b655be93a1f4233b193fcd20e3d6f2a3c
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sat Mar 18 19:05:18 2023 -0400
+
+    Add SingleLine.aaTranslate()
+    - Still need to implement
+    - Special translation function that translates ArrayAccess on the LHS of
+    an assign
+
+commit 3f29dc78b473cc3d3f9bd90f5454e106086d9cfb
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sat Mar 18 18:39:58 2023 -0400
+
+    Add ArrayAccessType
+    - And change ArrayAccess type annotation
+    - Should enable IR translation of assignment to an array index.
+
+commit b915f8dc08f3397ed87a2d7eee2c1957071cbadb
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sat Mar 18 17:51:36 2023 -0400
+
+    Tiny fix in Array.translate()
+
+commit e186a8d5c461fc65bdd5f68a761ee18cd9f2c269
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sat Mar 18 17:33:44 2023 -0400
+
+    Add comments to Array.translate()
+
+commit b9c38206fcd8d29813b8fbd2385879c517c1dcc4
+Merge: 46adcd3 4ef6ef1
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sat Mar 18 17:31:28 2023 -0400
+
+    Merge branch 'main' of https://github.coecis.cornell.edu/jdr299/Eta-Compiler into main
+
+commit 46adcd3d00da05d4a089935fda8d4d821c793545
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sat Mar 18 17:29:59 2023 -0400
+
+    Implement Array Literal translation
+    - Sequence of IRMove nodes per the spec
+    - Add a test case for it
+    - In order to to array access/assignment to index we need to do type
+    annotations (ie: preserve types from typechecking)
+
+commit 4ef6ef1aa27df2412d48f0948c6d14ffbf18dfef
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Mar 18 16:39:25 2023 -0400
+
+    short circuit binop
+
+commit ce7501f805b86466da3e22f4b5195c9a28a1f779
+Merge: 77bdab8 87c11bb
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Mar 18 15:57:01 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 77bdab8900110e514608b4266858220d84c8c7fd
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Mar 18 15:56:45 2023 -0400
+
+    translated if statements w out short circuit
+
+commit 87c11bb698a671dccfcc431bf4cafef9aff568a9
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Mar 18 14:19:05 2023 -0400
+
+    (Hopefully) fixing etac issue
+
+commit ce042669ac8b05bbeee8929e81f9a7ad712d13db
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 17 20:50:50 2023 -0400
+
+    update bounds check on array access
+
+commit 9a0511a8dbe1e6934cb85fc6ca87da74ac0941cb
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 17 20:17:15 2023 -0400
+
+    ignore local decl
+
+commit 3d6bfaeb194c166922506c5726069440a4773397
+Merge: 69810d5 7178d3f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 17 20:02:41 2023 -0400
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 69810d57ff5cfa70ce140a038e5a9c82f4a9da3d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 17 20:01:47 2023 -0400
+
+    fix id assign for globals and started array access
+
+commit 7178d3f6c7064841ed684b7c8381e1f8f5b7d957
+Author: jdr299 <jdr299@cornell.edu>
+Date:   Fri Mar 17 14:17:09 2023 -0400
+
+    Update README.md
+
+commit 0ec4370541cea68bb447e62c264c8d274adce967
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 16 23:42:21 2023 -0400
+
+    fix function calls and multi assigns and underscore issue
+
+commit b32e04c2926fb1374616f300f11a2b75499e6094
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 16 18:27:23 2023 -0400
+
+    underscores to global names
+
+commit e50d0de1082f01e28fb9d5f8afc9c4d88c3dfa05
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 16 17:43:15 2023 -0400
+
+    implement function calls
+
+commit 247c1b79b525f97108e0c15e3d72278b5336d475
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 15 20:30:42 2023 -0400
+
+    implemented procedure calls
+
+commit 5f67c6fe5ce96ea444555ef7c167672318125dda
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 15 19:48:01 2023 -0400
+
+    ran simulator
+
+commit ca81ebcd1b61756276c9791309e843c6c84122f0
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 15 14:08:01 2023 -0400
+
+    local dec assign + local dec
+
+commit 24557e207b6c12786defd74af7a9b6bc13bd81e1
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 15 13:26:24 2023 -0400
+
+    Implemented translate() in Return.java
+
+commit efeb16da52b037aa54ab2412bae92fbe314b5065
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 15 10:01:39 2023 -0400
+
+    Added comments to Program.java detailing IR logic
+
+commit 73aff34e2e565cd41605aae3f8f008308264d3a7
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Mar 14 21:52:26 2023 -0400
+
+    Fix Global translation functions
+    - Hashmap of global delcarations was being overwritten due to duplicate
+    keys
+    - Fixed this and now global declarations correctly translate
+
+commit b9129c1aaf0104018df58db797694d75c772fee6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Mar 14 21:24:10 2023 -0400
+
+    added global class to fix method and global issue
+
+commit 7234fd55a8a788419afd4ca7b36a26719a92af14
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Mar 14 20:13:33 2023 -0400
+
+    implemented translate functions for blocks id assign statements + literals
+
+commit 2a934c170e84b0d7fae6ddcd29f4d148bc8bf4d1
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Mar 14 19:46:39 2023 -0400
+
+    method ABI name + move arguments
+
+commit d14fee02c20cc76a0750078b908fc334eee4d488
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Mar 14 03:56:11 2023 -0400
+
+    added more todos
+
+commit 6a2a3181fd42507f1a2a2b105e519df56b3236d0
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Mar 14 01:42:10 2023 -0400
+
+    added more TODOs to ast node classes
+
+commit dc8dc52f75391e57019fbb25a9c84a6982ea6fa1
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 13 19:13:34 2023 -0400
+
+    got mir working with empty function and global data
+
+commit 6d1f08ff095cf0f16815293c1956d6e5ba35ad6e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 13 17:06:24 2023 -0400
+
+    printed ir for compilation unit
+
+commit e6b3a41a6ea10110697520af178ca595d5a49ed0
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 13 16:28:29 2023 -0400
+
+    fix bug with recognizing length as built in function
+
+commit 2f31fe2cbdb03cbb1c95dd9777f9f9b8927412ec
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 13 13:46:53 2023 -0400
+
+    p4 release builds
+
+commit 26ccca9453ff3d810d5655bda4d04b94581bfb4a
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Mar 12 23:21:56 2023 -0400
+
+    Add IR classes to be cleaned up
+
+commit 702710547ce25060362674cd9f2f4f51f7b9174c
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Mar 12 15:13:13 2023 -0400
+
+    Disregard previous commit
+
+commit b8554705105281622960f379d4f770729aa41082
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Mar 12 15:09:54 2023 -0400
+
+    Remove redundant code in  HelperCli
+
+commit 9aca128b1e019cb2c84ede21f5bd775a0cf5c6f4
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 6 16:55:05 2023 -0500
+
+    start javadoc in cli classes
+
+commit b404f8b7ebb9f7eb021a32ad78433b925feab1ea
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 6 16:36:37 2023 -0500
+
+    80 char limit on ast node classes
+
+commit aa38343a00c0ee9a8a35b3656662bc94df02fc7e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 6 16:08:50 2023 -0500
+
+    fix cli logic w standard libs
+
+commit 863b527f54997580b9be77510c2597ba9ee0b918
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 6 16:04:15 2023 -0500
+
+    move files to delete
+
+commit 12174429a719889a25a2985686a924a8daf4f3c1
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 6 16:03:06 2023 -0500
+
+    remove optional type from parameter class
+
+commit 734ff10b6e9afce722d509dc623ea1bf68ab7c9b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 6 15:29:40 2023 -0500
+
+    fix bug in cli
+
+commit 641bca06fe5d7abcf29c085d72db7cc4a3ab1539
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 6 14:11:53 2023 -0500
+
+    fix multi array type illegal declaration
+
+commit fb5f6d33854da4f26f8f7f0904e117ed8000675f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 6 03:58:51 2023 -0500
+
+    finished javadoc and saving types
+
+commit a5252ab69e503455de7962eb595573f8be262dbb
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 6 03:28:35 2023 -0500
+
+    continue javadoc and saving types
+
+commit 7dd7e691a1b56ea576f5533ffd1ce80b0dbba3f7
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Mar 6 02:50:38 2023 -0500
+
+    continue to add javadoc + store types
+
+commit 70b90ef3a53a711b625006505157091b59c789b7
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 5 23:19:35 2023 -0500
+
+    cont adding javadoc
+
+commit a6116b04e1191b26eccd19629d61d68f6780b5c9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 5 22:59:58 2023 -0500
+
+    started storing types in ast
+
+commit 6ebdf4c0ad569c5357394afc3c3474bca8c46f9c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 5 22:26:42 2023 -0500
+
+    cont adding javadoc
+
+commit 9e62312a8586dfdedbb0f3480e878af4e119a2c6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 5 21:35:09 2023 -0500
+
+    started to add javadoc
+
+commit 89d31e1acbe9fa161e4f8cde3178d5096ca6db5e
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Mar 5 17:42:25 2023 -0500
+
+    multi-array access bug fixed
+
+commit 0636b2275b8014feb75032819737be7cc78e5812
+Merge: 7f25604 14ed455
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Mar 5 17:26:53 2023 -0500
+
+    resolved merge conflicts
+
+commit 14ed455a696a45c6aca9413dba53d79c36048475
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 5 17:05:56 2023 -0500
+
+    fixed type checking logic in multi assign
+
+commit 9a2d9c37961479c2e74ee1d2aedb3da8dc6b474f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 5 16:35:00 2023 -0500
+
+    fix array type node issue
+
+commit b833334ebbea7409fef69502f897792311405ebf
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 5 16:01:28 2023 -0500
+
+    merge conflicts builds
+
+commit bde38642f8c3c563b9a08076a0bc54f1f8ae7d01
+Merge: 9c7444f 21073f0
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 5 15:58:58 2023 -0500
+
+    fix merge conflicts
+
+commit 7f2560414fd667e80ba9db95678d396bf92b4e82
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Mar 5 02:28:20 2023 -0500
+
+    Need to fix bug: 'hello' + {1,2} is being viewed as an int rather than an int array
+
+commit 9c7444fe460258c579b89b5e6f2a03fbe67d5f95
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 5 02:14:00 2023 -0500
+
+    build works w type refactor (minus several bandaid fixes)
+
+commit 5d99604c55cc6b323eb4b2b8b08c2475e74f995d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 5 01:37:43 2023 -0500
+
+    finish type refactor
+
+commit dc62a39f79e97290252228515275c190873c22c2
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Mar 5 01:37:16 2023 -0500
+
+    finish type refactor
+
+commit 21073f04167d4b02328b93e3b2ed3d10f65ab316
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Mar 4 23:23:48 2023 -0500
+
+    array access close to working (need to get LHS types to match up with RHS types - order of LHS is not showing up as expectected)
+
+commit 28e0f43e3279337eb9919d395ad1b7bbdd014495
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Mar 4 22:44:54 2023 -0500
+
+    type refactor cont
+
+commit c78a1dfe451e7d8f7e33f6c7ece97fd206edf13e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Mar 4 20:50:02 2023 -0500
+
+    enforce 80 char limit + clean up binop
+
+commit 7f7f5484da02a99089cbab1cc8d03b4876e4cd6c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Mar 4 20:05:35 2023 -0500
+
+    started type refactor
+
+commit a8f4dfdfb0cac9683b015ddc88a65bfc83d0a4b1
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Mar 4 19:23:59 2023 -0500
+
+    eta.cup:
+        -Now assignmentIdentifier can be a 2D array access
+    LocalMultiAssign.java:
+        -Commented out logic that enforces every parameter requires a type
+        -Changed member from ArrayList<Parameter> to ArrayList<Expression>
+        -Added logic to test if epression is parameter or arrayAccess
+            -From there, add to list of expressions appropriately
+    
+    LocalMultiDeclaration.java:
+        -Changed all parameter types to Expressions
+    
+    Parameter.java:
+        -Now extends expression instead of Node
+        -Added assignmentIdentifier to multiAssignContent production
+
+commit 628f5eac8ab65f1cbfb4e2a56d851ace9a29a114
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Mar 4 16:44:38 2023 -0500
+
+    TASK: Removing multi-declarations from grammar. From now on, only single declarations, single assignments, and multi-assignments are valid.
+    TEST CASE: See ~/type-check_tests/multiDeclaration_ErrorTesting.eta
+    eta.cup:
+        -Changed name of localMultiDeclarationContent to multiAssignContent
+        -Commented out '| globalMultiDeclaration:m optionalSemicolon' in definition production
+        -Commented out '| localMultiDeclaration:md optionalSemicolon' in singleLineStatement production
+    
+    LocalMultiAssign.java:
+        -Commented out logic that enforces every parameter requires a type
+
+commit 7a8d7a051673f387aad751b1fa25e0608acd883e
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 3 23:46:56 2023 -0500
+
+    non-descriptive message
+
+commit e96d2017d7f99a3ab611c5d035b0362891937321
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 23:12:21 2023 -0500
+
+    implemented programs need to have at least one function
+
+commit 5583506d02aa648380e41ae61a636d97f36628a2
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 22:57:22 2023 -0500
+
+    implemented standard library interface file
+
+commit 2e71969cf57ac7685581d01bd15899cc147d65eb
+Merge: 8a4644a f77629c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 22:19:52 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 8a4644ad339f5b04ace456bd134acdba24cd1a7e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 22:19:47 2023 -0500
+
+    clean up code + implement error messages in block
+
+commit f77629c388800451b800824e8981552d69cfe539
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 3 22:18:05 2023 -0500
+
+    Adding tests. Also found bug in ProcedureCall.java
+
+commit 8cd8e4ffa3fad5323e50bd6b195d298d9408a5e4
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 21:21:49 2023 -0500
+
+    actually fix cli
+
+commit 688c06251822636847c33b0f2757f1b81eac466b
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 3 20:28:59 2023 -0500
+
+    Can now assign single variables to function calls (e.g. a:int = f() or a = f() assuming f returns int)
+
+commit 0c6c5787f985097703f0237ad9027395f430f88e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 20:27:16 2023 -0500
+
+    recognize global variables if declared later than use
+
+commit 1b7b62b34a828659293437ec707dc608a574c451
+Merge: 72709f5 98ce234
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 3 19:57:47 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 72709f50ffc215a4e13803e6d0b9c0f150c47cf3
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 3 19:57:30 2023 -0500
+
+    a:int, b = 1 and a:int, b = 1,2 now work (within methods only)
+
+commit 98ce234203d4085b41a7a097b8e939e9052bb4e5
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 19:56:42 2023 -0500
+
+    fix cli error messages
+
+commit 3af2e4c49a69b88492f386f090e9e9fece0f45c1
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 19:49:33 2023 -0500
+
+    fix error messages for parsing
+
+commit 448a6f77754f4db188d419083c78cc56595c1ad9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 19:11:08 2023 -0500
+
+    fix lex error output message to inclide file name
+
+commit 01dc35a4c31fff1297710f0113120483044ee7fa
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 18:00:43 2023 -0500
+
+    fix recognizing methods defined below
+
+commit ac8d3eacba636444d5f6acdd3380a2529ed280a9
+Merge: c2fa1f1 caaba36
+Author: Claire Weis <claireweis@dhcp-vl2041-38661.eduroam.cornell.edu>
+Date:   Fri Mar 3 17:53:52 2023 -0500
+
+    add method
+
+commit c2fa1f1d2ae0b82b18c66f375d10060fa28d2402
+Author: Claire Weis <claireweis@dhcp-vl2041-38661.eduroam.cornell.edu>
+Date:   Fri Mar 3 17:52:01 2023 -0500
+
+    add method in java
+
+commit caaba36413bf676b44d01f75bbb807e30c9409bd
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 17:36:21 2023 -0500
+
+    fix error in lexer
+
+commit 42a568bf3a6792de566429bb8a59e147a076ed38
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 17:23:55 2023 -0500
+
+    make sure we stop when we see lexer error
+
+commit 986ca39be7b65b99ac99269f2dee079ead083448
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 17:19:36 2023 -0500
+
+    write lex errors to file
+
+commit 366a1c9f8f9eb7d3021980ea03a894c6136555fa
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 17:17:47 2023 -0500
+
+    fix build issue w cli
+
+commit 3cbb0c3a8c5a8ed42017f75fff118ebfa018ed4b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 17:16:46 2023 -0500
+
+    fix build issue w cli
+
+commit d6747b1426c5fdc342b117af248c8267223521b7
+Merge: 3af7f62 93da48a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 17:13:39 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 3af7f62e907e8966ba542f4d6dc954fa4c255593
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 17:13:28 2023 -0500
+
+    catch compile errors instead of just throwing everything
+
+commit 93da48a0a1dc7e78c4de36b3ac58e361b9ff31b0
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 3 16:54:04 2023 -0500
+
+    Fixed 'expected _ but found return' error in LocalDecAssign
+
+commit 614294cd08ea3173fb5b057581d9cebb72cbe0ec
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 16:47:23 2023 -0500
+
+    print parse errors to file cli
+
+commit 282e3e72d4719509c837264db54ecc239485caea
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 15:35:00 2023 -0500
+
+    implemented fix for printing parsing errors to file
+
+commit 7b90f002ee2b6a0d6343be7a6922507ccc5c5e54
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 15:01:28 2023 -0500
+
+    fix pretty printing w types
+
+commit d28eeec2031b0b226bf1a7a07df7cc5197a09dc8
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Mar 3 14:13:42 2023 -0500
+
+    Fixed multiassign bug. Now, #LHS objects must equal # RHS values in local multi-assigns
+
+commit 73651a0be15657ab2aba7361f39438bc53b5c2f6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 14:10:04 2023 -0500
+
+    fix empty help case in cli
+
+commit 2c65eef73ab850042077fc894c48de70979b66f9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 13:45:36 2023 -0500
+
+    simplify logic
+
+commit 9ed7b1a0c10581c131a7d5f3b1d60a0d04b71f94
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Fri Mar 3 05:38:07 2023 -0500
+
+    fix logic in cli to match ed post
+
+commit 0d87e1ab4913c6193c8804748c799fd943445580
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 22:24:04 2023 -0500
+
+    Can now do things like '_, a:int = f()' where f returns 2 ints. However, '_, a:int, b:int = f()' also works for some reason
+
+commit 48e600ff672edbb126330e424119e4c065c0ebf0
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 22:18:19 2023 -0500
+
+    Found bug in localMultiAssign - functionCall was returning a ReturnType object but we were looking for a FuncType.
+
+commit 3f8e4310f7d61e0c8990ce06fd589be1bceab97b
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 19:26:10 2023 -0500
+
+    Temporary solution to local declaration bug
+
+commit e7920604409f64ecb561d36a88b63ec5e8dba19c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 19:04:23 2023 -0500
+
+    fjdskdnsafdsakjn
+
+commit 5e264a8c8b18a69608b0a05ccf0b39ad5504eb02
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 18:23:20 2023 -0500
+
+    Fixing _ = 3 situation
+
+commit ab374da1fb1689fd5ad29cb4c7011c23d8bc2f10
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 2 15:38:31 2023 -0500
+
+    removed AST error class and handled it within parser
+
+commit dce3393d506364ecbb5b04ea4b6e80ed7957dea5
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 2 15:01:51 2023 -0500
+
+    switched data structure to an arraydeque which behaves the same as a stack but w order
+
+commit 56ca5795612f19bb4ba9b3a016fff6e1c8b4fc8b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 2 14:23:34 2023 -0500
+
+    can parse eti files and eta files together
+
+commit 7746c8920c3a5f66915c52fe0fbf27a642dc2e7d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 2 13:44:00 2023 -0500
+
+    write typecheck output to typed file
+
+commit b30b1f9bc929187396bbcde5c2c2d8f5d1c85a54
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 2 13:25:55 2023 -0500
+
+    prevent duplicate names in same scope
+
+commit a1eaaccd7d63bedf7a534a609307c779433d13a5
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 10:53:25 2023 -0500
+
+    Can now use boolean expressions such as x == 5 or x < y, etc
+
+commit da4105be5ba82ca4e8fa91bc46e6300f5031c7ea
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 10:33:55 2023 -0500
+
+    Fixed 'a, b, c:int = 1,2,3' for time being by adding globalMultiDeclarationContent production. Found issue with more-local names not overriding more-global names as expected. Providing details in Jira.
+
+commit f09f6da826da8749d50bf57d7d7b51b037351b94
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 2 05:42:14 2023 -0500
+
+    got if else statements working
+
+commit d7e605310c029ecebee87ded7493b073fc3b2095
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 2 05:24:26 2023 -0500
+
+    char literal array
+
+commit 349fcdd86859d168fffb108a3589cc1bc7f31e11
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 2 05:17:24 2023 -0500
+
+    import statement
+
+commit 01c6e32738a37af314b90a8879f5027873232717
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 05:15:54 2023 -0500
+
+    idassign update
+
+commit 5f0db39110c393392c21b3faf37698cca9b83914
+Merge: 528bc20 02c4077
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 05:10:36 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 528bc209a11604a6ea643daaac227c79508ab10f
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 05:10:27 2023 -0500
+
+    IDAssign typeCheck implementation
+
+commit 02c4077121351dd6157e0eaf724e79dd243826a6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 2 05:08:26 2023 -0500
+
+    tested and fixed some method errors in typechecking
+
+commit f66a4f330fafa84e7b8d858a18256f1ee3a5f81c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Mar 2 04:13:48 2023 -0500
+
+    fix build errors
+
+commit dd24617bffcfc3729e7a58f67a2c2c3eace29666
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 03:47:07 2023 -0500
+
+    if ifelse while typeCheck implementations
+
+commit a774d90e3a5b27b89f10f737697aa9cd7a0c9397
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 02:48:58 2023 -0500
+
+    if-else type checking logic
+
+commit 57b032321ef6de6803c29bc629a7ac5938f21f3c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 02:12:01 2023 -0500
+
+    fjlkdsjsdaf;lkasj
+
+commit 047e3b689cfe874e7e50a8fc760603dc30d09fc8
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Mar 2 01:01:40 2023 -0500
+
+    Working on typeChecks + so much more
+
+commit 1213f90bbbd14f10889a05cfecfb6aefa9c06b42
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 1 22:24:35 2023 -0500
+
+    fix bugs in typecheck
+
+commit 121bfe702dd748b0f9753107fabf782c451f6f6a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 1 22:18:00 2023 -0500
+
+    fixed build + added test for line and column error messages
+
+commit d987aec8ff93c727f9221c8dca1944701b1658f2
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 1 21:42:47 2023 -0500
+
+    Added position to AST node classes for type check error positions
+
+commit f82750161ab03f1497133400b73e75b41d894c92
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Wed Mar 1 19:42:49 2023 -0500
+
+    Implement initial local dec/assign node typecheck
+
+commit 25857642f9171f601973a7552b0909e659146b04
+Author: Claire Weis <claireweis@dhcp-vl2041-14792.eduroam.cornell.edu>
+Date:   Wed Mar 1 19:15:22 2023 -0500
+
+    updated arraytype
+
+commit 394eb4bf3d2b24450f838ad80265b4c8c4ec5e40
+Author: Claire Weis <claireweis@dhcp-vl2041-14792.eduroam.cornell.edu>
+Date:   Wed Mar 1 19:14:04 2023 -0500
+
+    changing ArrayType constructor
+
+commit 7a67702256701d4bc167803b9e031c8b3cf04a57
+Author: Claire Weis <claireweis@dhcp-vl2041-14792.eduroam.cornell.edu>
+Date:   Wed Mar 1 19:09:57 2023 -0500
+
+    updated stringliteral
+
+commit 4122baa6d25173172eaf74df5b91ecda04270de3
+Merge: 0e3a6ec d4fd391
+Author: Claire Weis <claireweis@dhcp-vl2041-14792.eduroam.cornell.edu>
+Date:   Wed Mar 1 19:08:11 2023 -0500
+
+    updated BinopExpression
+
+commit 0e3a6ec8da06d527d84ffafeb7c795091261c18c
+Author: Claire Weis <claireweis@dhcp-vl2041-14792.eduroam.cornell.edu>
+Date:   Wed Mar 1 19:04:49 2023 -0500
+
+    fixed boolean array case
+
+commit d4fd391e1a272f3073987f6d558a13f258b0cf86
+Merge: fe67984 fb0197a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 1 18:47:52 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit fe679849bb4b799b8a4dc7ac5c2a17fb04e12fa0
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 1 18:47:49 2023 -0500
+
+    added dummy exception throw
+
+commit fb0197acf2f3ecaf51d3173222f2a5ee7ecf09c5
+Merge: 011430a 97ba12e
+Author: Claire Weis <claireweis@dhcp-vl2041-14792.eduroam.cornell.edu>
+Date:   Wed Mar 1 18:42:50 2023 -0500
+
+    type checking
+
+commit 011430a63581478420041305ff4e9982123bc065
+Author: Claire Weis <claireweis@dhcp-vl2041-14792.eduroam.cornell.edu>
+Date:   Wed Mar 1 18:23:29 2023 -0500
+
+    type checking
+
+commit 97ba12ea99efcc381ec14f6ad3a92681d3738789
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 1 18:13:07 2023 -0500
+
+    changed all 'return null' in typeCheck methods to 'return Optional.empty()
+
+commit 5782463c572659392a4579fce536c6ba60ee4cdd
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 1 18:02:48 2023 -0500
+
+    changed all 'return null' in typeCheck methods to 'return Optional.empty()
+
+commit eb9bb089dcd6f35b485215fe1a6e0b1cdc2ad43d
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 1 17:08:40 2023 -0500
+
+    changed all 'return null' in typeCheck methods to 'return Optional.empty()
+
+commit 440d914ebcc7625ae3b587c5810f16c1862d7929
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 1 16:10:17 2023 -0500
+
+    typecheck builds
+
+commit 7c75fc8116422e460f09f8bbaa40228257a7524f
+Merge: 4968f6f 61b4ebd
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 1 14:12:28 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 4968f6fc04e5ffd8414efada500dfd82f701b713
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 1 14:12:25 2023 -0500
+
+    added logic to cli for .eti stuff
+
+commit 61b4ebd1cb4c51956ab8d93153440501aa3fa5fc
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 1 14:09:06 2023 -0500
+
+    Caught minor bugs in GlobalDec, GlobalDecAssign, While
+
+commit 59f5627dae2cbdd3f39d4f97b5ae645d375cd6b9
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Mar 1 14:00:17 2023 -0500
+
+    Implemented typeCheck for ProcedureCall
+
+commit eb39d972392c37fe2aeb6efaa3b320eba7876af2
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 1 13:45:44 2023 -0500
+
+    implemented use and recognizing .eti from .eta
+
+commit bf8ac89373186f072f0122b899b8508132403914
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Mar 1 02:26:05 2023 -0500
+
+    implemented start of eti and eta connection but not finished
+
+commit eb7fb2a9297a0e8d2ac37620619d004f8fcda735
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 28 23:09:14 2023 -0500
+
+    ProcedureCall.typeCheck(c) - need to compare argTypes to types of function type list in context
+
+commit 7bf64f8b9d8f23cb892da1bd0450ae06759ece24
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 28 22:57:27 2023 -0500
+
+    Implementing typeCheck on While
+        Assert type of expression is bool
+        push new scope onto Stack
+        call body.typeCheck(c)
+        pop scope
+
+commit fde120099e903898e17f177cd444b463ea8ea0bb
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 28 22:49:56 2023 -0500
+
+    Implementing typeCheck on IdAssign
+        Retrieve type for id (throw error if type not found)
+        Retrieve type of expression (throw error if type not found)
+        Assert id.getType() == expr.getType() (throw error if false)
+
+commit 1d80f2e4789ee68ee976f4cd5a35be00c5571298
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 28 22:39:47 2023 -0500
+
+    Implementing typeCheck on Return
+        added new constructor to ReturnType that takes in ArrayList
+        This way, we can create an arrayList of types in Return.typeCheck()
+        and pass use that to construct a new ReturnType object
+    
+        In Return.typeCheck(), call typeCheck on each expression in expression list
+        if null, throw error
+        Otherwise, add expression's type to ReturnTypeList
+        Wrapped in and returned a ReturnType object
+    
+        ? Do we need to add a getter to ReturnType? To get each of it's ArrayList members?
+
+commit 5c1f120e507f1399e02909ff69fb62012ae2e6b9
+Merge: d085189 f96bbb5
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 22:18:58 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit d0851893ec60cc9b2a0d01b1c3004ed429970afb
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 22:18:52 2023 -0500
+
+    move helper out of loop in cli
+
+commit f96bbb529c5300573a2295615ba6a7482e0b7bb7
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 28 22:17:45 2023 -0500
+
+    Implementing typeCheck for GlobalDeclaration
+        added line ' c.put(parameter.id, parameter.type);' to typeCheck() for GlobalDeclaration
+    Implementing typeCheck for GlobalDeclareAssign
+        Called typeCheck on literal
+        Asserted literal's type == parameter.type
+        stored parameter.id and parameter.type in symbol table
+    Implementing typeCheck for IntegerLiteral
+        added line 'return Optional.of(new IntType());'
+
+commit b5cdb26c2c771218026cc1a22f8b2ad00822af68
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 21:10:38 2023 -0500
+
+    implemented if/else typecheck
+
+commit 5f7514451a4f161d8b1e3e1f5a946b153ad23054
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 20:55:37 2023 -0500
+
+    implemented use typecheck
+
+commit bd8e20cd24e3fd1ebe4a21f1d9f9e0e2171e3913
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 20:45:19 2023 -0500
+
+    implemented typecheck method in Array
+
+commit 184195a5bf296b34fd7d8cf9e98bb1f7d4e462b8
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 20:09:52 2023 -0500
+
+    implemented typecheck for all definitions
+
+commit 672ff68ef6cd1964f2dde91e85b6f3cf5f601b67
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 19:41:26 2023 -0500
+
+    implemented typecheck for methods
+
+commit 03726247c3361df483c224c7a615dbbb1ec2186d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 19:08:37 2023 -0500
+
+    changed all typecheck methods to optionals
+
+commit 9ebe8d200da355b06185d90610191c0506ba36e1
+Merge: 69d6dd0 5bc1fa0
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 28 18:52:26 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 69d6dd067b243bc9b92ff7009c1f34ff03dbc19f
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 28 18:51:56 2023 -0500
+
+    Updating GlobalDec
+        Added c.put(parameter.id, parameter.type) to typeCheck() method
+    
+        -> Updating Parameter
+            Updated id member from String to Identifier type,
+            Parameter constructors now creates new Identifier object,
+            Updated prettyPrint() to use id.getName()
+    
+                -> Updating Identifier
+                     ?   call c.get(this) in typeCheck method since context.get() takes an Identifier object?
+    
+    Change all String 'id' attributes to type Identifier
+        Looking through eta.cup to see which classes have 'id' member
+        FunctionCall passes in id.getId() (id is an EtaIdentifier token)
+            -> in FunctionCall, updated functionName member from String type to Identifier
+               in FunctionCall, updated constructors with following statement: this.functionName = new Identifier(functionName);
+               updated prettyPrint() to use functionName.getName()
+            -> in ArrayAccess, updated id member from String type to Identifier
+               in ArrayAccess, updated constructors with following statement: this.id = new Identifier(id);
+               updated prettyPrint() to use id.getName()
+            -> in ProcedureCall, updated id member from String type to Identifier
+               in ProcedureCall, updated constructors with following statement: this.id = new Identifier(id);
+               updated prettyPrint() to use id.getName()
+            -> in Method, updated id member from String type to Identifier
+               in Method, updated constructors with following statement: this.id = new Identifier(id);
+               updated prettyPrint() to use id.getName()
+            -> in Use, updated id member from String type to Identifier
+               in Use, updated constructors with following statement: this.id = new Identifier(id);
+               updated prettyPrint() to use id.getName()
+
+commit 5bc1fa079b31c66aa63c68988acefbf5f9ee679c
+Merge: e4267ca c848a6e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 18:18:25 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit e4267ca4b3f4b4fc6272249ac12ebb4e237d472b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 18:18:20 2023 -0500
+
+    implemented typecheck for program node class
+
+commit c848a6e9615b5625dda2a8b6a2bb238fbb6ac1cc
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 28 18:04:54 2023 -0500
+
+    Updating GlobalDec
+        Added c.put(parameter.id, parameter.type) to typeCheck() method
+    
+        -> Updating Parameter
+            Updated id member from String to Identifier type,
+            Parameter constructors now creates new Identifier object,
+    
+                -> Updating Identifier
+                     ?   call c.get(this) in typeCheck method since context.get() takes an Identifier object?
+
+commit cb48d9576fcafe31ad97b7761d5d655c1c99df6b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 17:11:05 2023 -0500
+
+    finalize todos for typecheck methods
+
+commit 269255b778a34a4a1d72c4899660924bf86b20f7
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 16:37:02 2023 -0500
+
+    update todos
+
+commit 7cb1d59846bf188dc3033e2ef5ede84c6584fbdb
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 14:34:23 2023 -0500
+
+    add more todos for next steps
+
+commit 335370d219bccc5600725eff2a122f45948f3240
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 13:59:38 2023 -0500
+
+    implemented type hierarchy into separate package
+
+commit 308851ac34853dbafe11b014a27ab3b2859603d0
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 12:31:05 2023 -0500
+
+    remove unused import statements
+
+commit 52d12288454f749f66e0eab91e9fc35fe97d915d
+Merge: 0cc7243 66e30cb
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 12:14:18 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 0cc72439dea3a8a7be837139bad74e7b28b16e7f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 12:14:08 2023 -0500
+
+    refactor packages
+
+commit 66e30cb65506466f493090799517066bbc9bf251
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 28 10:15:44 2023 -0500
+
+    adding comments to EtaLexer
+
+commit aab0395910b88b745d59b36358b0b9e4a4f3479b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 03:51:08 2023 -0500
+
+    added TODOs to all node classes
+
+commit 558eb479ee36bdf24de17ae7bf63b231dae654c7
+Merge: 8cb4b88 5c80c2c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 01:40:41 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/Eta-Compiler
+
+commit 8cb4b88774dcac3b368c01fa0a2bfa5d90f8bdfa
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 28 01:40:31 2023 -0500
+
+    changed node to expression for global literals
+
+commit 5c80c2c11d4bd8396f9cd8bfd46eade27663161c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 27 23:42:29 2023 -0500
+
+    Enforcing [-2^63,2^63 -1] range for Eta ints. Now any value outside of this range will roll over.
+
+commit 0f32c13b1bb1f0d4390b05873bae32dc4e5d2a1b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 27 20:27:19 2023 -0500
+
+    planned out typecheck todos for p3
+
+commit 2291d54d55cde29eb2053a7d35b916614228116c
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 27 14:21:27 2023 -0500
+
+    lexer is now passing all tests it failed in p1
+
+commit 956abda00a1a1d6ee6dfd2154a7aa1416689b946
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 27 12:29:48 2023 -0500
+
+    EtaLexer now recognizes all unicode characters including emojis (within strings AND char literals). Issue with strings had to do with clearing buffer too early.
+
+commit 0410309be234f91a959722dcb30cc111995c70f8
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Feb 26 23:44:45 2023 -0500
+
+    lexer recognizes emojis but can only print with chars so far...
+
+commit 2e844f4ef0cfc731c6092677311d0bf202e8fe27
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Feb 26 23:12:16 2023 -0500
+
+    debugging emoji problem. Printing to screen but not writing to buffer
+
+commit 06c80532141bb5b32fbed6b9dd4dc852f21dfe99
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Feb 26 14:53:44 2023 -0500
+
+    Resolved p1 lexing errors through String08.eta of pdf detailing where our lexer failed
+
+commit c95d80ba64f549f8c23ab211440c76ed059699c0
+Merge: 3209573 070586d
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Feb 26 14:51:47 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 3209573934c9472397b8a6b07f25066386e7dcc6
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Feb 26 14:50:55 2023 -0500
+
+    Resolved p1 lexing errors through String08.eta of pdf detailing where our lexer failed
+
+commit 070586d8471f6813bc15f045135871562217cd16
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Feb 26 03:44:39 2023 -0500
+
+    clean up
+
+commit 7e1af32d4e8557275fe36bcbb16dc6c80d841e77
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Feb 26 01:55:58 2023 -0500
+
+    clean up pretty print logic in multi declarations and assignments
+
+commit acc53b5dc50e55134f5cbb29c3dac679f65e91fe
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 25 23:03:37 2023 -0500
+
+    implemented cli logic for p3
+
+commit 8e0ce1fea7e6e247e8656e57009b38dc689b5498
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 25 16:52:33 2023 -0500
+
+    pushed everything in package changes
+
+commit dd4955695cbab45cb06a4b7f559913d548c4bce6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 25 16:49:15 2023 -0500
+
+    package name change in build file
+
+commit 2b558d1223d472c8cde3728a3ba876d25ffd4465
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 25 16:44:47 2023 -0500
+
+    indentation issue
+
+commit f1c52b7d724732dffb28df2785c7af66c8a28007
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 25 16:41:34 2023 -0500
+
+    added token package
+
+commit ba6029e4cceb685f0c5127fbc0193de1249ea3ab
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 25 15:57:31 2023 -0500
+
+    print error messages to parsed file
+
+commit eed378af112de3b97996bae080ba5e6b6cdc64d1
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 25 14:18:39 2023 -0500
+
+    fixed all parsing issues except for error printing to parsed file
+
+commit d59babda17c8e9d4aca363d8cb6aca712093963d
+Merge: 65923ae ceef57d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 25 12:28:42 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 65923aefca0ef8bac0619bb9d9358ff132fb010d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 25 12:28:35 2023 -0500
+
+    fixed order error in parser
+
+commit ceef57db0751ee06e057f570edf25e0d923abf5e
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Feb 25 02:34:45 2023 -0500
+
+    Fixing lexer bugs
+
+commit 14c6880323488fab9beb1320af529448fd503c66
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Feb 25 02:02:21 2023 -0500
+
+    Fixing lexer bugs
+
+commit f99831eb231301ec7c121e6332b47edc7a90d2fe
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Feb 24 20:08:40 2023 -0500
+
+    updating character and string literal error logic in lexer
+
+commit 1ce5248667f97b6405dce3dbdd086fb11649f8b2
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Feb 24 18:56:50 2023 -0500
+
+    Fixing lexer bugs
+
+commit 7f308494d14be20e8c47d053e9457a270e5bfeea
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Feb 24 03:27:02 2023 -0500
+
+    Cleaning up gradle
+
+commit 63b2b78dd0f8444399a48d62b106526f5e2e46d1
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Feb 24 02:30:24 2023 -0500
+
+    Updated build.gradle
+
+commit f6ebbcf774715ee3d0ef10b006c563fc69339dff
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Feb 24 00:51:09 2023 -0500
+
+    adding lexing error messages for character literals
+
+commit 39c437c23e0ac7d5a0618a83af7fd687dd7b68cd
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Feb 23 23:54:56 2023 -0500
+
+    Updated packages, build.gradle, etac-build, and etac
+
+commit 7dda83e9831b01cf28b191316091e41cdf93c093
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Feb 23 17:28:31 2023 -0500
+
+    removed list classes
+
+commit c07995dec6b5198c8a6f16942b91757be1471a14
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Feb 23 16:30:32 2023 -0500
+
+    formatted eta.cup and added some javadoc
+
+commit 12b023ed3db41696e72379db2550f1681a9bd210
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Feb 23 14:56:25 2023 -0500
+
+    alter package names
+
+commit a3d27f026281708eb1a3c6c4d5858610c26dc1ca
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Feb 23 00:13:46 2023 -0500
+
+    This commit is what we submitted for P2. Passing about half the test cases. Errors appear to be due to printing formatting issues. Also need to throw lexing error when an empty character literal is supplied.
+
+commit ec57a43e8101b4e04756ecf620b508e5ee13b1f1
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 23:15:54 2023 -0500
+
+    test harness updates
+
+commit b9a3914e012aa6a2a8410aaefafed0a1a723f0c2
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 23:05:56 2023 -0500
+
+    test harness updates
+
+commit 293902d4e9a4b6bfc4adce2b8192c9d918285f10
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 22:54:46 2023 -0500
+
+    test harness updates
+
+commit 771a364ea5fa788a1db50cadca6dd005da74918f
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 22:01:43 2023 -0500
+
+    Updates based on test harness
+
+commit 0f941cadb3155c04993d916321352ea9e763a082
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 16:49:45 2023 -0500
+
+    Removing debugging print statements
+
+commit 26916e301d58c26c16f47beb435e5d3a23ea5120
+Merge: 045fc1e 06fe98f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Feb 22 16:46:08 2023 -0500
+
+    fix merge conflicts
+
+commit 045fc1e2f6ea13888d99ea287352467f8e0a2d2f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Feb 22 16:44:37 2023 -0500
+
+    fix unary minus
+
+commit 06fe98f62dc0d0e52e333636480059f6cf146d9a
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 16:39:43 2023 -0500
+
+    EtaLexer cleanup
+
+commit ec979ce66bbb0d5626037ac213909b38a2eabdeb
+Merge: 77aefe5 9f675a1
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 16:37:23 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 77aefe581cac20821f450a1db67bb1e69ded3ede
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 16:37:12 2023 -0500
+
+    Fixed bug in lexer. Wasn't leaving CHARACTER state. Can now parse hex
+
+commit 9f675a1f0d8a903cf10400cd42d3486dc422aed9
+Merge: b91e4dc 670662c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Feb 22 16:23:15 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit b91e4dc67dd6b97de0c4e1b206eb1f0486bc8690
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Feb 22 16:23:04 2023 -0500
+
+    fixed bug in cli
+
+commit 670662c245fc69d045a6b384d6bab98a01d114ad
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 16:09:49 2023 -0500
+
+    Removed debugging print statements from EtaLexer AND
+    our grammar supports print(hello + 1) which is pretty cool
+
+commit a2cd86551523bb1081cdec86e0dec15b9464ee20
+Merge: 4f591cc 71fdb50
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 15:59:13 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 4f591cc124e8f238a9632c41f4863645ce235a20
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 15:58:43 2023 -0500
+
+    Took a look through classes in AST package. Cleaned up a bit. Things are looking goooood
+
+commit 71fdb506858d3c36677c3a83170928358041388c
+Merge: 52fce19 eb2a167
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Feb 22 15:41:56 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 52fce1929cabaf38844a92bce651f69ec4775cb8
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Feb 22 15:41:45 2023 -0500
+
+    fixed options on cli
+
+commit eb2a167045ad7f83c21ebf87e2c02653f35aa729
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 15:29:23 2023 -0500
+
+    Cleaned up Eta classes and EtaLexer
+
+commit 3fccf4cb5cdf163f71e24b9fca04707da254fbdd
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 14:13:26 2023 -0500
+
+    nothing important
+
+commit 2eff458edcb1bab2d47fbcea730473a069c2fd93
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 14:11:22 2023 -0500
+
+    nothing important
+
+commit 7e326201c96dc3cc035e73c63bd9acac5754d886
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 13:10:32 2023 -0500
+
+    Added safeguard (line 57) to avoid writing a null object
+
+commit 6828427f978ca7dfb3348d0ffd3b03577daad6af
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 06:05:28 2023 -0500
+
+    error handling at 6 am - thanks Zack
+
+commit 7856e5c85a75f01d0a43100b01ff876e52862218
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 05:54:39 2023 -0500
+
+    error handling at 5 am
+
+commit d1050ea57f851f73e3249eb0a2f1c7cc4fe20c67
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 02:10:37 2023 -0500
+
+    Grammar now recognizes character literals and string literals
+
+commit 2b6c927f22b812c635d3016dee3dc1ce9d077c4d
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 01:54:36 2023 -0500
+
+    Cleaned up Program.java
+
+commit a60cbb05b3c67515321c22de30734cb460d85c33
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 01:52:28 2023 -0500
+
+    resolved conflicts (sorry zack)
+
+commit dcc563b0fca78ac978c3041fe8079592194251cd
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 01:33:48 2023 -0500
+
+    created charliteral + stringLiteral classes
+
+commit df2b73bdbe0675e055a2b76db0953710629fb0d1
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Feb 22 00:44:33 2023 -0500
+
+    idk
+
+commit 9af85c949f99fe0b93fcc9f1302e95858481d709
+Merge: 4953c7a 9b099b7
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Feb 22 00:04:49 2023 -0500
+
+    sync
+
+commit 9b099b7f1014c4ec1398d35901d7d0af230f59e6
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 22 00:03:55 2023 -0500
+
+    Lexer is now able to print to .lexed files because getLexedString was added to all Eta classes. We're now able to run
+    the parser with pretty printing (again) after updating Program.java constructor, types for methodInterfaceList, definitionList.
+
+commit 4953c7a719a1c4193e7b8a4080333275d0c0fbf9
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 21:22:21 2023 -0500
+
+    stashing changes
+
+commit 1b2b8356397c603488d7c9789a304c5836adca58
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 21 20:51:46 2023 -0500
+
+    Fixed bug in cli.java (in do-while loop). Lexer now writes to .lexed file for each token
+
+commit 86ec9818e98f7fa40b996ff28adb3ea11cc0b0af
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 21 19:33:47 2023 -0500
+
+    Resolving merge conflicts / working on lexer v2 (details to follow)
+
+commit 199b96c3b85e33e58b1064ff75ab907abf0263f7
+Merge: 70e4857 9164288
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 17:48:52 2023 -0500
+
+    merge conflicts
+
+commit 70e4857adbb1cd2ac6ca746f9500aafc6a6247db
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 17:48:14 2023 -0500
+
+    fixed function call no args error
+
+commit 9164288711a452f9a12e2a5108c8263df7a35522
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Feb 21 17:25:01 2023 -0500
+
+    Add toString() for every EtaToken class
+    - Enables error message printing for every possible type of token the
+    parser could see
+
+commit e968dc3acf9dd60b125d1507070efe0657f471c1
+Merge: 5223bd9 6eb1d4c
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Feb 21 17:14:11 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2 into main
+
+commit 5223bd9155b27f614589d07e092aad8d38c1bdec
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Feb 21 17:11:05 2023 -0500
+
+    Implement error messages
+    - Customized two CUP methods: syntax_error and unrecovered_syntax_error
+    - Now returns the location of the symbol that errors during
+    parsing
+    - However, still need to implement toString() for all EtaToken classes
+    - Also removed stuff in the catch{} inside of cli.java since it isn't
+    needed.
+
+commit 6eb1d4cc2872181597ba5b46f6e1def9b8965dfe
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 16:46:54 2023 -0500
+
+    id assign array identifier pretty print fix
+
+commit 2f9fdc5c621b504dcce8ff818af74c43b7601ca6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 16:37:13 2023 -0500
+
+    added identifiers to local multi assign pretty print
+
+commit 41a66b5b3d28f2cc97564ec2f5a795869879a8de
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 16:12:06 2023 -0500
+
+    each statement wrapped in parenthesis
+
+commit 9adf7946f8a08221beba95903641298a4553fa34
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 15:17:47 2023 -0500
+
+    pretty printing correctly for everything not in a block
+
+commit 6558a4e7c397c1b71b94e095393c63fbaefdbcb4
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 15:01:22 2023 -0500
+
+    array type pretty print fix
+
+commit 88db5db86bb100fe98637a530776ec37222cd5af
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 14:09:00 2023 -0500
+
+    semicolon
+
+commit 556694777f00940e99b408248c2ff66e143e480e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 14:07:03 2023 -0500
+
+    pretty print for global multi declare and assign
+
+commit 5e7ac83ecd4923a6e462a88bbfb61e2c688cf977
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 13:12:09 2023 -0500
+
+    dec assign pretty print
+
+commit 4bdd9f8579b6682ce0346e4071d7f3bacc33afcc
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 12:35:39 2023 -0500
+
+    can have array access as identifiers
+
+commit 99af6e9434a2db0254fd7692f337e932687e8e8c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 04:07:02 2023 -0500
+
+    fixed operator strings
+
+commit f56fbc1cb7a27d1fb8bdfde8f30281d5a51a3495
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 03:45:28 2023 -0500
+
+    fix pretty printing for binop / unop expressions
+
+commit 35996d8c2003ed8b9c4c6328ed8d796ba8135367
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 03:38:12 2023 -0500
+
+    fix pretty printing for methods
+
+commit 6b1d2ed013a32b5386a1876bab8c0f9460099e26
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 03:15:49 2023 -0500
+
+    fix pretty printing for local declarations and assigns
+
+commit a6e8f4044a65b93671594eff9b2ff3e99ef14e83
+Merge: d056dbf 93ac7f8
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 01:21:28 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit 93ac7f8e1a0035197ce98e7373945fb424263c31
+Merge: c2d1dc9 5793c00
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Feb 21 01:20:54 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2 into main
+
+commit 5793c00f352b787dd0ece924d05ff4793e27e199
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 21 01:20:27 2023 -0500
+
+    added logic to distinguish .eta and .eti files
+
+commit c2d1dc93186b2586a8f425a05fdb34afe09e23b5
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Feb 21 01:20:14 2023 -0500
+
+    Fix return prettyPrint
+    - Block was printing a return regardless of if a block was passed into
+    constructor
+
+commit cf2975081c3fceef57c281038df0fedd5094a7cc
+Merge: 00f05b0 8a4fbd0
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 21 01:18:54 2023 -0500
+
+    xXMerge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit d056dbffa61dbdab03c22a2eac6f3a4e22e4a31c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 01:18:33 2023 -0500
+
+    did same for input dir
+
+commit 00f05b0f96e3df1fddcddb7e1e2fdd278b59d0b7
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 21 01:17:33 2023 -0500
+
+    added logic to distinguish .eta and .eti files
+
+commit ef0be46438456f1d0081bff7e5cc1d6a477652b6
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 21 01:17:11 2023 -0500
+
+    added logic to distinguish .eta and .eti files
+
+commit 6d9d19a8b6e2e5c9c8c68baf5f111996c0d04943
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 01:10:15 2023 -0500
+
+    sourcepath doesnt have to provide slash anymore
+
+commit 8a4fbd0c511da4d8676a743eff29a22849d51e3b
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Feb 21 01:04:29 2023 -0500
+
+    Fix more printing
+    - If/else
+    - Trying to get "return" to only print when it should
+
+commit b26306e71b82656afb475fb071de06b10a4824f0
+Merge: 1e0a1b6 ddc6117
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Feb 21 00:46:39 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2 into main
+
+commit 1e0a1b6f0caa2fd8d82c4f32b03e8aac9a2892ae
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Feb 21 00:46:10 2023 -0500
+
+    Fix some prettyPrint functions
+    - see changed files
+
+commit ddc6117bf84ee047d4b14d3cc3016050468d0024
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 21 00:34:57 2023 -0500
+
+    officially called EtaLexer.flex
+
+commit 98efabe188bafc2fa135b549ea0fc5a3ace9e04a
+Author: jdr299 <jdr299@cornell.edu>
+Date:   Tue Feb 21 00:33:24 2023 -0500
+
+    Rename etaLexer.flex to EtaLexer.flex
+
+commit d38230c3260d12de0333ebed56a6d244d2faea1e
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 21 00:32:08 2023 -0500
+
+    EtaLexer
+
+commit 083249a6cd9c47708fb2156884d30d27103c15a3
+Author: jdr299 <jdr299@cornell.edu>
+Date:   Tue Feb 21 00:29:08 2023 -0500
+
+    Delete etaLexer.flex
+
+commit a957f03de38390982ac75a73d454890770493cc0
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 21 00:20:01 2023 -0500
+
+    need to change name from etaLexer to EtaLexer
+
+commit 74898d90f7afc029951ef090afdb3ddfc536e548
+Merge: a5189c8 bb7fedd
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 00:13:49 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit a5189c8a5e2f5ca79369fea51a887735ee645d0a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 21 00:13:38 2023 -0500
+
+    fix pretty print issues
+
+commit bb7fedd9ff209ca2b8cad0d4e940e879e89a9d54
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 21 00:11:11 2023 -0500
+
+    adding syntax error safeguards to eta.cup
+
+commit a5dcdbdd92bedf6ea81b866b506a66b5ca3818e3
+Merge: 34e573d cb4bc20
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Tue Feb 21 00:03:57 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2 into main
+
+commit cb4bc20229b1ba935821360071dd9df185224cb3
+Merge: 1c8b675 0e135a6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 20 23:59:00 2023 -0500
+
+    fix merge conflict in Program.java
+
+commit 1c8b6755b6a4d92e4c1c84d6dc5ea18e67fc1dc5
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 20 23:57:32 2023 -0500
+
+    did pretty printing for bottom half of classes
+
+commit 34e573da7aef58d2662f5d4f94d89d11b0859b1c
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon Feb 20 23:57:04 2023 -0500
+
+    Implement pretty print for Node classes
+    - From Array-->Ifelse.java (alphabetically)
+    - Should work recursively
+
+commit 0e135a61bc407f8d4ea5847af97d22cad6b27a52
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 20 23:41:33 2023 -0500
+
+    Added method interface productions to grammar. Should only need one grammar now.
+
+commit f7d927c7c240d9e174ed68fee4651b5225e84836
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 20 23:39:51 2023 -0500
+
+    Added method interface productions to grammar. Should only need one grammar now.
+
+commit 22d9a077a57d2e8143d32d03ba6815c968c5e501
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 20 22:58:40 2023 -0500
+
+    got pretty printing working for use definitions
+
+commit 76270efca084800573d3040dc556ea21ac913e47
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 20 21:55:11 2023 -0500
+
+    remove bad grammar
+
+commit c85765c5332b0e9ff51f0f3118f6c437eaa5009d
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 20 16:39:52 2023 -0500
+
+    adding eti logic
+
+commit 5e996019e128012115770a73d8d5e41887d59f63
+Merge: 626e8c0 f87eadf
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 20 15:58:03 2023 -0500
+
+    fix merge conflict in cup file
+
+commit 626e8c0856712c2610053705de895313e8b0dc1a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 20 15:51:11 2023 -0500
+
+    finished cli parsing
+
+commit f87eadf6ee44e527b464b8a1e047b2cb8cd07310
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Mon Feb 20 15:42:10 2023 -0500
+
+    Test with pretty printer functions in eta.cup
+    - Added printAtom for every case of identifier
+    - Replaced startList() with startUnifiedList() to support line breaks
+            - this might be useful for formatting
+    - Added printer.flush() after every endList(), which just seems to print
+    every element on a new line.
+    - Still can't figure out how to do printing "recursively" Like, how to
+    get useList and definitionList to print INSIDE of the list printed by
+    program
+            - this seems to be because the "action" code is only run once
+            the non terminals are fully parsed
+            - there must be some trick or other thing I'm not thinking of.
+
+commit 26a18d43807010c40cc279b943bb9a80477cf005
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 20 01:26:42 2023 -0500
+
+    Cleaned up formatting in eta.cup a bit
+
+commit 18e0ef65eeecc6331152e60ec6e9b9d47a0cd11b
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 20 00:21:30 2023 -0500
+
+    Made _ count as an identifier for parsing purposes
+
+commit 15ee600405c92cfe547d3f6693455e090c1417f2
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 20 00:16:52 2023 -0500
+
+    Got the ball rolling with printing. Trying to implement eti grammar.
+
+commit 0a75bff068190083ddf2e2502ce5ab81f7f8c4e6
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Feb 19 21:42:18 2023 -0500
+
+    Filled java code for all productions besides array and function call -
+    Updated classes in AST package so constructors take in proper values (don't ask me which ones)
+
+commit d29deeb3e5d13d27fa6f78086728ca72f34577bf
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Feb 19 18:20:19 2023 -0500
+
+    got global declarations working
+
+commit 616f11281695b740f5bf0f8a25a0946f77531521
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Feb 19 17:39:16 2023 -0500
+
+    fix error in method parsing
+
+commit 1914f1efe05a1968c105b16456906f884d3aebb7
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Feb 19 17:20:50 2023 -0500
+
+    parses methods correctly
+
+commit 3e3ea023f47a1f3eabfb2cc79bcaa2fb8cc30250
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Feb 19 15:17:42 2023 -0500
+
+    semicolon
+
+commit 35484b5835c399ae725191a13b9387b6c0ffc36a
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Feb 19 11:59:05 2023 -0500
+
+    changed name of constructor/class/call in EtaLexer.flex from 'EtaSemicolon' to 'EtaSemiColon' (was getting error).
+    Also changed name of jflex file from etaLexer.flex to EtaLexer.flex to be consistent.
+
+commit 21c10abd99294e8a0f2bcea00e91d1cc8724e618
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sat Feb 18 23:14:11 2023 -0500
+
+    Update EtaToken files and etaLexer.flex
+    - All token files now extend EtaToken and call super(line, col)
+    - EtaIntLiteral and EtaIdentifier also have an attribute that contains
+    the token's content in a String
+    - etaLexer.flex now returns Symbol objects with the arguments
+    (sym.SYMBOL_NAME, ew EtaSymbolName(lineNumber(), column())
+    - need to update some of the Lexer cases (eg: CHARACTER, STRINGLIT) to integrate
+    with this new (correct) format as well
+
+commit 88596f3de2d85b4888ac5a4fac30807c623248d3
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Feb 18 21:34:57 2023 -0500
+
+    Working on building AST with grammar
+
+commit 025fcdcf8a8775a854fd648f69effbbb163c179c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 18 19:45:11 2023 -0500
+
+    got parser working!
+
+commit 4235a683ac156e533335f9ca0265814b626b406f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 18 18:47:16 2023 -0500
+
+    sync changes
+
+commit bec67ef21355b5f21870ef33a8bbc732ad5c652d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 18 18:35:39 2023 -0500
+
+    sync changes
+
+commit 4b51b20174204b9b93db311b28b8c83403dff590
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sat Feb 18 17:20:59 2023 -0500
+
+    parser recognizes use commands
+
+commit 67d6c74454be2f7987896c91b3387332a9a94917
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Feb 17 17:44:53 2023 -0500
+
+    down to 1 error
+
+commit 6cad693f17cab39424b9cfb0c1c21b8403c690ce
+Author: jdr299 <jdr299@cornell.edu>
+Date:   Fri Feb 17 10:53:15 2023 -0500
+
+    Delete etaLexer$Token.class
+
+commit 5d66ed1355c2826a93f8439ad459723e64804577
+Author: jdr299 <jdr299@cornell.edu>
+Date:   Fri Feb 17 10:52:55 2023 -0500
+
+    Delete etaLexer$LexFileWriter.class
+
+commit 3290324b3539ea80646430bff124b0cc62245975
+Author: jdr299 <jdr299@cornell.edu>
+Date:   Fri Feb 17 10:52:45 2023 -0500
+
+    Delete etaLexer$EtaInt.class
+
+commit 92dda7971944138d93dac7d690fa352132dfa3fb
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Feb 17 05:58:46 2023 -0500
+
+    Re-worked grammar + implemented new class hierarchy
+
+commit aa1d00e54de5cd20bce1f4de2509d6bf0466f8cd
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Feb 17 03:22:10 2023 -0500
+
+    Added AST classes git add src/main/java/jdr299zdh5cew256ans96/AST/*! :)
+
+commit 09055795dc8bb7fdd48ea3e0eb72e32957c76fd5
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Fri Feb 17 02:13:45 2023 -0500
+
+    adding updated grammar and AST folder
+
+commit 67f1af29c9423bc2dca064b3f02a78add0154912
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Feb 16 17:43:00 2023 -0500
+
+    grammar update
+
+commit 305c5d7113e83dbf3414fa1867b155571770377a
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Feb 16 15:06:08 2023 -0500
+
+    added multiassignment to grammar
+
+commit b653de7bee219842b855e1a65a6f26d20e115ba6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Feb 16 13:48:39 2023 -0500
+
+    allow idenitifiers in array brackets
+
+commit 852d69cca716f90743ec2f54e6c20ca668437530
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Feb 16 11:22:47 2023 -0500
+
+    Cleaning up comments a bit
+
+commit 7653ea9251843974b162afb004ef26c71ac7395a
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Feb 16 11:14:43 2023 -0500
+
+    Tabs can be frustrating >:(
+
+commit b42aea6928b23664f32885411368e8d23f1872b1
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Thu Feb 16 10:58:31 2023 -0500
+
+    Added comments detailing proposed changes to arrayType production
+
+commit 3aba79c152da2ccaff18a19b3362e2aabcdf23b8
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Feb 16 03:18:58 2023 -0500
+
+    fix grammar
+
+commit 0ea3393294b5d15060eb0485c00ef230e23b9b34
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Feb 16 02:59:18 2023 -0500
+
+    grammar no longer ambiguous
+
+commit 8092c0e0a278e1466c9b2f91b52b9725ef048d44
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Thu Feb 16 00:03:59 2023 -0500
+
+    fixed some grammar ambiguities
+
+commit f330c294cb2df453cacb4b53d56413be12b591d8
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Feb 15 20:29:44 2023 -0500
+
+    grammar except arrays
+
+commit 46f7b3a57fe60acb03d6a58cbac9eb4376d90abc
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Feb 15 20:13:28 2023 -0500
+
+    implemented if else
+
+commit 08a1ddc09da2c7b57fa6bf58079a58ce432ed5f2
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Wed Feb 15 19:58:36 2023 -0500
+
+    fixed grammar in statements and expressions
+
+commit 27f4d3efd8271c90b21a6f215b82cf062f557909
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 15 18:35:28 2023 -0500
+
+    updated etac-build and grammar is working! Kind of
+
+commit f2f4a563a46c714a572a975a34aa9be7563179fd
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Wed Feb 15 02:53:39 2023 -0500
+
+    the grammar is alive
+
+commit 414fe014ff65b5c246839f2f6543e333d263aa1e
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 14 13:30:18 2023 -0500
+
+    added start of pretty printing logic
+
+commit 6fc995d536969523b776793dc032f55ac9b2879b
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 14 11:57:48 2023 -0500
+
+    etac-build putting things in the right place now v2
+
+commit 5d86e93d1cb56ee505b36770933759ced47a5767
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 14 11:55:13 2023 -0500
+
+    etac-build putting things in the right place now
+
+commit d0b3a9f9e01463f2806b413d73bcaa7b9cfd8a48
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Tue Feb 14 08:29:56 2023 -0500
+
+    First working grammar! ...Now we just have to make a real one lol
+
+commit 0c26e697fe35a7accd32e67992af61f2778c83e6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Tue Feb 14 01:50:14 2023 -0500
+
+    tried to integrate cup w jflex
+
+commit 13a828bccc3a08cfd78b0c766ece980e7d32fadc
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 13 19:03:15 2023 -0500
+
+    finished lex file for creating token objects
+
+commit 41aabea01a0835e6447ee6ffcada313f751c2103
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 13 18:46:20 2023 -0500
+
+    finish operators and symbols
+
+commit 93a17de7b600015ccd50587627abeb534b04207c
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 13 18:20:59 2023 -0500
+
+    remove helper
+
+commit d2ea18d0a726d08e4910d57748b51e29d02481e9
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 13 18:20:05 2023 -0500
+
+    AND added
+
+commit be0d7c366f49b8a3014d3acb825eea8d5e1a033d
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 13 18:19:14 2023 -0500
+
+    fix LT
+
+commit c42e34b8c93dc0be631b4af6a6b4edfbbd575ef6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 13 18:12:44 2023 -0500
+
+    forgot some symbols and keywords
+
+commit c68264a9e5cef4929b4e7cc0b0bb9507bc7b8038
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 13 18:03:59 2023 -0500
+
+    operators added
+
+commit 18486a58025125c40923f65f43b571b345a4e793
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 13 17:51:02 2023 -0500
+
+    adding operator classes
+
+commit 1beffec00578fcf87791abd6e577e986f67b87ab
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 13 17:57:57 2023 -0500
+
+    separate keywords and symbols into respective classes
+
+commit 7b6d221d03a3794ed8f0c81da769b1ffa573093f
+Merge: ebe591a 1faf035
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 13 17:43:51 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit ebe591a373f71a9abfab961030f88cb0d866efe6
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 13 17:43:44 2023 -0500
+
+    create new use keyword
+
+commit 1faf035c1b293bdfd8e7dac3e5cd62156a56bacf
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 13 17:43:37 2023 -0500
+
+    etaLexer.flex update
+
+commit e4368bca62c9b62c4c0147a110c2e8733ca9833f
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 13 17:20:56 2023 -0500
+
+    separated token classes form lexer file
+
+commit a4fb72d419e595c75a4075a4b5bb3a4994eaee0d
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 13 16:28:55 2023 -0500
+
+    update to etaLexer.flex EtaGeneralToken.java
+
+commit 258f02cfa9a8759605c23950333204fd4c2a16d0
+Merge: e25820e c874564
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 13 14:37:51 2023 -0500
+
+    Merge branch 'main' of github.coecis.cornell.edu:jdr299/programming-assignment-2
+
+commit e25820e45fb1e9294e398bb9a68cfbb066e119b5
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Mon Feb 13 14:37:13 2023 -0500
+
+    add token classes
+
+commit c87456437be3a4cc15c32936108a36ebb1c72826
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 13 10:30:39 2023 -0500
+
+    adding to .gitignore
+
+commit 10a66497fe3285573bf2420f681c84624dc3b4a3
+Author: jdr299 <jdr299@cornell.edu>
+Date:   Mon Feb 13 10:29:47 2023 -0500
+
+    Delete pa2.pdf
+
+commit e8ae2743f3f91c764e3e81f0c8f9fd02157bf6d1
+Author: jdr299 <jdr299@cornell.edu>
+Date:   Mon Feb 13 10:29:22 2023 -0500
+
+    Delete sym.java
+
+commit 58e0c5470d50811836fd9e5c611cc6ab021d8ba3
+Author: jdr299 <jdr299@cornell.edu>
+Date:   Mon Feb 13 10:29:13 2023 -0500
+
+    Delete parser.java
+
+commit 6cc678ae1bf0a5524c86466bf86a9f93f4176952
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 13 10:21:15 2023 -0500
+
+    adding to previous commit
+
+commit 2f5550a4d06e8343c7d49f56206ee5db7ba30fc1
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Mon Feb 13 10:17:42 2023 -0500
+
+    resolving parser build conflicts
+
+commit adbb2b586f2fd05d8aea028c236958deb20b5826
+Merge: 5093e4e 655e005
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Feb 12 17:02:47 2023 -0500
+
+    Begin implementing parser
+
+commit 5093e4e99e8431845c3a131e4d6b39ba3a408eb3
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Feb 12 16:58:55 2023 -0500
+
+    Begin implementing parser
+
+commit 655e005a06797b91e71c041beca69caf996eda06
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Feb 12 16:46:00 2023 -0500
+
+    updated etac to use gradle
+
+commit 41f8bcdd19b86ecec6ebb20d61e4ecc9b6316ccb
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Feb 12 16:42:24 2023 -0500
+
+    ./etac-build IS WORKING
+
+commit ec8134962e03fa2391567cefb423c70829bbbde9
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sun Feb 12 16:33:54 2023 -0500
+
+    No build errors BUT need to update build.gradle so it can find our main class
+
+commit 3043b003de792705fafa01ea312b483934a9f91b
+Author: Arjun Shah <ans96@cornell.edu>
+Date:   Sun Feb 12 15:25:28 2023 -0500
+
+    cup build still broken
+
+commit 2facf4eb082a9fedd0ba9e9c82a2859320bab401
+Merge: b6c13f7 8978414
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Feb 12 15:16:22 2023 -0500
+
+    Fix conflicts in prev pull
+
+commit b6c13f7cac483745bd34d11cee79c13067bd595c
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sun Feb 12 15:15:09 2023 -0500
+
+    Commit my changes so I can pull
+
+commit 89784141358d81d2a741a40172251958d9f787f5
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Feb 11 19:55:21 2023 -0500
+
+    etaLexer.java -- trying to interface with CUP... unsuccessfully :(
+
+commit 791bd5266bd80d2de0098c4df53ecc2b42869f0d
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Feb 11 18:24:12 2023 -0500
+
+    adding a .gitignore file
+
+commit c8502a6e9c4ff41e542068a094f43b888782a28b
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Feb 11 18:13:40 2023 -0500
+
+    etaLexer.flex token approach
+
+commit b16f664ef6531de9c3f41c4cc099968c4da56c61
+Author: Zack Hatzis <zdh5@cornell.edu>
+Date:   Sat Feb 11 16:54:07 2023 -0500
+
+    Begin changing etaLexer.flex
+    - Want to add subclasses with methods for writing to files
+    - Need to add return statements for token cases
+
+commit a7a0fe70d7ce8d6d64bc2814f665e25162beeb2d
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Feb 11 16:06:01 2023 -0500
+
+    etac-build update
+
+commit 5c3206fe453b2ea20c43080ba36684e867c56b4d
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Feb 11 15:45:43 2023 -0500
+
+    build.gradle
+
+commit ce7400682b7bd52fdad56879c03a51bc59130053
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Feb 11 15:29:06 2023 -0500
+
+    adding etac-build etac
+
+commit 16121fae65fb5a2a67cd6ff614ebdbb9528924b5
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Feb 11 15:24:50 2023 -0500
+
+    first commit <3
+
+commit f5bb3347778d61ed3d4b8e74af58c227e9d5e9e6
+Author: John Rubio <jdr299@cornell.edu>
+Date:   Sat Feb 11 15:20:52 2023 -0500
+
+    first commit
