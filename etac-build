@@ -1,0 +1,19 @@
+#!/bin/bash
+export CLASSPATH=CLASSPATH:/home/student/shared/deps/libs/main/commons-cli-1.5.0.jar:.
+# rm -rf deps
+DIR=$(dirname $0)
+cd $DIR
+CUP_DIR=src/main/java/jdr299zdh5cew256ans96/cup
+# gradle copyDependenciesToLib
+CUP_JAR_DIR=./deps/libs/main
+cp $CUP_DIR/java_cup.jar $CUP_JAR_DIR
+JFLEX_DIR=src/main/java/jdr299zdh5cew256ans96
+
+jflex $JFLEX_DIR/EtaLexer.flex
+java -jar $CUP_DIR/java_cup.jar $CUP_DIR/eta.cup
+cp sym.java $CUP_DIR
+cp parser.java $CUP_DIR
+rm sym.java parser.java
+# javac $JFLEX_DIR/etaLexer.java
+# javac $JFLEX_DIR/cli.java
+gradle --no-daemon shadowJar
