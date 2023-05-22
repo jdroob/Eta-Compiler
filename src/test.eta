@@ -6,12 +6,12 @@ main(args: int[][]) {
     a:int = 5
     println(unparseInt(a))
 
-    c:int = f(a)
+    c:int,d:int = f(a)
     println(unparseInt(c))
 }
 
-f(x:int):int {
-    return g(7)
+f(x:int):int,int {
+    return g(7),5
 }
 
 g(y:int):int {

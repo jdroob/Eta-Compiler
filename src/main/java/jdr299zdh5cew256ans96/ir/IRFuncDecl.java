@@ -137,6 +137,13 @@ public class IRFuncDecl extends IRNode_c {
         return getNumUnits(abiName.substring(index));
     }
 
+    public static int getNumRets(String abiName) {
+        int returnIndex = abiName.lastIndexOf("_");
+        if (abiName.charAt(returnIndex + 1) == 't')
+            return Integer.parseInt(String.valueOf(abiName.charAt(returnIndex + 2)));
+        return 1;
+    }
+
     public static int getNumUnits(String chars) {
         int numUnits = 0;
         for (int i = 0; i < chars.length(); i++) {
