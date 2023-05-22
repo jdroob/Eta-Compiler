@@ -92,7 +92,8 @@ public class RegisterAllocation {
 	// TODO: maybe add more x86 registers
 	public static LinkedHashSet<String> x86colors = new LinkedHashSet<>(
 			Arrays.asList(
-					"rcx", "rbx",
+//					"rcx",
+					"rbx",
 //					"r8", "r9",
 //					"r10", "r11",
 					"r12", "r13",
@@ -222,7 +223,7 @@ public class RegisterAllocation {
 		if (!abstractAssembly.getInsns().get(2).toString().contains("push rbx")) {
 //			IRCompUnit.addedCallingConventions.add(abstractAssembly.getInsns().get(0).toString());
 //			System.out.println("Added "+abstractAssembly.getInsns().get(0).toString()+" to calling conv ");
-			//insertCallingConventions(abstractAssembly);
+			insertCallingConventions(abstractAssembly);
 		}
 		memoryOffset = 8;
 		return abstractAssembly;
@@ -237,108 +238,108 @@ public class RegisterAllocation {
 		insns.add(2,new Push("rbx"));
 		insns.add(2,new Push("rbx"));
 
-		for (int i=0;i<insns.size();i++) {
-			if (insns.get(i) instanceof Call c) {
-				String abiName = c.getFunc();
-//				System.out.println("abi name: "+abiName);
-				int numArgs = IRFuncDecl.getNumArgs(abiName);
-//				System.out.println("numArgs: "+numArgs);
-				int cur = i-1;
-				while (numArgs > 0) {
-					Instruction insn = insns.get(cur);
-					if (insn instanceof Mov m) {
-						if (m.getRegs().size() == 2) {
-							if (m.getRegs().get(0).getReg().equals(m.getRegs().get(1).getReg())) {
-//								System.out.println(m.getRegs().get(0)+" equals "+m.getRegs().get(1));
-							} else {
-//								System.out.println(m.getRegs().get(0)+" does not equal "+m.getRegs().get(1));
-							}
-								if (!m.getRegs().get(0).getReg().equals(m.getRegs().get(1).getReg())) {
-//								System.out.println(m.getRegs().get(0));
-//								System.out.println(m.getRegs().get(1));
-//								System.out.println("not redundent: "+insn);
-								numArgs--;
-							}
-						} else {
-//							System.out.println("one reg move: "+insn);
-							numArgs--;
-						}
-					} else {
-						numArgs--;
-					}
-					cur--;
-				}
-
-				insns.add(cur+2,new Push("rsi"));
-				insns.add(cur+2,new Push("rdi"));
-				insns.add(cur+2,new Push("r8"));
-				insns.add(cur+2,new Push("r9"));
-				insns.add(cur+2,new Push("r10"));
-				insns.add(cur+2,new Push("r11"));
-				insns.add(cur+2,new Push("rax"));
-				insns.add(cur+2,new Push("rdx"));
-
-				i = i + 8;
-
-				cur = i+1;
-				ArrayList<String> returnValuePops = new ArrayList<>();
-				ArrayList<String> callerSavedRegs = new ArrayList<>();
-				callerSavedRegs.add("rsi");
-				callerSavedRegs.add("rdi");
-				callerSavedRegs.add("r8");
-				callerSavedRegs.add("r9");
-				callerSavedRegs.add("r10");
-				callerSavedRegs.add("r11");
-				callerSavedRegs.add("rax");
-				callerSavedRegs.add("rdx");
-
-				while (insns.get(cur) instanceof Pop p) {
-					if (isCallerSaved(p.getVal())) {
-						returnValuePops.add(p.getVal());
-					}
-					cur++;
-				}
-
-				for (String s : callerSavedRegs) {
-					if (returnValuePops.contains(s)) {
-						insns.add(cur, new Binop("add",new Register("rsp"),
-								new Const(8)));
-					} else {
-						insns.add(cur, new Pop(s));
-					}
-					cur++;
-				}
-
-				cur++;
-
-//				System.out.println("starting pops from: "+cur);
-////				addPops(cur,"rsi",returnValuePops,insns);
-//				insns.add(cur, new Pop("rsi"));
+//		for (int i=0;i<insns.size();i++) {
+//			if (insns.get(i) instanceof Call c) {
+//				String abiName = c.getFunc();
+////				System.out.println("abi name: "+abiName);
+//				int numArgs = IRFuncDecl.getNumArgs(abiName);
+////				System.out.println("numArgs: "+numArgs);
+//				int cur = i-1;
+//				while (numArgs > 0) {
+//					Instruction insn = insns.get(cur);
+//					if (insn instanceof Mov m) {
+//						if (m.getRegs().size() == 2) {
+//							if (m.getRegs().get(0).getReg().equals(m.getRegs().get(1).getReg())) {
+////								System.out.println(m.getRegs().get(0)+" equals "+m.getRegs().get(1));
+//							} else {
+////								System.out.println(m.getRegs().get(0)+" does not equal "+m.getRegs().get(1));
+//							}
+//								if (!m.getRegs().get(0).getReg().equals(m.getRegs().get(1).getReg())) {
+////								System.out.println(m.getRegs().get(0));
+////								System.out.println(m.getRegs().get(1));
+////								System.out.println("not redundent: "+insn);
+//								numArgs--;
+//							}
+//						} else {
+////							System.out.println("one reg move: "+insn);
+//							numArgs--;
+//						}
+//					} else {
+//						numArgs--;
+//					}
+//					cur--;
+//				}
+//
+//				insns.add(cur+2,new Push("rsi"));
+//				insns.add(cur+2,new Push("rdi"));
+//				insns.add(cur+2,new Push("r8"));
+//				insns.add(cur+2,new Push("r9"));
+//				insns.add(cur+2,new Push("r10"));
+//				insns.add(cur+2,new Push("r11"));
+//				insns.add(cur+2,new Push("rax"));
+//				insns.add(cur+2,new Push("rdx"));
+//
+//				i = i + 8;
+//
+//				cur = i+1;
+//				ArrayList<String> returnValuePops = new ArrayList<>();
+//				ArrayList<String> callerSavedRegs = new ArrayList<>();
+//				callerSavedRegs.add("rsi");
+//				callerSavedRegs.add("rdi");
+//				callerSavedRegs.add("r8");
+//				callerSavedRegs.add("r9");
+//				callerSavedRegs.add("r10");
+//				callerSavedRegs.add("r11");
+//				callerSavedRegs.add("rax");
+//				callerSavedRegs.add("rdx");
+//
+//				while (insns.get(cur) instanceof Pop p) {
+//					if (isCallerSaved(p.getVal())) {
+//						returnValuePops.add(p.getVal());
+//					}
+//					cur++;
+//				}
+//
+//				for (String s : callerSavedRegs) {
+//					if (returnValuePops.contains(s)) {
+//						insns.add(cur, new Binop("add",new Register("rsp"),
+//								new Const(8)));
+//					} else {
+//						insns.add(cur, new Pop(s));
+//					}
+//					cur++;
+//				}
+//
 //				cur++;
-////				addPops(cur,"rdi",returnValuePops,insns);
-//				insns.add(cur, new Pop("rdi"));
-//				cur++;
-////				addPops(cur,"r8",returnValuePops,insns);
-//				insns.add(cur, new Pop("r8"));
-//				cur++;
-////				addPops(cur,"r9",returnValuePops,insns);
-//				insns.add(cur, new Pop("r9"));
-//				cur++;
-////				addPops(cur,"r10",returnValuePops,insns);
-//				insns.add(cur, new Pop("r10"));
-//				cur++;
-////				addPops(cur,"r11",returnValuePops,insns);
-//				insns.add(cur, new Pop("r11, "+cur));
-//				cur++;
-////				addPops(cur,"rax",returnValuePops,insns);
-//				insns.add(cur, new Pop("rax"));
-//				cur++;
-////				addPops(cur,"rdx",returnValuePops,insns);
-//				insns.add(cur, new Pop("rdx, "+cur));
-//				cur++;
-
-			}
-		}
+//
+////				System.out.println("starting pops from: "+cur);
+//////				addPops(cur,"rsi",returnValuePops,insns);
+////				insns.add(cur, new Pop("rsi"));
+////				cur++;
+//////				addPops(cur,"rdi",returnValuePops,insns);
+////				insns.add(cur, new Pop("rdi"));
+////				cur++;
+//////				addPops(cur,"r8",returnValuePops,insns);
+////				insns.add(cur, new Pop("r8"));
+////				cur++;
+//////				addPops(cur,"r9",returnValuePops,insns);
+////				insns.add(cur, new Pop("r9"));
+////				cur++;
+//////				addPops(cur,"r10",returnValuePops,insns);
+////				insns.add(cur, new Pop("r10"));
+////				cur++;
+//////				addPops(cur,"r11",returnValuePops,insns);
+////				insns.add(cur, new Pop("r11, "+cur));
+////				cur++;
+//////				addPops(cur,"rax",returnValuePops,insns);
+////				insns.add(cur, new Pop("rax"));
+////				cur++;
+//////				addPops(cur,"rdx",returnValuePops,insns);
+////				insns.add(cur, new Pop("rdx, "+cur));
+////				cur++;
+//
+//			}
+//		}
 
 
 		int setIndex = insns.size()-2;

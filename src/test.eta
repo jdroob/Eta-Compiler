@@ -5,4 +5,15 @@ main(args: int[][]) {
 
     a:int = 5
     println(unparseInt(a))
+
+    c:int = f(a)
+    println(unparseInt(c))
+}
+
+f(x:int):int {
+    return g(7)
+}
+
+g(y:int):int {
+    return 77
 }

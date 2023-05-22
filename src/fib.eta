@@ -2,7 +2,7 @@ use io
 use conv
 
 main(args:int[][]) {
-   println(unparseInt(fib(8)))
+   println(unparseInt(fib(0)))
 }
 
 fib(n:int):int {

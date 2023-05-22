@@ -4,6 +4,9 @@ deps/
 build/
 gradle/
 runtime/
+src/.DS_Store
+./test
+test
 src/main/java/jdr299zdh5cew256ans96/etaLexer.java
 src/main/java/jdr299zdh5cew256ans96/etaLexer.java~
 src/main/java/jdr299zdh5cew256ans96/etaLexer.class
