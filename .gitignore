@@ -1,5 +1,9 @@
 .gradle/
 deps/
+.idea/
+build/
+gradle/
+runtime/
 src/main/java/jdr299zdh5cew256ans96/etaLexer.java
 src/main/java/jdr299zdh5cew256ans96/etaLexer.java~
 src/main/java/jdr299zdh5cew256ans96/etaLexer.class
@@ -9,9 +13,6 @@ src/main/java/jdr299zdh5cew256ans96/cup/sym.java
 src/main/java/jdr299zdh5cew256ans96/pa2_release/pa2.pdf
 src/main/java/jdr299zdh5cew256ans96/ir/interpret/IRSimulator.java
 src/main/java/jdr299zdh5cew256ans96/ir/interpret/*
-.idea/
-build/
-gradle/
 gradlew
 gradlew.bat
 src/main/java/jdr299zdh5cew256ans96/cup/sumTest.eta
