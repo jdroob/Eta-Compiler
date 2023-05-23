@@ -273,17 +273,25 @@ public class RegisterAllocation {
 					}
 					cur--;
 				}
-
 				insns.add(cur+2,new Push("rsi"));
 				insns.add(cur+2,new Push("rdi"));
 				insns.add(cur+2,new Push("r8"));
 				insns.add(cur+2,new Push("r9"));
 				insns.add(cur+2,new Push("r10"));
 				insns.add(cur+2,new Push("r11"));
-				insns.add(cur+2,new Push("rax"));
-				insns.add(cur+2,new Push("rdx"));
+				int offset = 6;
+				if (numRets < 2) {
+					if (numRets == 1) {
+						insns.add(cur+2,new Push("rdx"));
+						insns.add(cur+2,new Push("rdx"));
+					} else {
+						insns.add(cur+2,new Push("rax"));
+						insns.add(cur+2,new Push("rdx"));
+					}
+					offset +=2;
+				}
 
-				i = i + 8;
+				i = i + offset;
 
 				cur = i+1;
 				ArrayList<String> returnValuePops = new ArrayList<>();
@@ -294,8 +302,16 @@ public class RegisterAllocation {
 				callerSavedRegs.add("r9");
 				callerSavedRegs.add("r10");
 				callerSavedRegs.add("r11");
-				callerSavedRegs.add("rax");
-				callerSavedRegs.add("rdx");
+
+				if (numRets < 2) {
+					if (numRets == 1) {
+						callerSavedRegs.add("rdx");
+						callerSavedRegs.add("rdx");
+					} else {
+						callerSavedRegs.add("rax");
+						callerSavedRegs.add("rdx");
+					}
+				}
 
 				while (insns.get(cur) instanceof Pop p) {
 					if (isCallerSaved(p.getVal())) {
